@@ -1,0 +1,19 @@
+# LOGS
+logs
+*.log
+
+# DEVELOPMENT & PRODUCTION
+node_modules
+dist
+*.local
+
+# EDITOR
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
