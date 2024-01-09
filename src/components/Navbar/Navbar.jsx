@@ -1,91 +1,36 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { MdOutlineSearch } from 'react-icons/md'
 
 const Navbar = () => {
-  const navigate = useNavigate()
-  const [searchVisible, setSearchVisible] = useState(false)
-
-  const toggleSearch = () => {
-    setSearchVisible(!searchVisible)
-  }
-
-  const redirectTo = (path) => {
-    navigate(path)
-  }
-
+  const [open, setOpen] = useState(false)
   return (
-    <nav className='bg-white shadow rounded-full'>
-      <div className='container mx-auto relative flex h-16 items-center justify-between'>
-        <div className='relative flex h-16 justify-between'>
-          <img src='src\assets\capital_sanjuan_blanco.png' alt='Logo' />
-        </div>
-        <div className='container flex items-center justify-between p-6 mx-auto text-gray-600'>
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/')}
-          >
-            Municipio
+    <div className='bg-white py-3 fixed top-0 left-0 right-0 shadow-md rounded-full flex justify-end'>
+      <button className='mr-4 mt-1' onClick={() => setOpen(true)}>
+        <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
+          <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+        </svg>
+      </button>
+
+      <div className={`${!open && 'hidden'} bg-gray-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm`} onClick={() => setOpen(false)}> </div>
+
+      <div className={`${open ? 'w-80' : 'w-0'} bg-white min-h-screen fixed top-0 right-0 transition-all duration-300`}>
+        <div className={`${!open && 'hidden'} pt-3`}>
+          <button className=' ml-4 text-[#4B0984]' onClick={() => setOpen(false)}>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
+              <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
+            </svg>
           </button>
-
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/servicios')}
-          >
-            Servicios
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/culturayturismo')}
-          >
-            Cultura y Turismo
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/transparencia')}
-          >
-            Transparencia
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/noticias')}
-          >
-            Noticias
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-purple-800 hover:text-white hover:rounded-b-lg'
-            onClick={() => redirectTo('/contacto')}
-          >
-            Contacto
-          </button>
-
-          <div className='relative flex h-16 items-center justify-between'>
-            <button
-              onClick={toggleSearch}
-              className='group h-10 w-10 hover:bg-purple-800 hover:text-white hover:rounded-full text-gray-800 focus:outline-none mx-2 flex justify-center items-center'
-            >
-              <MdOutlineSearch className='w-6 group-hover:filter group-hover:invert(0)' alt='Lupa' />
-            </button>
-
-            <div
-              className={`${
-                searchVisible ? 'scale-x-100' : 'scale-x-0'
-              } transform origin-top relative top-0 right-0 w-64 transition-transform duration-300`}
-            >
-              <input
-                type='text'
-                placeholder='Buscar...'
-                className='border w-60 h-10 border-gray-300 p-2 focus:outline-none focus:border-purple-700 rounded-full'
-              />
-            </div>
+          <div className='flex justify-center'>
+            <input placeholder='Buscar...' className='p-2 mb-2 w-60 rounded-full border border-[#4B0984]' />
           </div>
+          <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Municipio</div>
+          <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Servicios</div>
+          <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Transparencia</div>
+          <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Noticias</div>
+          <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Contacto</div>
         </div>
+        <img src='src\assets\group_61.png' className='absolute bottom-20 right-0' />
       </div>
-    </nav>
+    </div>
   )
 }
 
