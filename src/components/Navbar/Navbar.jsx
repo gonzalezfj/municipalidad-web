@@ -3,7 +3,7 @@ import { useState } from 'react'
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div className='bg-white py-3 fixed top-0 left-0 right-0 shadow-md rounded-full flex justify-end'>
+    <div className='bg-white py-3 sticky top-0 left-0 right-0 shadow-md rounded-full flex justify-end'>
       <button className='mr-4 mt-1' onClick={() => setOpen(true)}>
         <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
           <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
