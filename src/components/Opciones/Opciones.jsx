@@ -1,17 +1,14 @@
 import React from 'react'
+import { Card } from './Card'
 
 export const Opciones = () => {
-    return (
-        <div className=''>
-            <h1 className='m-4'>Servicios</h1>
-            <div className='grid gap-x-8 gap-y-4 grid-cols-2 items-center justify-center m-4'>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-                <div className='bg-red-600 rounded-lg h-32'></div>
-            </div>
+  return (
+    <div className='bg-secondary'>
+      <div className='items-center justify-center flex bg-primary rounded-secondary'>
+        <div>
+          <Card />
         </div>
-    )
+      </div>
+    </div>
+  )
 }

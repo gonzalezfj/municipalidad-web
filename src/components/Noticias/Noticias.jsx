@@ -1,7 +1,7 @@
 import React from 'react'
 import imagen1 from '../../assets/image3.jpg'
 export const Noticias = () => {
-    return (
+ return (
         <div className=''>
             <h1 className='m-4'>Noticias</h1>
             {/* CONTENEDOR */}
@@ -20,12 +20,12 @@ export const Noticias = () => {
                     <img className="w-full items-center justify-center flex" src={imagen1} />
                     <div className="px-6 py-4 items-center justify-center">
                         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p className="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
+                      <p className="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
                     </div>
                 </div>
             </div>
         </div>
-    )
+  )
 }
