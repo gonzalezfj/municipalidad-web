@@ -1,11 +1,10 @@
-import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import img2 from '../../assets/imagen2.jpg'
 import img3 from '../../assets/imagen4.jpg'
 import img4 from '../../assets/imagen5.webp'
-import img5 from '../../assets/home/home_seccion3_deporteysalud_foto.jpg'
+import img5 from '../../assets/home_seccion3_deporteysalud_foto.jpg'
 
 export const Desctacado = () => {
   const images = [img2, img3, img4, img5]
@@ -32,7 +31,7 @@ export const Desctacado = () => {
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className='mb-4'>
-            <div className=' w-72 h-72 rounded-full overflow-hidden ' style={{ margin: '0 4rem' }}>
+            <div className=' w-72 h-72 rounded-full overflow-hidden shadow-lg' style={{ margin: '0 4rem' }}>
               <img
                 className='w-full h-full object-cover z-100 relative top-0 left-0'
                 src={img}

@@ -10,7 +10,8 @@ export default {
         primary: '#FFC14F',
         secondary: '#D85B35',
         third: '#FFFFFF',
-        room: '#8A43EF'
+        room: '#8A43EF',
+        fifth: '#4B0984'
       },
       borderRadius: {
         primary: '35px',
