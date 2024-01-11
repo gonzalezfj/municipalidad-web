@@ -5,18 +5,17 @@ import Home from './pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer/Footer'
+import Boletas from './pages/Boletas'
 
 function App () {
   return (
     <Router>
       <Navbar />
-      <div className='container mx-auto py-8'>
-        <Routes>
-          <Route index element={<Home />} />
-          {/* <Route path='/noticias' element={<Noticias />} /> */}
-          {/* <Route path='/tramites' element={<Tramites />} /> */}
-        </Routes>
-      </div>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/boletas' element={<Boletas />} />
+        {/* <Route path='/tramites' element={<Tramites />} /> */}
+      </Routes>
       <Footer />
     </Router>
   )
