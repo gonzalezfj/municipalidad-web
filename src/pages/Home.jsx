@@ -1,7 +1,7 @@
 import React from 'react'
 import { Banner } from '../components/Banner/Banner'
 import { Opciones } from '../components/Opciones/Opciones'
-import { Desctacado } from '../components/Turismo y Cultura/Destacado'
+import { Destacado } from '../components/Turismo y Cultura/Destacado'
 import { Noticias } from '../components/Noticias/Noticias'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Banner />
       <Opciones />
-      <Desctacado />
+      <Destacado />
       <Noticias />
     </div>
   )

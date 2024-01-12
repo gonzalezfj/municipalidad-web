@@ -1,47 +1,18 @@
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import img2 from '../../assets/imagen2.jpg'
-import img3 from '../../assets/imagen4.jpg'
-import img4 from '../../assets/imagen5.webp'
-import img5 from '../../assets/home_seccion3_deporteysalud_foto.jpg'
+import img1 from '../../assets/home_seccion4_noticiaPirotecnia.jpg'
+import img2 from '../../assets/home_seccion4_noticiaLimpieza.jpg'
+import img3 from '../../assets/home_seccion4_noticiaHomenaje.jpg'
+import img4 from '../../assets/homemovil_seccion4_fondo.svg'
+import CarruselDestacado from './CarruselDestacado'
 
-export const Desctacado = () => {
-  const images = [img2, img3, img4, img5]
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  }
+export const Destacado = () => {
+  const slides = [img1, img2, img3]
+
   return (
-    <div className='bg-room items-center justify-center'>
-      <h1 className='p-8 bg-third mt-4 z-4 text-neutral-400'>Turismo y Cultura</h1>
-      <Slider {...settings}>
-        {images.map((img, index) => (
-          <div key={index} className='mb-4'>
-            <div className=' w-72 h-72 rounded-full overflow-hidden shadow-lg' style={{ margin: '0 4rem' }}>
-              <img
-                className='w-full h-full object-cover z-100 relative top-0 left-0'
-                src={img}
-                alt={`Imagen ${index + 1}`}
-              />
-            </div>
-          </div>
-        ))}
-      </Slider>
-      <h4 className='flex items-center justify-center mt-8 text-lg font-bold text-stone-200'>Guía Turística</h4>
+    <div className='container relative'>
+      <h3 className='ml-4 mt-3 text-3xl text-slate-500'>Destacado</h3>
+      <div className='flex flex-col relative bg-no-repeat bg-fifth mt-10 h-96'>
+        <CarruselDestacado slides={slides} />
+      </div>
     </div>
   )
 }

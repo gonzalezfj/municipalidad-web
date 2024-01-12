@@ -6,10 +6,9 @@ import img4 from '../../assets/homemovil_seccion4_fondo.svg'
 
 export const Noticias = () => {
   const slides = [img1, img2, img3]
-
   return (
     <div className='flex flex-col relative bg-no-repeat' style={{ backgroundImage: `url(${img4})` }}>
-      <h3 className='ml-4 mb-8 mt-3 text-gray-300'>NOTICIAS</h3>
+      <h3 className='ml-4 mb-8 mt-3 text-3xl text-gray-500'>NOTICIAS</h3>
       <CarruselNoticias slides={slides} />
     </div>
   )
