@@ -3,7 +3,7 @@ import SocialIcons from './SocialIcons'
 const Footer = () => {
   return (
     <footer
-      data-aos="fade-up"
+      // data-aos="fade-up"
       data-aos-duration="3000"
       className='bg-[#4B0984] text-white'
     >

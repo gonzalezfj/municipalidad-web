@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import { ChevronLeft, ChevronRight } from 'react-feather';
+// import { ChevronLeft, ChevronRight } from 'react-feather';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Carousel({
+export default function CarruselNoticias({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides
@@ -38,9 +38,9 @@ export default function Carousel({
           <div
             data-aos="fade-left"
             key={key}
-            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg p-4'>
-            <div className='h-82 rounded-lg flex object-cover '>
-              <img className='w-full h-64 object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
+            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg p-10 lg:h-full'>
+            <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
+              <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
             </div>
             <div className='px-6 py-4'>
               <div className='font-bold text-3xl text-fifth'>Pirotecnia Cero en la Ciudad de San Juan</div>

@@ -15,7 +15,8 @@ export default {
       },
       borderRadius: {
         primary: '35px',
-        secondary: '200px 0 0 0'
+        secondary: '200px 0 0 0',
+        third : '600px 0 0 0'
       },
       textColor: {
         primary: '#FFFFF'

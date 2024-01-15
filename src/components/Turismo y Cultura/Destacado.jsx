@@ -10,7 +10,7 @@ export const Destacado = () => {
   return (
     <div className='container relative'>
       <h3 className='ml-4 mt-3 text-3xl text-slate-500'>Destacado</h3>
-      <div className='flex flex-col relative bg-no-repeat bg-fifth mt-10 h-96'>
+      <div className='flex flex-col relative bg-no-repeat bg-fifth mt-10 h-90'>
         <CarruselDestacado slides={slides} />
       </div>
     </div>

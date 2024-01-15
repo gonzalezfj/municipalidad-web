@@ -43,7 +43,7 @@ export default function CarruselDestacado({
                         className='flex transition-transform ease-out duration-300 rounded-full'
                     >
                         <div className='w-screen flex-shrink-0 rounded-full items-center justify-center flex'>
-                            <img className='w-80 h-80 object-cover rounded-full shadow-xl' src={img} alt={`Slide ${key}`} />
+                            <img className='w-80 h-80 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={img} alt={`Slide ${key}`} />
                         </div>
                     </div>
                 ))}
