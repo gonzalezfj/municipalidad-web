@@ -15,15 +15,19 @@ const Navbar = () => {
   return (
     <div className='container p-2 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
-        <NavLink to='/home'><img className='px-3 h-16 lg:h-auto lg:mt-2' src='src\assets\capital_sanjuan_blanco.png' /></NavLink>
-        <button className='mr-4 mt-1 lg:hidden' onClick={() => setOpen(true)}>
-          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6 mr-1'>
-            <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
-          </svg>
-        </button>
+        <div>
+          <NavLink to='/home'><img className='px-3 h-16 lg:h-auto lg:mt-2' src='src\assets\capital_sanjuan_blanco.png' /></NavLink>
+        </div>
+        <div className='flex items-center'>
+          <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-7 h-7'>
+              <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+            </svg>
+          </button>
+        </div>
 
-        <div className='hidden md:hidden lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
-          <div className={`relative ${openDrop ? 'selected' : ''}`} onBlur={() => setOpenDrop(false)}>
+        <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
+          <div className='relative' onBlur={() => setOpenDrop(false)}>
             <button
               className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2 ${openDrop ? 'bg-[#4B0984] text-white rounded-b-lg translate-y-2' : ''}`}
               onClick={() => setOpenDrop(!openDrop)}
@@ -72,17 +76,22 @@ const Navbar = () => {
           >
             Contacto
           </button>
-          <button
+          {/* <button
             className='group h-10 w-10 bg-[#FFC14F] rounded-full hover:bg-[#4B0984] hover:text-white hover:rounded-full focus:outline-none mx-2 flex justify-center items-center'
           >
             <img className='w-6 group-hover:filter invert group-hover:invert' src='src\assets\lupa.png' alt='' />
-          </button>
-          <div className='px-2'>
+          </button> */}
+        </div>
+        <div className='hidden lg:block lg:container lg:w-60'>
+          <div className='group'>
             <input
               type='text'
               placeholder='Buscar...'
-              className='border w-60 h-10 border-gray-300 p-2 focus:outline-none focus:border-[#FFC14F] rounded-full'
+              className='group-hover:w-60 h-10 w-0 border rounded-full absolute top-5 right-0 mr-5 p-2 transition-all ease-out duration-500 focus:outline-none'
             />
+            <svg className='group mr-2 h-12 w-12 absolute top-4 right-0'>
+              <image className='w-12' href='src\assets\home_menu_buscador.svg' alt='' />
+            </svg>
           </div>
         </div>
 
