@@ -1,6 +1,6 @@
 const SocialIcons = () => {
   return (
-    <div className='flex justify-between items-center sm:px-12 px-24 py-3'>
+    <div className='flex justify-between items-center md:px-64 sm:px-12 lg:h-5 lg:px-15 px-24 py-3'>
       <svg className='h-12 w-12'>
         <image className='h-12' href='src\assets\home_footer_iconoFacebook.svg' />
       </svg>

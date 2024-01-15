@@ -2,28 +2,30 @@ import SocialIcons from './SocialIcons'
 
 const Footer = () => {
   return (
-    <footer
-      // data-aos="fade-up"
-      data-aos-duration="3000"
-      className='bg-[#4B0984] text-white'
-    >
+    <footer className='bg-[#4B0984] text-white w-screen'>
       <div className='bg-white h-20 rounded-br-full'>-
       </div>
-      <div className='flex justify-center items-center sm:px-12 px-4 py-5'>
-        <img src='src\assets\logo_capital_blanco.png' />
-      </div>
-      <div className='flex justify-center items-center sm:px-12 px-4 py-4'>
-        <h1
-          className='lg:text-4xl text-xl md:mb-0 mb-6 lg:leading-normal font-semibold
+      <div className='lg:container lg:mx-auto lg:flex'>
+        <div className='flex justify-center items-center sm:px-12 lg:h-full lg:px-0 lg:w-full lg:ml-10 px-4 py-5'>
+          <img className='lg:w-auto' src='src\assets\logo_capital_blanco.png' />
+        </div>
+        <div className='container'>
+          <div className='flex justify-center lg:w-full lg:mt-5 items-center sm:px-12 px-4 py-4'>
+            <h1
+              className='lg:text-l text-xl md:mb-0 mb-6 lg:leading-normal font-semibold
          md:w-2/5 text-center'
-        >
-          Caseros sur 298,
-          San Juan, Argentina
-        </h1>
-      </div>
-      <SocialIcons />
-      <div className='flex justify-between items-center sm:px-12 px-24 py-6'>
-        <img src='src\assets\logo_telefono_blanco.png' />
+            >
+              Caseros sur 298,
+              San Juan, Argentina
+            </h1>
+          </div>
+          <div className='lg:p-20'>
+            <SocialIcons />
+          </div>
+        </div>
+        <div className='flex justify-center items-center sm:px-12 lg:h-full lg:px-0 lg:w-full lg:ml-10 lg:mt-3 px-4 py-5'>
+          <img className='h-auto' src='src\assets\logo_telefono_blanco.png' />
+        </div>
       </div>
     </footer>
   )
