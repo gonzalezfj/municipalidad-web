@@ -10,7 +10,6 @@ export default function CarruselDestacado({
     slides
 }) {
     const [curr, setCurr] = useState(0)
-
     const prev = () =>
         setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
     const next = () =>
@@ -34,16 +33,24 @@ export default function CarruselDestacado({
     };
 
     return (
-        <div className='overflow-hidden items-center justify-center relative' style={{ top: '-20px' }}>
+        <div className='overflow-hidden items-center justify-center relative' style={{ top: '-20px' }} >
             <Slider {...settings}>
-                {slides.map((img, key, index) => (
+                {slides.map((slide, key, index) => (
                     <div
                         key={key}
                         data-aos="fade-right"
-                        className='flex transition-transform ease-out duration-300 rounded-full'
+                        className='flex transition-transform ease-out duration-300 rounded-full '
                     >
-                        <div className='w-screen flex-shrink-0 rounded-full items-center justify-center flex'>
-                            <img className='w-80 h-80 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={img} alt={`Slide ${key}`} />
+                        <div className='w-screen flex-shrink-0 flex-col rounded-full items-center justify-center flex'>
+                            <div className='lg:max-w-96 lg:max-h-96'>
+                                <img className='w-80 h-80 lg:w-96 lg:h-96 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
+                            </div>
+                            <div className='pt-4 items-center justify-center'>
+                                <h3 className='text-white lg:text-3xl'>{slide.titulo}</h3>
+                            </div>
+                            <div className='pt-4 items-center justify-center'>
+                                <p className='text-white lg:text-lg'>{slide.text}</p>
+                            </div>
                         </div>
                     </div>
                 ))}
