@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
           <div className='relative' onBlur={() => setOpenDrop(false)}>
             <button
-              className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2 ${openDrop ? 'bg-[#4B0984] text-white rounded-b-lg translate-y-2' : ''}`}
+              className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu ${openDrop ? 'bg-[#4B0984] text-white rounded-b-lg ' : ''}`}
               onClick={() => setOpenDrop(!openDrop)}
             >
               <span>Municipio</span>
@@ -41,14 +41,14 @@ const Navbar = () => {
           </div>
 
           <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
             onClick={() => redirectTo('/servicios')}
           >
             Servicios
           </button>
 
           <button
-            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
             onClick={() => redirectTo('/culturayturismo')}
           >
             <span>Cultura y Turismo</span>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </button>
 
           <button
-            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
             onClick={() => redirectTo('/transparencia')}
           >
             <span>Transparencia</span>
@@ -64,14 +64,14 @@ const Navbar = () => {
           </button>
 
           <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
             onClick={() => redirectTo('/noticias')}
           >
             Noticias
           </button>
 
           <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
             onClick={() => redirectTo('/contacto')}
           >
             Contacto
