@@ -1,35 +1,111 @@
 import { useState } from 'react'
 import Links from './Links'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { MdExpandMore } from 'react-icons/md'
+import Sublinks from './Sublinks'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const [openDrop, setOpenDrop] = useState(false)
+  const navigate = useNavigate()
+
+  const redirectTo = (path) => {
+    navigate(path)
+  }
   return (
-    <div className='bg-white py-3 sticky top-0 left-0 right-0 shadow-md rounded-full flex justify-between'>
-      <NavLink to='/home'><img className='px-3' src='src\assets\capital_sanjuan_blanco.png' /></NavLink>
-      <button className='mr-4 mt-1' onClick={() => setOpen(true)}>
-        <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6 mr-1'>
-          <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
-        </svg>
-      </button>
+    <div className='container p-2 mx-auto'>
+      <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
+        <NavLink to='/home'><img className='px-3 h-16 lg:h-auto lg:mt-2' src='src\assets\capital_sanjuan_blanco.png' /></NavLink>
+        <button className='mr-4 mt-1 lg:hidden' onClick={() => setOpen(true)}>
+          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6 mr-1'>
+            <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+          </svg>
+        </button>
 
-      <div className={`${!open && 'hidden'} bg-gray-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm`} onClick={() => setOpen(false)}> </div>
-
-      <div className={`${open ? 'translate-x-0' : 'translate-x-80'} bg-white min-h-screen w-80 fixed top-0 right-0 transition-all duration-300`}>
-        <div className={`${!open && 'hidden'} pt-3`}>
-          <button className=' ml-4 text-[#4B0984]' onClick={() => setOpen(false)}>
-            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
-              <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
-            </svg>
-          </button>
-          <div className='flex justify-center'>
-            <input placeholder='Buscar...' className='p-2 mb-2 w-60 rounded-full border border-[#4B0984]' />
+        <div className='hidden md:hidden lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
+          <div className={`relative ${openDrop ? 'selected' : ''}`} onBlur={() => setOpenDrop(false)}>
+            <button
+              className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2 ${openDrop ? 'bg-[#4B0984] text-white rounded-b-lg translate-y-2' : ''}`}
+              onClick={() => setOpenDrop(!openDrop)}
+            >
+              <span>Municipio</span>
+              <MdExpandMore />
+            </button>
+            <div className={`fixed mt-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrop ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrop(false)}>
+              <Sublinks />
+            </div>
           </div>
-          <Links />
+
+          <button
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            onClick={() => redirectTo('/servicios')}
+          >
+            Servicios
+          </button>
+
+          <button
+            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            onClick={() => redirectTo('/culturayturismo')}
+          >
+            <span>Cultura y Turismo</span>
+            <MdExpandMore />
+          </button>
+
+          <button
+            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            onClick={() => redirectTo('/transparencia')}
+          >
+            <span>Transparencia</span>
+            <MdExpandMore />
+          </button>
+
+          <button
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            onClick={() => redirectTo('/noticias')}
+          >
+            Noticias
+          </button>
+
+          <button
+            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu hover:translate-y-2'
+            onClick={() => redirectTo('/contacto')}
+          >
+            Contacto
+          </button>
+          <button
+            className='group h-10 w-10 bg-[#FFC14F] rounded-full hover:bg-[#4B0984] hover:text-white hover:rounded-full focus:outline-none mx-2 flex justify-center items-center'
+          >
+            <img className='w-6 group-hover:filter invert group-hover:invert' src='src\assets\lupa.png' alt='' />
+          </button>
+          <div className='px-2'>
+            <input
+              type='text'
+              placeholder='Buscar...'
+              className='border w-60 h-10 border-gray-300 p-2 focus:outline-none focus:border-[#FFC14F] rounded-full'
+            />
+          </div>
         </div>
-        <img src='src\assets\group_61.png' className='absolute bottom-20 right-0' />
+
+        {/* ACA EMPIEZA EL SIDEBAR */}
+        <div className={`${!open && 'hidden'} bg-gray-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm`} onClick={() => setOpen(false)}> </div>
+
+        <div className={`${open ? 'translate-x-0' : 'translate-x-80'} bg-white min-h-screen w-80 fixed top-0 right-0 transition-all duration-300`}>
+          <div className={`${!open && 'hidden'} pt-3`}>
+            <button className=' ml-4 text-[#4B0984]' onClick={() => setOpen(false)}>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
+                <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
+              </svg>
+            </button>
+            <div className='flex justify-center'>
+              <input placeholder='Buscar...' className='p-2 mb-2 w-60 rounded-full border border-[#4B0984]' />
+            </div>
+            <Links />
+          </div>
+          <img src='src\assets\group_61.png' className='absolute bottom-20 right-0' />
+        </div>
       </div>
     </div>
+
   )
 }
 
