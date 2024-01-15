@@ -1,7 +1,7 @@
 import { useState } from 'react'
 // import { NavLink } from 'react-router-dom'
 import { MdArrowBackIos } from 'react-icons/md'
-import Sublinks from './Sublinks'
+import SublinksMobile from './SublinksMobile'
 
 const Links = () => {
   const [open, setOpen] = useState(false)
@@ -45,16 +45,10 @@ const Links = () => {
               <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
             </svg>
           </button>
-          <Sublinks />
+          <SublinksMobile />
         </div>
       </div>
     </div>
-
-  // <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Municipio</div>
-  // <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Servicios</div>
-  // <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Transparencia</div>
-  // <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Noticias</div>
-  // <div className='text-right text-[#4B0984] text-xl cursor-pointer py-3 mb-2 mr-10'>Contacto</div>
   )
 }
 
