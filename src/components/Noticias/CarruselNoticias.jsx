@@ -47,8 +47,8 @@ export default function CarruselNoticias({
               <div className='font-bold text-3xl text-fifth'>Pirotecnia Cero en la Ciudad de San Juan</div>
             </div>
             <div className='px-6 pt-2 pb-2 rounded-xl'>
-              <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-                #photography
+              <span className='inline-block bg-gray-50 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 shadow-xl'>
+                + info
               </span>
             </div>
           </div>
@@ -58,8 +58,8 @@ export default function CarruselNoticias({
         data-aos="fade-right"
         className='container items-center justify-center flex pt-10 pb-10'
       >
-        <span className='items-center justify-center flex bg-orange-400 rounded-3xl w-40 h-10 shadow-lg transform hover:translate-y-1 transition-transform'>
-          <h2 className='text-gray-600 items-center justify-center '>Mostrar más ...</h2>
+        <span className='items-center justify-center flex bg-six rounded-3xl w-40 h-10 transform hover:translate-y-1 transition-transform shadow-xl'>
+          <h2 className='text-white items-center justify-center font-bold'>Más Noticias</h2>
         </span>
       </div>
 

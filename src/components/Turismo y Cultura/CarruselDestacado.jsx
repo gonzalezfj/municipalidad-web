@@ -29,11 +29,37 @@ export default function CarruselDestacado({
         slidesToScroll: 1,
         swipeToSlide: true,
         autoplay: autoSlide,
-        autoplaySpeed: autoSlideInterval
+        autoplaySpeed: autoSlideInterval,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
-        <div className='overflow-hidden items-center justify-center relative' style={{ top: '-20px' }} >
+        <div className='overflow-hidden items-center justify-center relative ' style={{ top: '-20px' }} >
             <Slider {...settings}>
                 {slides.map((slide, key, index) => (
                     <div
@@ -45,10 +71,10 @@ export default function CarruselDestacado({
                             <div className='lg:max-w-96 lg:max-h-96'>
                                 <img className='w-80 h-80 lg:w-96 lg:h-96 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
                             </div>
-                            <div className='pt-4 items-center justify-center'>
-                                <h3 className='text-white lg:text-3xl'>{slide.titulo}</h3>
+                            <div className='pt-8 flex items-center justify-center w-42'>
+                                <h3 className='text-white lg:text-3xl text-xl font-bold text-center'>{slide.titulo}</h3>
                             </div>
-                            <div className='pt-4 items-center justify-center'>
+                            <div className='pt-4 items-center justify-center lg:visible invisible'>
                                 <p className='text-white lg:text-lg'>{slide.text}</p>
                             </div>
                         </div>
