@@ -32,14 +32,15 @@ export default function CarruselNoticias({
   };
 
   return (
-    <div className='overflow-hidden items-center justify-center'>
+    <div className='overflow-hidden w-5/6 lg:invisible'>
       <Slider {...settings}>
         {slides.map((img, key, index) => (
           <div
             data-aos="fade-left"
             key={key}
-            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg p-10 lg:h-full'>
-            <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
+            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full bg-white'
+          >
+            <div className='h-82 lg:h-96 rounded-lg flex object-cover'>
               <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
             </div>
             <div className='px-6 py-4'>
@@ -60,6 +61,44 @@ export default function CarruselNoticias({
         <span className='items-center justify-center flex bg-orange-400 rounded-3xl w-40 h-10 shadow-lg transform hover:translate-y-1 transition-transform'>
           <h2 className='text-gray-600 items-center justify-center '>Mostrar más ...</h2>
         </span>
+      </div>
+
+      {/* PRUEBA HOME */}
+      <div className=" grid-cols-2 gap-4 justify-center hidden md:block">
+        <div className="col-span-1 grid grid-cols-2 gap-4 lg:visible">
+          {/* Imagen 1 */}
+          <div>
+            <img
+              className="w-62 h-62 object-cover rounded-md"
+              src="https://via.placeholder.com/400x300"
+              alt="Imagen Pequeña 1"
+            />
+          </div>
+          {/* Imagen 2 */}
+          <div>
+            <img
+              className="w-62 h-62 object-cover rounded-md"
+              src="https://via.placeholder.com/400x300"
+              alt="Imagen Pequeña 2"
+            />
+          </div>
+          {/* Imagen 3 */}
+          <div>
+            <img
+              className="w-62 h-62 object-cover rounded-md"
+              src="https://via.placeholder.com/400x300"
+              alt="Imagen Pequeña 3"
+            />
+          </div>
+          {/* Imagen 4  */}
+          <div>
+            <img
+              className="w-62 h-62 object-cover rounded-md"
+              src="https://via.placeholder.com/400x300"
+              alt="Imagen Pequeña 3"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
