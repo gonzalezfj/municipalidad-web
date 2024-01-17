@@ -44,7 +44,7 @@ export default function CarruselNoticias({
               <div
                 data-aos="fade-left"
                 key={key}
-                className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full '
+                className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full'
               >
                 <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
                   <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
