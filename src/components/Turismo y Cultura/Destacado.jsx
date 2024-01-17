@@ -9,18 +9,18 @@ export const Destacado = () => {
   const prueba = [
     {
       imagen: img1,
-      titulo: "La Pirotecnia en el Año de la Ciencia",
-      text: "lorem input lorem input lorem input"
+      titulo: 'La Pirotecnia en el Año de la Ciencia',
+      text: 'lorem input lorem input lorem input'
     },
     {
       imagen: img2,
-      titulo: "Cuidemos a los animales",
-      text: "lorem input lorem input lorem input"
+      titulo: 'Cuidemos a los animales',
+      text: 'lorem input lorem input lorem input'
     },
     {
       imagen: img3,
-      titulo: "Homenaje al Profesor Don Carlos Sánchez",
-      text: "lorem input lorem input lorem input"
+      titulo: 'Homenaje al Profesor Don Carlos Sánchez',
+      text: 'lorem input lorem input lorem input'
     }
   ]
 

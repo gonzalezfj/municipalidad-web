@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
+import React, { useState, useEffect } from 'react'
+import Slider from 'react-slick'
 // import { ChevronLeft, ChevronRight } from 'react-feather';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-export default function CarruselNoticias({
+export default function CarruselNoticias ({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides
 }) {
-  const [curr, setCurr] = useState(0);
+  const [curr, setCurr] = useState(0)
 
-  const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
-  const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+  const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
+  const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
 
   useEffect(() => {
-    if (!autoSlide) return;
-    const slideInterval = setInterval(next, autoSlideInterval);
-    return () => clearInterval(slideInterval);
-  }, [autoSlide, autoSlideInterval, next]);
+    if (!autoSlide) return
+    const slideInterval = setInterval(next, autoSlideInterval)
+    return () => clearInterval(slideInterval)
+  }, [autoSlide, autoSlideInterval, next])
 
   const settings = {
     dots: true,
@@ -28,17 +28,18 @@ export default function CarruselNoticias({
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: autoSlide,
-    autoplaySpeed: autoSlideInterval,
-  };
+    autoplaySpeed: autoSlideInterval
+  }
 
   return (
     <div className='overflow-hidden items-center justify-center'>
       <Slider {...settings}>
         {slides.map((img, key, index) => (
           <div
-            data-aos="fade-left"
+            data-aos='fade-left'
             key={key}
-            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg p-10 lg:h-full'>
+            className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg p-10 lg:h-full'
+          >
             <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
               <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
             </div>
@@ -54,7 +55,7 @@ export default function CarruselNoticias({
         ))}
       </Slider>
       <div
-        data-aos="fade-right"
+        data-aos='fade-right'
         className='container items-center justify-center flex pt-10 pb-10'
       >
         <span className='items-center justify-center flex bg-orange-400 rounded-3xl w-40 h-10 shadow-lg transform hover:translate-y-1 transition-transform'>
@@ -62,5 +63,5 @@ export default function CarruselNoticias({
         </span>
       </div>
     </div>
-  );
+  )
 }
