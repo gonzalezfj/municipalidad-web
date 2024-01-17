@@ -1,5 +1,4 @@
 import React from 'react'
-import Slider from 'react-slick'
 
 export const NoticiasMobil = () => {
     return (
@@ -8,9 +7,9 @@ export const NoticiasMobil = () => {
                 {/* CONTENEDOR IMAGEN  */}
                 <div className="grid grid-cols-2 gap-4 gap-y-0 lg:visible relative">
                     {/* Imagen 1 */}
-                    <div>
+                    <div className='relative'>
                         <img
-                            className="w-28 h-28 object-cover rounded-md absolute"
+                            className="transition duration-500 hover:scale-125 shadow-lg  w-28 h-28 cursor-pointer object-cover rounded-md absolute"
                             src="https://via.placeholder.com/400x300"
                             alt="Imagen Pequeña 1"
                         />
@@ -18,7 +17,7 @@ export const NoticiasMobil = () => {
                     {/* Imagen 2 */}
                     <div>
                         <img
-                            className="w-28 h-28 object-cover rounded-md"
+                            className="transition duration-500 hover:scale-125ñ w-28 h-28 shadow-lg cursor-pointer object-cover rounded-md"
                             src="https://via.placeholder.com/400x300"
                             alt="Imagen Pequeña 2"
                         />
@@ -26,7 +25,7 @@ export const NoticiasMobil = () => {
                     {/* Imagen 3 */}
                     <div>
                         <img
-                            className="w-28 h-28 object-cover rounded-md"
+                            className="transition duration-500 hover:scale-125ñ w-28 h-28 shadow-lg cursor-pointer object-cover rounded-md"
                             src="https://via.placeholder.com/400x300"
                             alt="Imagen Pequeña 3"
                         />
@@ -34,7 +33,7 @@ export const NoticiasMobil = () => {
                     {/* Imagen 4  */}
                     <div className=''>
                         <img
-                            className="w-28 h-28 object-cover rounded-md"
+                            className="transition duration-500 hover:scale-125ñ w-28 h-28 shadow-lg cursor-pointer object-cover rounded-md"
                             src="https://via.placeholder.com/400x300"
                             alt="Imagen Pequeña 3"
                         />
@@ -47,12 +46,12 @@ export const NoticiasMobil = () => {
                     <p className='text-left mt-6'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
                     <div className='mt-8'>
                         <div className=' pt-2 pb-2 rounded-xl ml-0'>
-                            <span className='inline-block bg-gray-50 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 shadow-lg'>
+                            <span className='cursor-pointer inline-block bg-gray-50 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 shadow-lg'>
                                 + info
                             </span>
                         </div>
                         <div className=' pt-2 pb-2 rounded-xl'>
-                            <span className='inline-block rounded-full px-3 py-1 text-sm font-bold text-white bg-six mr-2 mb-2 shadow-lg'>
+                            <span className='cursor-pointer inline-block rounded-full px-3 py-1 text-sm font-bold text-white bg-six mr-2 mb-2 shadow-lg'>
                                 Más Noticias
                             </span>
                         </div>
