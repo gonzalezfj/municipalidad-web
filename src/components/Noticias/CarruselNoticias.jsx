@@ -11,14 +11,12 @@ export default function CarruselNoticias ({
 }) {
   const [curr, setCurr] = useState(0)
 
-  const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
-  const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
-
   useEffect(() => {
+    const next = () => setCurr(c => curr === slides.length - 1 ? 0 : curr + 1)
     if (!autoSlide) return
     const slideInterval = setInterval(next, autoSlideInterval)
     return () => clearInterval(slideInterval)
-  }, [autoSlide, autoSlideInterval, next])
+  }, [autoSlide, autoSlideInterval, slides.length, curr])
 
   const settings = {
     dots: true,

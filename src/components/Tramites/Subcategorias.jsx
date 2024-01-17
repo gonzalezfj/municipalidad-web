@@ -1,3 +1,5 @@
+import iconoComercio from '../../assets/guíadeTramitesMobile_iconoComercio.svg'
+
 const Sublinks = () => {
   return (
     <div className='container'>
@@ -43,7 +45,7 @@ const Sublinks = () => {
       </div>
       <div className='flex justify-end'>
         <svg className='h-30 w-44'>
-          <image href='src/assets/guíadeTramitesMobile_iconoComercio.svg' />
+          <image href={iconoComercio} />
         </svg>
       </div>
     </div>

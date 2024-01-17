@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Categorias from '../components/Tramites/Categorias'
 import { useNavigate } from 'react-router-dom'
+import buttonAtras from '../assets/guiaDeTramitesMobile_botonAtras.svg'
 
 const Tramites = () => {
   const [openDrop, setOpenDrop] = useState(false)
@@ -22,7 +23,7 @@ const Tramites = () => {
         <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
         <button onClick={() => redirectTo('/')}>
           <svg className='h-10 w-10 mr-14'>
-            <image className='h-10 w-10' href='src\assets\guiaDeTramitesMobile_botonAtras.svg' />
+            <image className='h-10 w-10' href={buttonAtras} />
           </svg>
         </button>
       </div>

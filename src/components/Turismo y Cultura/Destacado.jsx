@@ -1,7 +1,6 @@
 import img1 from '../../assets/home_seccion4_noticiaPirotecnia.jpg'
 import img2 from '../../assets/home_seccion4_noticiaLimpieza.jpg'
 import img3 from '../../assets/home_seccion4_noticiaHomenaje.jpg'
-import img4 from '../../assets/homemovil_seccion4_fondo.svg'
 import CarruselDestacado from './CarruselDestacado'
 
 export const Destacado = () => {

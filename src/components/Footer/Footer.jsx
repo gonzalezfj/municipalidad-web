@@ -1,4 +1,6 @@
 import SocialIcons from './SocialIcons'
+import logoCapital from '../../assets/logo_capital_blanco.png'
+import logoTelefono from '../../assets/logo_telefono_blanco.png'
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
       </div>
       <div className='lg:container lg:mx-auto lg:flex'>
         <div className='flex justify-center items-center sm:px-12 lg:h-full lg:px-0 lg:w-full lg:ml-10 px-4 py-5'>
-          <img className='lg:w-auto' src='src\assets\logo_capital_blanco.png' />
+          <img className='lg:w-auto' src={logoCapital} />
         </div>
         <div className='container'>
           <div className='flex justify-center lg:w-full lg:mt-5 items-center sm:px-12 px-4 py-4'>
@@ -24,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='flex justify-center items-center sm:px-12 lg:h-full lg:px-0 lg:w-full lg:ml-10 lg:mt-3 px-4 py-5'>
-          <img className='h-auto' src='src\assets\logo_telefono_blanco.png' />
+          <img className='h-auto' src={logoTelefono} />
         </div>
       </div>
     </footer>
