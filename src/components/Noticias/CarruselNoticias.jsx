@@ -35,21 +35,23 @@ export default function CarruselNoticias ({
 
   return (
     <div className='overflow-hidden w-5/6 lg:w-full items-center justify-center flex'>
-      {formato
-        ? (
-          <NoticiasMobil />
-          )
-        : (
-          <div className='overflow-hidden items-center justify-center bg-white rounded-lg'>
-            <Slider {...settings}>
-              {slides.map((img, key, index) => (
-                <div
-                  data-aos='fade-left'
-                  key={key}
-                  className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full '
-                >
-                  <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
-                    <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
+      {formato ? (
+        <NoticiasMobil />
+      ) : (
+        <div className='overflow-hidden items-center justify-center bg-white rounded-lg'>
+          <Slider {...settings}>
+            {slides.map((img, key, index) => (
+              <div
+                data-aos="fade-left"
+                key={key}
+                className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full'
+              >
+                <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
+                  <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
+                </div>
+                <div className='pl-2'>
+                  <div className=' py-4'>
+                    <div className='font-bold text-3xl text-fifth text-left'>Pirotecnia Cero en la Ciudad de San Juan</div>
                   </div>
                   <div className='pl-2'>
                     <div className=' py-4'>
