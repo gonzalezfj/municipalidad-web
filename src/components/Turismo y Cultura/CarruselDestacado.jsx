@@ -65,7 +65,7 @@ export default function CarruselDestacado({
                     <div
                         key={key}
                         data-aos="fade-right"
-                        className='flex transition-transform ease-out duration-300 rounded-full '
+                        className='flex transition-transform ease-out duration-300 rounded-full'
                     >
                         <div className='w-screen flex-shrink-0 flex-col rounded-full items-center justify-center flex'>
                             <div className='lg:max-w-96 lg:max-h-96'>
