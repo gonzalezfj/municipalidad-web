@@ -20,41 +20,66 @@ export default function CarruselDestacado ({
     const slideInterval = setInterval(next, autoSlideInterval)
     return () => clearInterval(slideInterval)
   }, [autoSlide, autoSlideInterval, next])
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: autoSlide,
+        autoplaySpeed: autoSlideInterval,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    autoplay: autoSlide,
-    autoplaySpeed: autoSlideInterval
-  }
-
-  return (
-    <div className='overflow-hidden items-center justify-center relative' style={{ top: '-20px' }}>
-      <Slider {...settings}>
-        {slides.map((slide, key, index) => (
-          <div
-            key={key}
-            data-aos='fade-right'
-            className='flex transition-transform ease-out duration-300 rounded-full '
-          >
-            <div className='w-screen flex-shrink-0 flex-col rounded-full items-center justify-center flex'>
-              <div className='lg:max-w-96 lg:max-h-96'>
-                <img className='w-80 h-80 lg:w-96 lg:h-96 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
-              </div>
-              <div className='pt-4 items-center justify-center'>
-                <h3 className='text-white lg:text-3xl'>{slide.titulo}</h3>
-              </div>
-              <div className='pt-4 items-center justify-center'>
-                <p className='text-white lg:text-lg'>{slide.text}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  )
+    return (
+        <div className='overflow-hidden items-center justify-center relative ' style={{ top: '-20px' }} >
+            <Slider {...settings}>
+                {slides.map((slide, key, index) => (
+                    <div
+                        key={key}
+                        data-aos="fade-right"
+                        className='flex transition-transform ease-out duration-300 rounded-full'
+                    >
+                        <div className='w-screen flex-shrink-0 flex-col rounded-full items-center justify-center flex'>
+                            <div className='lg:max-w-96 lg:max-h-96'>
+                                <img className='w-80 h-80 lg:w-96 lg:h-96 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
+                            </div>
+                            <div className='pt-8 flex items-center justify-center w-42'>
+                                <h3 className='text-white lg:text-3xl text-xl font-bold text-center'>{slide.titulo}</h3>
+                            </div>
+                            <div className='pt-4 items-center justify-center lg:visible invisible'>
+                                <p className='text-white lg:text-lg'>{slide.text}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    )
 }

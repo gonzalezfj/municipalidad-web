@@ -25,9 +25,9 @@ export const Destacado = () => {
   ]
 
   return (
-    <div className='container relative lg:max-w-full lg:pr-20'>
-      <h3 className='ml-4 mt-3 text-3xl text-slate-500'>Destacado</h3>
-      <div className='flex flex-col relative lg:w-full bg-fifth mt-10 h-90 rounded-room'>
+    <div className='container relative lg:max-w-full md:w-full'>
+      <h3 className='ml-4 mt-10 text-3xl text-slate-500 font-bold'>Destacado</h3>
+      <div className='flex flex-col relative lg:w-full bg-fifth mt-10 h-90 lg:rounded-room md:rounded-room md:w-full'>
         <CarruselDestacado slides={prueba} />
       </div>
     </div>
