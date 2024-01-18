@@ -3,10 +3,14 @@ import img1 from '../../assets/home_seccion3_agenda_foto.jpg'
 import img2 from '../../assets/home_seccion3_circuito_foto.jpg'
 import img3 from '../../assets/home_seccion3_deporteysalud_foto.jpg'
 import img4 from '../../assets/home_seccion3_ferias_foto.jpg'
+import fondo from '../../assets/home_seccion4_fondo.svg'
 
-export const NoticiasMobil = () => {
+export const NoticiasDesktop = () => {
   return (
-    <div className='container flex grid-cols-2 justify-center items-center'>
+    <div className='container relative flex grid-cols-2 justify-center items-center'>
+      <svg className='lg:absolute lg:top-2 lg:left-[12vw] lg:w-full lg:h-full'>
+        <image className='lg:relative lg:h-full' href={fondo} />
+      </svg>
       <div className='flex gap-x-32 mt-10 mb-10'>
         {/* CONTENEDOR IMAGEN  */}
         <div className='grid grid-cols-2 gap-4 gap-y-4 lg:visible relative'>
