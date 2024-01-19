@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import { MdExpandMore } from 'react-icons/md'
 import Subcategorias from './Subcategorias' // Asegúrate de importar Subcategorias desde la ruta correcta
 
-const Categorias = () => {
-  const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
-
+const Categorias = ({ dropdownStates, setDropdownStates }) => {
   const toggleDropdown = (index) => {
     const newStates = dropdownStates.map((state, i) => (i === index ? !state : false))
     setDropdownStates(newStates)
