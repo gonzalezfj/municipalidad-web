@@ -11,7 +11,9 @@ export default {
         secondary: '#D85B35',
         third: '#FFFFFF',
         room: '#8A43EF',
-        fifth: '#4B0984'
+        fifth: '#4B0984',
+        six: '#616161',
+        seven: '#9C9C9C'
       },
       borderRadius: {
         primary: '35px',
