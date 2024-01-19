@@ -1,76 +1,45 @@
+import { useState } from 'react'
 import { MdExpandMore } from 'react-icons/md'
-import Subcategorias from './Subcategorias'
-// import { useState } from 'react'
+import Subcategorias from './Subcategorias' // Asegúrate de importar Subcategorias desde la ruta correcta
 
-const Categorias = ({ openDrop, setOpenDrop }) => {
-  // const [openDrop, setOpenDrop] = useState(false)
+const Categorias = () => {
+  const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
+
+  const toggleDropdown = (index) => {
+    const newStates = dropdownStates.map((state, i) => (i === index ? !state : false))
+    setDropdownStates(newStates)
+  }
+
   return (
-    <div className='container px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
-      <div className='flex border border-transparent bg-[#D85B35] rounded-xl mb-1'>
-        <button className='text-white flex items-center text-xl font-bold w-full py-3'>
-          <div className='w-[95%] flex justify-center'>
-            General
-          </div>
-          <div className='w-[5%] flex justify-end'>
-            <MdExpandMore />
-          </div>
-        </button>
-      </div>
-      <div className='flex border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1'>
-        <button className='text-white flex items-center text-xl w-full py-3'>
-          <div className='w-[95%] flex justify-center'>
-            Arbolado
-          </div>
-          <div className='w-[5%] flex justify-end'>
-            <MdExpandMore />
-          </div>
-        </button>
-      </div>
-      <div className='flex border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1'>
-        <button className='text-white flex items-center text-xl w-full py-3'>
-          <div className='w-[95%] flex justify-center'>
-            Rentas
-          </div>
-          <div className='w-[5%] flex justify-end'>
-            <MdExpandMore />
-          </div>
-        </button>
-      </div>
-      <div className={`flex flex-col w-full border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${openDrop ? 'bg-white' : 'bg-[#D85B35]'}`}>
-        <button
-          onClick={() => setOpenDrop(!openDrop)}
-          className={`flex flex-col items-center text-xl w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${openDrop ? 'text-[#D85B35]' : 'text-white'}`}
-        >
-          <div className='flex items-center w-full'>
-            <div className='flex w-[95%] ml-4 justify-center'>
-              Comercio
+    <div className='container lg:ml-10 lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
+      {['General', 'Arbolado', 'Rentas', 'Comercio', 'Obras'].map((categoria, index) => (
+        <div key={index} className={`flex flex-col w-full lg:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
+          <button
+            onClick={() => toggleDropdown(index)}
+            className={`flex flex-col items-center text-xl lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}
+          >
+            <div className='flex items-center w-full'>
+              <div className='flex w-[95%] lg:w-[80%] ml-4 justify-center'>
+                {categoria}
+              </div>
+              <div className={`flex w-[5%] lg:w-[20%] ${dropdownStates[index] ? 'rotate-180 lg:rotate-90' : 'rotate-0 lg:-rotate-90'}`}>
+                <MdExpandMore />
+              </div>
             </div>
-            <div className={`flex w-[5%] ${openDrop ? 'rotate-180' : 'rotate-0'}`}>
-              <MdExpandMore />
+          </button>
+          <div className='lg:absolute lg:-top-10'>
+            <div
+              className={`lg:absolute ${dropdownStates[index] ? 'scale-y-100 lg:scale-100' : 'scale-y-0 lg:scale-0 h-0'
+                } transition-all transform-gpu ease-in-out origin-top lg:origin-left duration-300 lg:duration-500`}
+              onClick={() => toggleDropdown(index)}
+            >
+              <div className='lg:relative lg:left-48 w-[70vw] rounded-xl lg:shadow-none shadow-lg'>
+                <Subcategorias />
+              </div>
             </div>
-          </div>
-        </button>
-        <div
-          className={`${
-                  openDrop ? 'scale-y-100' : 'scale-y-0 h-0'
-          } transition-all transform-gpu ease-in-out origin-top duration-300`}
-          onClick={() => setOpenDrop(false)}
-        >
-          <div className='flex-col w-full rounded-xl shadow-lg bg-white'>
-            <Subcategorias />
           </div>
         </div>
-      </div>
-      <div className='flex border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1'>
-        <button className='text-white flex items-center text-xl w-full py-3'>
-          <div className='w-[95%] flex justify-center'>
-            Obras
-          </div>
-          <div className='w-[5%] flex justify-end'>
-            <MdExpandMore />
-          </div>
-        </button>
-      </div>
+      ))}
     </div>
   )
 }

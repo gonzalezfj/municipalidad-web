@@ -2,7 +2,7 @@ import iconoComercio from '../../assets/guíadeTramitesMobile_iconoComercio.svg'
 
 const Sublinks = () => {
   return (
-    <div className='container'>
+    <div className='container bg-white lg:bg-transparent lg:absolute lg:top-0 lg:grid lg:grid-cols-2 lg:gap-4'>
       <div className='flex'>
         <button className='text-[#D85B35] flex flex-col items-center rounded-xl border border-[#D85B35] justify-center text-l w-full py-3 mb-1'>
           Manipulación de alimentos
@@ -43,7 +43,7 @@ const Sublinks = () => {
           Habilitaciones
         </button>
       </div>
-      <div className='flex justify-end'>
+      <div className='flex justify-end lg:col-span-2'>
         <svg className='h-30 w-44'>
           <image href={iconoComercio} />
         </svg>
