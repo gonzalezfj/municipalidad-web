@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import Links from './Links'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { MdExpandMore } from 'react-icons/md'
 import Sublinks from './Sublinks'
+import Links from './Links'
+import logoCapital from '../../assets/capital_sanjuan_blanco.png'
+import imgSearch from '../../assets/home_menu_buscador.svg'
+import sidebarImage from '../../assets/group_61.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -16,7 +19,7 @@ const Navbar = () => {
     <div className='container p-2 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
         <div>
-          <NavLink to='/home'><img className='px-3 h-16 lg:h-auto lg:mt-2' src='src\assets\capital_sanjuan_blanco.png' /></NavLink>
+          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={logoCapital} /></NavLink>
         </div>
         <div className='flex items-center'>
           <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
@@ -76,11 +79,6 @@ const Navbar = () => {
           >
             Contacto
           </button>
-          {/* <button
-            className='group h-10 w-10 bg-[#FFC14F] rounded-full hover:bg-[#4B0984] hover:text-white hover:rounded-full focus:outline-none mx-2 flex justify-center items-center'
-          >
-            <img className='w-6 group-hover:filter invert group-hover:invert' src='src\assets\lupa.png' alt='' />
-          </button> */}
         </div>
         <div className='hidden lg:block lg:container lg:w-60'>
           <div className='group'>
@@ -90,7 +88,7 @@ const Navbar = () => {
               className='group-hover:w-60 h-10 w-0 border rounded-full absolute top-5 right-0 mr-5 p-2 transition-all ease-out duration-500 focus:outline-none'
             />
             <svg className='group mr-2 h-12 w-12 absolute top-4 right-0'>
-              <image className='w-12' href='src\assets\home_menu_buscador.svg' alt='' />
+              <image className='w-12' href={imgSearch} alt='Buscar' />
             </svg>
           </div>
         </div>
@@ -110,7 +108,7 @@ const Navbar = () => {
             </div>
             <Links />
           </div>
-          <img src='src\assets\group_61.png' className='absolute bottom-20 right-0' />
+          <img src={sidebarImage} className='absolute bottom-20 right-0' />
         </div>
       </div>
     </div>
