@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='container p-2 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
         <div>
-          <NavLink to='/home'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={logoCapital} /></NavLink>
+          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={logoCapital} /></NavLink>
         </div>
         <div className='flex items-center'>
           <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
