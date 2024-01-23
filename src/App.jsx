@@ -5,6 +5,7 @@ import Boletas from './pages/Boletas'
 import Tramites from './pages/Tramites'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Eco from './pages/Eco'
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
         <Route index element={<Home />} />
         <Route path='/boletas' element={<Boletas />} />
         <Route path='/tramites' element={<Tramites />} />
+        <Route path='/estacionamientocontrolado' element={<Eco />} />
       </Routes>
       <Footer />
     </Router>

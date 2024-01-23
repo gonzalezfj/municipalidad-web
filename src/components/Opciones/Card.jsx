@@ -26,7 +26,7 @@ export const Card = () => {
         </div>
       </div>
 
-      <div className='w-40 h-52 lg:w-52 lg:h-62  overflow-hidden shadow-lg bg-third rounded-primary flex flex-col items-center justify-center cursor-pointer' data-aos='fade-right'>
+      <div onClick={() => handleClick('/estacionamientocontrolado')} className='w-40 h-52 lg:w-52 lg:h-62  overflow-hidden shadow-lg bg-third rounded-primary flex flex-col items-center justify-center cursor-pointer' data-aos='fade-right'>
         <div className='w-36 h-36'>
           <img src={boletas2} className='object-cover' alt='Boletas' />
         </div>
