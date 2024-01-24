@@ -4,10 +4,10 @@ import img2 from '../assets/imgVideo.jpg'
 
 const Boletas = () => {
   return (
-    <div className='absolute top-14 bg-white'>
+    <div className='absolute top-14 bg-white w-screen'>
       <div className='h-60 w-screen rounded-bl-full bg-[#D85B35]  text-white flex items-center pl-60 pt-20 '>
         <img src={img1} alt="" className='w-20 h-20 bg-slate-50 rounded-lg' />
-        <div className='pl-10'>
+        <div className='ml-10'>
           <h1 className='font-bold text-xl'>PAGAR E IMPRIMIR BOLETAS</h1>
           <h5 className='font-semebold'>Tasas de inmueble y comercios</h5>
         </div>
