@@ -26,15 +26,15 @@ const Boletas = () => {
         <div className='pl-20 text-gray-600 container '>
           <h2 className='text-2xl font-bold'>Boletas Inmueble y Comercial</h2>
           <h5>Puede obtener la boleta sobre la tasa de servicio de Inmueble y actividad comercºial.</h5>
-          <span>
-            <li>Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
-            <li>Personalmente por la Dirección de Rentas del municipio. Con el nombre del titular del inmueble o comercio y/o la nomenclatura catastral e inscripción comercial. De forma online. Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
+          <span >
+            <li className='pl-8'>Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
+            <li className='pl-8'>Personalmente por la Dirección de Rentas del municipio. Con el nombre del titular del inmueble o comercio y/o la nomenclatura catastral e inscripción comercial. De forma online. Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
           </span>
         </div>
       </div>
       <div className='items-center justify-center flex flex-col'>
         <div className='flex items-center justify-center  pt-10 pb-20 w-full h-full'>
-          <img src={img2} alt="img de prueba" className='rounded-2xl w-2/4 h-2/4 ' />
+          <img src={img2} alt="img de prueba" className='rounded-2xl w-2/4 h-2/4 object-cover' />
         </div>
         <div className='bg-[#9747FF] h-72 z-20 flex flex-col justify-center items-center'>
           <div className='bg-white relative -top-12 h-20 w-full z-10 rounded-br-full' />
