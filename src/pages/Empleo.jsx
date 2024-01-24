@@ -1,5 +1,5 @@
 import React from 'react'
-import CarruselEmpleo from './carruselEmpleo'
+import CarruselEmpleo from '../components/Empleo/carruselEmpleo'
 import boton from '../../assets/mobilEmpleo/empleo_botonCalendario.svg'
 import img1 from '../../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 import img2 from '../../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
