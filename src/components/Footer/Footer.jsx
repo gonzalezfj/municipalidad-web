@@ -4,7 +4,7 @@ import logoTelefono from '../../assets/logo_telefono_blanco.png'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#4B0984] z-20 text-white w-screen'>
+    <footer className='bg-[#4B0984] z-20 text-white w-full'>
       <div className='bg-white h-20 z-10 rounded-br-full'>-
       </div>
       <div className='lg:container lg:mx-auto lg:flex'>

@@ -17,7 +17,7 @@ const Eco =
               <div className='text-white'>Estacionamiento Controlado</div>
             </div>
           </div>
-          <div className='flex w-screen h-64 text-center p-4 text-base text-white items-end bg-[#D85B35] rounded-bl-3xl'>
+          <div className='flex w-screen h-64 text-center p-4 md:p-10 text-base text-white items-end bg-[#D85B35] rounded-bl-3xl'>
             <p>El centro de la Ciudad de San Juan cuenta con un servicio de estacionamiento controlado,
               denominado ECO, que regula el estacionamiento en el área de mayor flujo vehicular.
             </p>
