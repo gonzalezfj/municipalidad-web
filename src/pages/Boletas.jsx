@@ -22,9 +22,7 @@ const Boletas = () => {
           <h5>Puede obtener la boleta sobre la tasa de servicio de Inmueble y actividad comercºial.</h5>
           <span>
             <li>Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
-            <li>Personalmente por la Dirección de Rentas del municipio. Con el nombre del titular del inmueble o comercio y/o la nomenclatura catastral e inscripción comercial.
-              De forma online. Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.
-            </li>
+            <li>Personalmente por la Dirección de Rentas del municipio. Con el nombre del titular del inmueble o comercio y/o la nomenclatura catastral e inscripción comercial. De forma online. Debe tener la nomenclatura catastral o la inscripción del comercio y seleccionar qué y cómo desea pagar.</li>
           </span>
         </div>
       </div>
@@ -59,7 +57,6 @@ const Boletas = () => {
         </div>
       </div>
     </div>
-
   )
 }
 
