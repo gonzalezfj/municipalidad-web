@@ -15,7 +15,7 @@ const Boletas = () => {
     <div>
       <div className=''>
         <div className='absolute top-0 bg-[#D85B35] w-full h-20' />
-        <div className='relative flex py-12 items-center justify-center bg-[#D85B35] w-full h-20 rounded-bl-full'>
+        <div className='relative lg:-top-4 flex py-12 items-center justify-center bg-[#D85B35] w-full h-20 rounded-bl-full'>
           <svg className='w-28 h-30'>
             <image href={img1} />
           </svg>
@@ -25,7 +25,7 @@ const Boletas = () => {
           </div>
         </div>
       </div>
-      <div className='container flex-col flex p-6'>
+      <div className='container flex-col flex lg:items-center lg:mx-auto p-6'>
         <div className='text-[#616161]'>
           <p>Para pagar en línea boletas de contribución de inmuebles y tasa de comercio</p>
         </div>
@@ -33,9 +33,9 @@ const Boletas = () => {
           <button className='bg-[#4B0984] p-3 rounded-full'>GENERAR BOLETA</button>
         </div>
       </div>
-      <div className='relative bg-[#FFC14F] w-full h-auto'>
+      <div className='relative bg-[#FFC14F] w-full h-auto lg:h-64 lg:flex lg:items-center lg:rounded-l-full lg:text-xl'>
         <div className='absolute right-0 -top-16 bg-[#D85B35] w-32 h-32 rounded-tl-full shadow-lg' />
-        <div className='text-[#616161] p-11'>
+        <div className='text-[#616161] p-11 lg:container lg:mx-auto'>
           <h1 className='font-bold'>Boletas Inmueble y Comercial</h1>
           <p>Puede obtener boletas de la tasa de servicio sobre inmueble y actividad comercial:
             <ul className='list-inside list-disc'>
@@ -46,15 +46,15 @@ const Boletas = () => {
         </div>
       </div>
       <div className='mt-10 container mx-auto flex flex-col items-center'>
-        <video className='w-auto h-auto' autoPlay loop muted>
+        <video className='w-auto h-auto lg:w-[100vh]' autoPlay loop muted>
           <source src={videoBoletas} type='video/mp4' />
         </video>
         <p className='p-6 font-bold text-[#4B0984]'>Asimismo, podés completar la siguiente encuesta sobre la gestión de trámites online que brinda el municipio. Tu opinión es importante para la mejora continua de nuestra atención.</p>
         <button className='w-52 rounded-full bg-[#D85B35] text-white p-3'>REALIZAR ENCUESTA</button>
       </div>
-      <div className='bg-[#9747FF] relative w-full h-auto text-white'>
-        <div className='bg-white w-screen h-20 rounded-br-full' />
-        <div className='p-6'>
+      <div className='bg-[#9747FF] relative w-full h-auto text-white lg:text-xl'>
+        <div className='bg-white w-full h-20 rounded-br-full' />
+        <div className='p-6 lg:container lg:mx-auto lg:flex lg:flex-col lg:py-20'>
           <h1 className='font-bold mb-2'>¿Dónde consigo la Nomenclatura Catastral?</h1>
           <p className='text-sm mb-2'>La nomenclatura catastral es una serie de números que se encuentra impreso en el margen superior de la boleta de tasa municipal.</p>
           <h1 className='font-bold mb-2'>Vencimiento de Boletas</h1>
@@ -67,7 +67,7 @@ const Boletas = () => {
             </ul>
           </p>
         </div>
-        <div className='bg-[#9747FF] absolute -bottom-30 w-full h-20 rounded-br-full'>
+        <div className='bg-[#9747FF] absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'>
           <button onClick={() => handleClick('/')} className='p-4'>
             <svg className='w-16 h-16'>
               <image className='w-full' href={buttonAtras} />
