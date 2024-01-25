@@ -21,8 +21,9 @@ export const Empleo = () => {
                     <h2 className='font-bold text-xl'>CALENDARIO DE PAGO</h2>
                 </div>
             </div>
-            <h1 className='font-bold text-2xl mt-10 ml-10 text-seven'>PROGRAMAS</h1>
-            <div className='bg-primary'>
+            <h1 className='font-bold text-2xl mt-10 ml-10 text-seven pb-6'>PROGRAMAS</h1>
+            <div className='bg-primary '>
+                <div className='bg-white w-full h-60 z-60 absolute'/>
                 <CarruselEmpleo slides={slides} />
             </div>
         </div>
