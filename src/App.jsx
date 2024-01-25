@@ -8,7 +8,7 @@ import Tramites from './pages/Tramites'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-function App () {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -18,6 +18,7 @@ function App () {
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/detalle' element={<DetalleNoticia />} />
         <Route path='/tramites' element={<Tramites />} />
+        <Route path='/empleo' element={<Empleo />} />
       </Routes>
       <Footer />
     </Router>
