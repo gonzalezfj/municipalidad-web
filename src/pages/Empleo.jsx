@@ -2,6 +2,9 @@ import React from 'react'
 
 export const Empleo = () => {
   return (
-    <div>Empleo</div>
+    <div>
+         <h1>Empleado</h1>
+         
+    </div>
   )
 }
