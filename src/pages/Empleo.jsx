@@ -1,9 +1,9 @@
 import React from 'react'
-import CarruselEmpleo from './carruselEmpleo'
-import boton from '../../assets/mobilEmpleo/empleo_botonCalendario.svg'
-import img1 from '../../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
-import img2 from '../../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
-import img3 from '../../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import CarruselEmpleo from '../components/Empleo/CarruselEmpleo'
+import boton from '../assets/mobilEmpleo/empleo_botonCalendario.svg'
+import img1 from '../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
+import img2 from '../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
+import img3 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
 
 export const Empleo = () => {
   const slides = [img1, img2, img3]
