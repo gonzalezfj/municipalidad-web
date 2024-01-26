@@ -9,6 +9,7 @@ import './App.css'
 import Eco from './pages/Eco'
 import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
+import Zoonosis from './pages/Zoonosis'
 
 function App () {
   return (
@@ -23,6 +24,7 @@ function App () {
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/estacionamientocontrolado' element={<Eco />} />
         <Route path='/playaderemocion' element={<PlayaRemocion />} />
+        <Route path='/zoonosis' element={<Zoonosis />} />
       </Routes>
       <Footer />
     </Router>
