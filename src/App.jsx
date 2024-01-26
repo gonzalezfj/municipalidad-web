@@ -2,13 +2,14 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer/Footer'
 import Boletas from './pages/Boletas'
-import { Empleo } from './components/Empleo/Empleo'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Eco from './pages/Eco'
+import { Empleo } from './pages/Empleo'
 
-function App() {
+function App () {
   return (
     <Router>
       <Navbar />
@@ -19,6 +20,7 @@ function App() {
         <Route path='/detalle' element={<DetalleNoticia />} />
         <Route path='/tramites' element={<Tramites />} />
         <Route path='/empleo' element={<Empleo />} />
+        <Route path='/estacionamientocontrolado' element={<Eco />} />
       </Routes>
       <Footer />
     </Router>

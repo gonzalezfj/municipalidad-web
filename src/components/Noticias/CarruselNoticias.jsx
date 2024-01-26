@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -59,7 +58,7 @@ export default function CarruselNoticias ({
                         <div className='font-bold text-3xl text-fifth text-left'>Pirotecnia Cero en la Ciudad de San Juan</div>
                       </div> */}
                       <div className=' pt-2 pb-2 rounded-xl'>
-                        <span className='inline-block font-bold bg-six rounded-full px-3 py-1 shadow-lg text-sm text-gray-700 mr-2 mb-2'>
+                        <span className='inline-block font-bold bg-[#FFC14F] rounded-full px-3 py-1 shadow-lg text-sm text-gray-700 mr-2 mb-2'>
                           + info
                         </span>
                       </div>

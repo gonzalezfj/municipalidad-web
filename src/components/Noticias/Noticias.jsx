@@ -8,7 +8,7 @@ export const Noticias = () => {
   const slides = [img1, img2, img3]
   return (
     <div className='flex flex-col relative items-center justify-center'>
-      <h3 className='ml-4 mb-8 mt-10 text-3xl text-gray-500 font-bold'>NOTICIAS</h3>
+      <h3 className='mb-8 mt-10 text-3xl text-gray-500 font-bold'>NOTICIAS</h3>
       <svg className='absolute -z-10 lg:hidden top-10 md:top-2 w-full h-96 md:h-[100%]'>
         <image className='relative w-full' href={img4} />
       </svg>
