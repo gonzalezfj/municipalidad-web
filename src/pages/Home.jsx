@@ -6,7 +6,7 @@ import { Noticias } from '../components/Noticias/Noticias'
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
       <Banner />
       <Opciones />
       <Destacado />
