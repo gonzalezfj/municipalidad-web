@@ -7,6 +7,7 @@ import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/detalle' element={<DetalleNoticia />} />
         <Route path='/tramites' element={<Tramites />} />
         <Route path='/empleo' element={<Empleo />} />
+        <Route path='/agenda' element={<NuestraAgenda />} />
       </Routes>
       <Footer />
     </Router>
