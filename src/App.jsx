@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Eco from './pages/Eco'
 import { Empleo } from './pages/Empleo'
+import PlayaRemocion from './pages/PlayaRemocion'
 
 function App () {
   return (
@@ -21,6 +22,7 @@ function App () {
         <Route path='/tramites' element={<Tramites />} />
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/estacionamientocontrolado' element={<Eco />} />
+        <Route path='/playaderemocion' element={<PlayaRemocion />} />
       </Routes>
       <Footer />
     </Router>
