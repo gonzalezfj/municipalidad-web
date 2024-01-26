@@ -25,7 +25,8 @@ export default {
         secondary: '200px 0 0 0',
         third: '600px 0 0 0',
         room: '0 250px 250px 0',
-        fifth:'60px'
+        fifth:'60px',
+        six:'0 150px 0 0'
       },
       textColor: {
         primary: '#FFFFF'
