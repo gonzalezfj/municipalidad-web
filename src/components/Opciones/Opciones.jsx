@@ -3,8 +3,8 @@ import { Card } from './Card'
 
 export const Opciones = () => {
   return (
-    <div className='relative top-3'>
-      <div className='bg-secondary mt-64 md:mt-60'>
+    <div className='pt-44 md:pt-96 top-40 lg:top-[300px]'>
+      <div className='bg-secondary'>
         <div className='items-center justify-center flex bg-primary rounded-secondary lg:rounded-third'>
           <Card />
         </div>
