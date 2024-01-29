@@ -18,6 +18,7 @@ export default function CarruselDestacado ({
     return () => clearInterval(slideInterval)
   }, [autoSlide, autoSlideInterval, slides.length, curr])
   const settings = {
+    mobileFirst: true,
     dots: false,
     className: 'center',
     centerMode: true,
@@ -27,11 +28,38 @@ export default function CarruselDestacado ({
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+    ]
   }
 
   return (
-    <div className='overflow-hidden relative -top-5 container flex flex-col mx-auto'>
+    <div className='overflow-hidden relative -top-5 md:-top-10'>
       <style>
         {`
           .slick-slide.slick-center {
@@ -49,9 +77,9 @@ export default function CarruselDestacado ({
           <div
             key={key}
           >
-            <div className='w-full lg:h-[56vh] flex-col rounded-full items-center justify-center flex'>
-              <div className='lg:w-auto lg:h-auto'>
-                <img className='w-80 h-80 lg:w-96 lg:h-96 md:w-96 md:h-96 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
+            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[56vh] flex-col rounded-full items-center justify-center flex'>
+              <div className='w-auto h-auto'>
+                <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>
                 <h3 className='text-white lg:text-2xl text-l font-bold text-center'>{slide.titulo}</h3>
