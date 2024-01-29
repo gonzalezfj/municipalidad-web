@@ -22,8 +22,8 @@ const Eco = () => {
           <div className='text-white'>Estacionamiento Controlado</div>
         </div>
       </div>
-      <div className='flex lg:justify-center w-full h-64 text-center p-4 md:p-10 lg:p-14 text-base lg:text-xl text-white items-end bg-[#D85B35] rounded-bl-3xl'>
-        <p>El centro de la Ciudad de San Juan cuenta con un servicio de estacionamiento controlado,
+      <div className='flex lg:justify-center w-full h-64 text-center p-4 md:p-10 lg:p-10 text-base lg:text-xl text-white items-end bg-[#D85B35] rounded-bl-3xl'>
+        <p className='lg:px-40'>El centro de la Ciudad de San Juan cuenta con un servicio de estacionamiento controlado,
           denominado ECO, que regula el estacionamiento en el área de mayor flujo vehicular.
         </p>
       </div>
@@ -55,10 +55,12 @@ const Eco = () => {
             <p className='bg-[#FFBDAB] p-1'>Zona 1: $140 por hora ($112 por la aplicación)</p>
             <p className='bg-[#9EC0B5] p-1'>Zona 2: $105 por hora ($84 por la aplicación) </p>
             <p className='bg-[#EBD983] p-1'>Zona 3: $70 por hora ($56 por la aplicación)</p>
-            <iframe className='w-full h-80 lg:h-96 mt-2' src='https://www.google.com/maps/d/embed?mid=1vMRbLNy00DMVwnFeR64NihzBEQ-Ky1ep&ehbc=2E312F' />
+            <div className='flex items-center justify-center'>
+              <iframe className='w-full h-80 lg:h-[60vh] lg:w-[60vw] mt-2' src='https://www.google.com/maps/d/embed?mid=1vMRbLNy00DMVwnFeR64NihzBEQ-Ky1ep&ehbc=2E312F' />
+            </div>
           </div>
         </div>
-        <div className='bg-[#8A43EF] p-7 lg:p-24 text-white'>
+        <div className='bg-[#8A43EF] p-7 lg:p-24 lg:px-52 text-white'>
           <h1 className='text-xl font-bold'>Turistas</h1>
           <p className='mt-2'>Los turistas que visiten nuestra provincia pueden solicitar una oblea para estacionamiento, ya sea en el hotel donde se hospeden (adherido a la cámara hotelera de San Juan), oficinas de ECO (Rivadavia 788 Este y la sede de Las Heras y Central) y Puntos de atención de Recargas y tarjetas recargables.
             Esta oblea le permitirá al turista estacionar sin costo alguno durante 48 horas, luego de las cuales deberá

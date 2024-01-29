@@ -10,7 +10,7 @@ const ButtonAtras = () => {
   }
   return (
     <div>
-      <button onClick={() => handleClick('-1')}>
+      <button onClick={() => handleClick(-1)}>
         <svg className='w-16 h-16'>
           <image className='w-full' href={buttonAtras} />
         </svg>
