@@ -41,7 +41,7 @@ export const Destacado = () => {
   return (
     <div className='lg:max-w-full mt-10'>
       <h3 className='mt-3 text-3xl text-gray-500 font-bold text-center'>DESTACADO</h3>
-      <div className='flex flex-col relative lg:w-full bg-fifth mt-14 h-96 md:h-[60vh] lg:h-[92vh] 2xl:h-[58vh] 2xl:mt-18'>
+      <div className='flex flex-col relative lg:w-full bg-fifth mt-14 h-96 md:h-[60vh] lg:h-[92vh] 2xl:h-[60vh] 2xl:mt-16'>
         <CarruselDestacado slides={prueba} />
       </div>
     </div>
