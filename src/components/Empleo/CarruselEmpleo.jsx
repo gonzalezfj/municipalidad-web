@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-export default function CarruselEmpleo ({
+export default function CarruselEmpleo({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides
@@ -54,6 +54,21 @@ export default function CarruselEmpleo ({
   }
   return (
     <div className='cursor-pointer overflow-hidden z-10 lg:w-full'>
+      <style>
+        {`
+         .slick-track {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        .slick-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        `}
+      </style>
       <Slider {...settings}>
         {slides.map((img, key, index) => (
           <div

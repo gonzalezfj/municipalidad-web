@@ -15,7 +15,7 @@ export const Empleo = () => {
           <h1 className='font-bold text-fifth text-2xl mb-2'>EMPLEO</h1>
           <p className='font-semibold text-six text-sm lg:w-2/3'>Brindamos acompañamiento en la búsqueda de empleo y cursos disponibles para el ingreso al mercado laboral de los capitalinos/as desocupados/as o que requieran capacitación.</p>
         </div>
-        <div className='items-center justify-center flex flex-col-2 mr-8 lg:flex lg:flex-col'>
+        <div className='items-center justify-center flex flex-col-2 lg:pt-10 mr-8 lg:flex lg:flex-col'>
           <div className='pr-4 lg:pr-0'>
             <img className='bg-secondary p-1 w-24 h-24 object-cover rounded-3xl' src={boton} alt='' />
           </div>
