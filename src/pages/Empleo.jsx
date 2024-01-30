@@ -13,7 +13,7 @@ import buttonAtras from '../assets/guiaDeTramitesMobile_botonAtras.svg'
 export const Empleo = () => {
   const slides = [img1, img2, img3, img4, img5, img6, img7]
   return (
-    <div className=''>
+    <div className='pt-20'>
       {/* PRIMERA PARTE */}
       <div className='lg:flex lg:flex-cols lg:w-3/4 lg:pl-40'>
         <div className='p-12 w-full items-center justify-center grid'>
