@@ -83,8 +83,8 @@ export default function CarruselDestacado ({
           <div
             key={key}
           >
-            <div className='w-full h-[50vh] lg:h-[73vh] md:h-[50vh] 2xl:h-[60vh] flex-col rounded-full items-center justify-center flex'>
-              <div className=''>
+            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
+              <div className='cursor-pointer'>
                 <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>

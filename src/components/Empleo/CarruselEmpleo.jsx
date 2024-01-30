@@ -2,15 +2,14 @@ import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
-export default function CarruselEmpleo ({
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+export default function CarruselEmpleo({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides
 }) {
   const [curr, setCurr] = useState(0)
-  // const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
-  // const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
   useEffect(() => {
     const next = () => setCurr(c => curr === slides.length - 1 ? 0 : curr + 1)
     if (!autoSlide) return
@@ -23,6 +22,8 @@ export default function CarruselEmpleo ({
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    // prevArrow: <button className="slick-arrow slick-prev" onClick={() => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))}><FontAwesomeIcon icon={faChevronLeft} /></button>,
+    // nextArrow: <button className="slick-arrow slick-next" onClick={() => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))}><FontAwesomeIcon icon={faChevronRight} /></button>,
     swipeToSlide: true,
     autoplay: autoSlide,
     autoplaySpeed: autoSlideInterval,
@@ -52,9 +53,24 @@ export default function CarruselEmpleo ({
       }
     ]
   }
+
   return (
-    <div className='cursor-pointer overflow-hidden z-10 lg:w-full'>
-      <Slider {...settings}>
+    <div className='cursor-pointer overflow-hidden z-10 lg:w-full max-w-screen-xl mx-auto'>
+      <style>
+        {`
+        .slick-track {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .slick-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        `}
+      </style>
+      <Slider  {...settings} afterChange={index => setCurr(index)}>
         {slides.map((img, key, index) => (
           <div
             data-aos='fade-left'
