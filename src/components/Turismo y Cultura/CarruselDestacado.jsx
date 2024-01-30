@@ -18,7 +18,8 @@ export default function CarruselDestacado ({
     return () => clearInterval(slideInterval)
   }, [autoSlide, autoSlideInterval, slides.length, curr])
   const settings = {
-    dots: false,
+    dots: true,
+    arrows: false,
     className: 'center',
     centerMode: true,
     centerPadding: '0px',
@@ -43,7 +44,8 @@ export default function CarruselDestacado ({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true
+          infinite: true,
+          dots: true
         }
       },
       {
@@ -51,14 +53,15 @@ export default function CarruselDestacado ({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true
+          infinite: true,
+          dots: true
         }
       }
     ]
   }
 
   return (
-    <div className='overflow-hidden relative -top-5 md:-top-10'>
+    <div className='relative -top-5 md:-top-10'>
       <style>
         {`
           .slick-slide.slick-center {
@@ -69,6 +72,10 @@ export default function CarruselDestacado ({
             transform: scale(1);
             transition: transform 1.2s ease;
           }
+          .slick-dots li button:before {
+            color: #FFF !important;
+            font-size: 1rem !important;
+          }
         `}
       </style>
       <Slider {...settings}>
@@ -76,15 +83,15 @@ export default function CarruselDestacado ({
           <div
             key={key}
           >
-            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[60vh] flex-col rounded-full items-center justify-center flex'>
+            <div className='w-full h-[50vh] lg:h-[73vh] md:h-[50vh] 2xl:h-[60vh] flex-col rounded-full items-center justify-center flex'>
               <div className=''>
                 <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>
-                <h3 className='text-white lg:text-2xl text-l font-bold text-center'>{slide.titulo}</h3>
+                <h3 className='text-white lg:text-xl text-l font-bold text-center'>{slide.titulo}</h3>
               </div>
               <div className='items-center justify-center lg:visible invisible'>
-                <p className='text-white lg:text-l'>{slide.text}</p>
+                <p className='text-white lg:text-base'>{slide.text}</p>
               </div>
             </div>
           </div>

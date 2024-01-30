@@ -16,7 +16,7 @@ const Navbar = () => {
     navigate(path)
   }
   return (
-    <div className='container p-2 mx-auto'>
+    <div className='container absolute p-2 left-0 right-0 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
         <div>
           <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={logoCapital} /></NavLink>

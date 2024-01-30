@@ -6,12 +6,12 @@ import { Noticias } from '../components/Noticias/Noticias'
 
 const Home = () => {
   return (
-    <div className=''>
+    <>
       <Banner />
       <Opciones />
       <Destacado />
       <Noticias />
-    </div>
+    </>
   )
 }
 
