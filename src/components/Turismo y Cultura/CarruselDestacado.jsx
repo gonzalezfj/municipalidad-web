@@ -18,7 +18,6 @@ export default function CarruselDestacado ({
     return () => clearInterval(slideInterval)
   }, [autoSlide, autoSlideInterval, slides.length, curr])
   const settings = {
-    mobileFirst: true,
     dots: false,
     className: 'center',
     centerMode: true,
@@ -77,8 +76,8 @@ export default function CarruselDestacado ({
           <div
             key={key}
           >
-            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[56vh] flex-col rounded-full items-center justify-center flex'>
-              <div className='w-auto h-auto'>
+            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
+              <div className=''>
                 <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>
