@@ -17,15 +17,16 @@ export const NoticiasDesktop = () => {
           {/* Imagen 1 */}
           <div>
             <img
-              className='transition duration-500 hover:scale-125 shadow-lg w-40 h-40 cursor-pointer object-cover rounded-md absolute'
+              className='transition duration-500 transform origin-bottom-right hover:scale-125 hover:origin-bottom-right shadow-lg w-40 h-40 cursor-pointer object-cover rounded-md absolute'
               src={img1}
               alt='Imagen Pequeña 1'
             />
+
           </div>
           {/* Imagen 2 */}
           <div>
             <img
-              className='transition duration-500 hover:scale-125 w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
+              className='transition duration-500 transform origin-bottom-left hover:scale-125 hover:origin-bottom-left w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
               src={img2}
               alt='Imagen Pequeña 2'
             />
@@ -33,7 +34,7 @@ export const NoticiasDesktop = () => {
           {/* Imagen 3 */}
           <div>
             <img
-              className='transition duration-500 hover:scale-125 w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
+              className='transition duration-500 transform origin-top-right hover:scale-125 hover:origin-top-right w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
               src={img3}
               alt='Imagen Pequeña 3'
             />
@@ -41,7 +42,7 @@ export const NoticiasDesktop = () => {
           {/* Imagen 4  */}
           <div className=''>
             <img
-              className='transition duration-500 hover:scale-125 w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
+              className='transition duration-500 transform origin-top-left hover:scale-125 hover:origin-top-left w-40 h-40 shadow-lg cursor-pointer object-cover rounded-md'
               src={img4}
               alt='Imagen Pequeña 3'
             />
