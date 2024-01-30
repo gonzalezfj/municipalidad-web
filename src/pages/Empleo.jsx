@@ -4,10 +4,14 @@ import boton from '../assets/mobilEmpleo/empleo_botonCalendario.svg'
 import img1 from '../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 import img2 from '../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
 import img3 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import img4 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import img5 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import img6 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import img7 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
 import buttonAtras from '../assets/guiaDeTramitesMobile_botonAtras.svg'
 
 export const Empleo = () => {
-  const slides = [img1, img2, img3]
+  const slides = [img1, img2, img3, img4, img5, img6, img7]
   return (
     <div className=''>
       {/* PRIMERA PARTE */}
