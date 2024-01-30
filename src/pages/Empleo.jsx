@@ -4,11 +4,12 @@ import boton from '../assets/mobilEmpleo/empleo_botonCalendario.svg'
 import img1 from '../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 import img2 from '../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
 import img3 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import buttonAtras from '../assets/guiaDeTramitesMobile_botonAtras.svg'
 
 export const Empleo = () => {
   const slides = [img1, img2, img3]
   return (
-    <div className='container'>
+    <div className=''>
       {/* PRIMERA PARTE */}
       <div className='lg:flex lg:flex-cols lg:w-3/4 lg:pl-40'>
         <div className='p-12 w-full items-center justify-center grid'>
@@ -25,12 +26,15 @@ export const Empleo = () => {
         </div>
       </div>
       {/* PRIMERA PARTE */}
-      <div className='lg:items-center lg:justify-center lg:w-[100vw]'>
+      <div className='lg:items-center relative lg:justify-center lg:w-full'>
         <h1 className='font-bold text-2xl pt-4 pl-10 lg:pt-0 lg:pl-0 lg:ml-[12.5rem] text-seven'>PROGRAMAS</h1>
-        <div className='bg-primary lg:w-full w-full'>
-          <div className='bg-white w-full h-60 z-60 absolute lg:w-[100vw]' />
-          <CarruselEmpleo slides={slides} />
+        <div className='bg-primary  relative w-full h-auto text-white'>
+          <div className='bg-white w-full h-20 z-60 absolute lg:w-full rounded-br-full' />
+          <div>
+            <CarruselEmpleo slides={slides} />
+          </div>
         </div>
+        <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'/>
       </div>
     </div>
   )
