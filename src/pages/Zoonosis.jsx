@@ -6,7 +6,7 @@ import fondo from '../assets/fondo_zoonosis.svg'
 
 const Zoonosis = () => {
   return (
-    <div className='relative'>
+    <div className='relative pt-24'>
       <div className='container mx-auto'>
         <TextZoonosis />
         <ButtonTurnos />
