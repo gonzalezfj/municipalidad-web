@@ -26,6 +26,7 @@ export default function CarruselDestacado ({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    swipeToSlide: true,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 4000,
@@ -66,11 +67,11 @@ export default function CarruselDestacado ({
         {`
           .slick-slide.slick-center {
             transform: scale(1.2);
-            transition: transform 1.6s ease;
+            transition: transform 0.8s ease;
           }
           .slick-slide:not(.slick-center) {
             transform: scale(1);
-            transition: transform 1.2s ease;
+            transition: transform 0.6s ease;
           }
           .slick-dots li button:before {
             color: #FFF !important;
@@ -83,7 +84,7 @@ export default function CarruselDestacado ({
           <div
             key={key}
           >
-            <div className='w-full h-[70vh] lg:h-[90vh] md:h-[70vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
+            <div className='w-full h-[52vh] lg:h-[73vh] md:h-[50vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
               <div className='cursor-pointer'>
                 <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
               </div>

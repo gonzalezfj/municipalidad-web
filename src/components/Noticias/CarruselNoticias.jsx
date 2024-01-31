@@ -32,21 +32,21 @@ export default function CarruselNoticias ({
   const formato = window.innerWidth >= 1024
 
   return (
-    <div className='overflow-hidden w-5/6 lg:w-full items-center justify-center flex'>
+    <div className='relative overflow-hidden w-3/4 items-center justify-center flex'>
       {formato
         ? (
           <NoticiasDesktop />
           )
         : (
-          <div className='overflow-hidden items-center justify-center bg-white rounded-lg'>
+          <div className='overflow-hidden items-center justify-center bg-transparent rounded-lg'>
             <Slider {...settings}>
               {slides.map((img, key, index) => (
                 <div
                   data-aos='fade-left'
                   key={key}
-                  className='w-screen flex-shrink-0 rounded-lg overflow-hidden shadow-lg lg:h-full'
+                  className='w-full flex-shrink-0 rounded-lg overflow-hidden lg:h-full'
                 >
-                  <div className='h-82 lg:h-96 rounded-lg flex object-cover '>
+                  <div className='h-82 p-1 lg:h-96 rounded-lg flex object-cover '>
                     <img className='w-full h-64 lg:h-full object-cover rounded-lg' src={img} alt={`Slide ${key}`} />
                   </div>
                   <div className='pl-2'>
@@ -57,10 +57,11 @@ export default function CarruselNoticias ({
                       {/* <div className=' py-4'>
                         <div className='font-bold text-3xl text-fifth text-left'>Pirotecnia Cero en la Ciudad de San Juan</div>
                       </div> */}
-                      <div className=' pt-2 pb-2 rounded-xl'>
-                        <span className='inline-block font-bold bg-[#FFC14F] rounded-full px-3 py-1 shadow-lg text-sm text-gray-700 mr-2 mb-2'>
-                          + info
-                        </span>
+                      <div className='pt-2 pb-2 rounded-xl'>
+                        <button className='font-bold flex gap-2 bg-white rounded-full px-4 py-1 shadow shadow-slate-400 text-sm text-gray-700 mr-2 mb-2'>
+                          Info
+                          <span className='bg-purple-950 w-5 h-5 rounded-full text-white font-extrabold'>+</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -71,8 +72,8 @@ export default function CarruselNoticias ({
               data-aos='fade-right'
               className='container items-center justify-center flex pt-10 pb-10'
             >
-              <span className='items-center justify-center flex bg-orange-400 rounded-3xl w-40 h-10 shadow-lg transform hover:translate-y-1 transition-transform'>
-                <h2 className='text-gray-600 items-center justify-center '>Mostrar más ...</h2>
+              <span className='items-center justify-center flex bg-[#FFC14F] rounded-full w-40 h-10 shadow-lg transform hover:translate-y-1 transition-transform'>
+                <h2 className='text-white items-center font-bold justify-center '>Más noticias ...</h2>
               </span>
             </div>
           </div>

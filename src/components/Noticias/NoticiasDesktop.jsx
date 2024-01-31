@@ -8,7 +8,7 @@ import fondo from '../../assets/home_seccion4_fondo.svg'
 export const NoticiasDesktop = () => {
   return (
     <div className='container relative flex grid-cols-2 justify-center items-center lg:mb-3'>
-      <svg className='lg:absolute lg:top-2 lg:left-[12vw] lg:w-full lg:h-full'>
+      <svg className='lg:absolute lg:top-2 2xl:left-44 xl:left-10 lg:-left-16 lg:w-full lg:h-full'>
         <image className='lg:relative lg:h-full' href={fondo} />
       </svg>
       <div className='flex gap-x-32 mt-10 mb-10'>
