@@ -8,14 +8,14 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
   }
 
   return (
-    <div className='container lg:ml-10 lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
+    <div className='container lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
       {['General', 'Arbolado', 'Rentas', 'Comercio', 'Obras'].map((categoria, index) => (
         <div key={index} className={`flex flex-col w-full lg:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
           <button
             onClick={() => toggleDropdown(index)}
             className={`flex flex-col items-center text-xl lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}
           >
-            <div className='flex items-center w-full'>
+            <div className='relative flex items-center w-full'>
               <div className='flex w-[95%] lg:w-[80%] ml-4 justify-center'>
                 {categoria}
               </div>
@@ -24,13 +24,13 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
               </div>
             </div>
           </button>
-          <div className='lg:absolute lg:-top-10'>
+          <div className='lg:absolute lg:-top-0'>
             <div
               className={`lg:absolute ${dropdownStates[index] ? 'scale-y-100 lg:scale-100' : 'scale-y-0 lg:scale-0 h-0'
                 } transition-all transform-gpu ease-in-out origin-top lg:origin-left duration-300 lg:duration-500`}
               onClick={() => toggleDropdown(index)}
             >
-              <div className='lg:relative lg:left-48 w-[70vw] rounded-xl lg:shadow-none shadow-lg'>
+              <div className='lg:relative lg:left-48 lg:w-[69vw] rounded-xl lg:shadow-none shadow-lg'>
                 <Subcategorias />
               </div>
             </div>
