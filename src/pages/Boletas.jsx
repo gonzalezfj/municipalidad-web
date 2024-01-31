@@ -14,8 +14,8 @@ const Boletas = () => {
   return (
     <div>
       <div className=''>
-        <div className='absolute top-0 bg-[#D85B35] w-full h-20' />
-        <div className='relative lg:-top-4 flex py-12 items-center justify-center bg-[#D85B35] w-full h-20 rounded-bl-full'>
+        <div className='bg-[#D85B35] w-full h-20' />
+        <div className='relative flex py-12 items-center justify-center bg-[#D85B35] w-full h-20 rounded-bl-full'>
           <svg className='w-28 h-30'>
             <image href={img1} />
           </svg>
