@@ -8,7 +8,7 @@ import img4 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.
 import img5 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
 import img6 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
 import img7 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
-import buttonAtras from '../assets/guiaDeTramitesMobile_botonAtras.svg'
+import ButtonAtras from '../components/Default/ButtonAtras'
 
 export const Empleo = () => {
   const slides = [img1, img2, img3, img4, img5, img6, img7]
@@ -38,7 +38,11 @@ export const Empleo = () => {
             <CarruselEmpleo slides={slides} />
           </div>
         </div>
-        <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'/>
+        <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center' >
+          <div className='flex items-center justify-center'>
+            <ButtonAtras />
+          </div>
+        </div>
       </div>
     </div>
   )
