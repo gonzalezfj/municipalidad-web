@@ -8,7 +8,7 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
   }
 
   return (
-    <div className='container lg:ml-10 lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
+    <div className='container lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
       {['General', 'Arbolado', 'Rentas', 'Comercio', 'Obras'].map((categoria, index) => (
         <div key={index} className={`flex flex-col w-full lg:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
           <button
@@ -24,7 +24,7 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
               </div>
             </div>
           </button>
-          <div className='lg:absolute lg:-top-10'>
+          <div className='lg:absolute lg:-top-0'>
             <div
               className={`lg:absolute ${dropdownStates[index] ? 'scale-y-100 lg:scale-100' : 'scale-y-0 lg:scale-0 h-0'
                 } transition-all transform-gpu ease-in-out origin-top lg:origin-left duration-300 lg:duration-500`}
