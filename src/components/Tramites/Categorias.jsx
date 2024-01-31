@@ -15,7 +15,7 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
             onClick={() => toggleDropdown(index)}
             className={`flex flex-col items-center text-xl lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}
           >
-            <div className='flex items-center w-full'>
+            <div className='relative flex items-center w-full'>
               <div className='flex w-[95%] lg:w-[80%] ml-4 justify-center'>
                 {categoria}
               </div>
@@ -30,7 +30,7 @@ const Categorias = ({ dropdownStates, setDropdownStates }) => {
                 } transition-all transform-gpu ease-in-out origin-top lg:origin-left duration-300 lg:duration-500`}
               onClick={() => toggleDropdown(index)}
             >
-              <div className='lg:relative lg:left-48 w-[70vw] rounded-xl lg:shadow-none shadow-lg'>
+              <div className='lg:relative lg:left-48 lg:w-[69vw] rounded-xl lg:shadow-none shadow-lg'>
                 <Subcategorias />
               </div>
             </div>
