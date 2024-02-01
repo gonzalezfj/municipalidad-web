@@ -15,17 +15,19 @@ const Boletas = () => {
     <div>
       <div className=''>
         <div className='bg-[#D85B35] w-full h-20' />
-        <div className='relative flex py-12 items-center justify-center bg-[#D85B35] w-full h-20 rounded-bl-full'>
-          <svg className='w-28 h-30'>
-            <image href={img1} />
-          </svg>
-          <div className='text-white'>
-            <h1 className='text-l font-bold'>PAGAR E IMPRIMIR BOLETAS</h1>
-            <h2 className='text-sm'>Tasas de inmuebles y comercios</h2>
+        <div className='bg-[#D85B35] w-full h-40 rounded-br-full'>
+          <div className='container mx-auto flex items-center'>
+            <svg className='w-36 h-40 relative -top-7 -left-6'>
+              <image className='w-[200px] lg:w-[210px] xl:w-[210px] 2xl:w-[210px]' href={img1} />
+            </svg>
+            <div className='text-white'>
+              <h1 className='text-l md:text-xl font-bold'>PAGAR E IMPRIMIR BOLETAS</h1>
+              <h2 className='text-sm md:text-base'>Tasas de inmuebles y comercios</h2>
+            </div>
           </div>
         </div>
       </div>
-      <div className='container flex-col flex lg:items-center lg:mx-auto p-6'>
+      <div className='container flex-col flex lg:mx-auto p-6'>
         <div className='text-[#616161]'>
           <p>Para pagar en línea boletas de contribución de inmuebles y tasa de comercio</p>
         </div>
@@ -35,7 +37,7 @@ const Boletas = () => {
       </div>
       <div className='relative bg-[#FFC14F] w-full h-auto lg:h-64 lg:flex lg:items-center lg:rounded-l-full lg:text-xl'>
         <div className='absolute right-0 -top-16 bg-[#D85B35] w-32 h-32 rounded-tl-full shadow-lg' />
-        <div className='text-[#616161] p-11 lg:container lg:mx-auto'>
+        <div className='text-[#616161] p-11 container lg:mx-auto'>
           <h1 className='font-bold'>Boletas Inmueble y Comercial</h1>
           <p>Puede obtener boletas de la tasa de servicio sobre inmueble y actividad comercial:
             <ul className='list-inside list-disc'>

@@ -13,16 +13,18 @@ const Eco = () => {
   }
   return (
     <div className='top-0'>
-      <div className='absolute lg:flex lg:justify-center px-5 flex top-0 w-full h-52 bg-[#8A43EF] rounded-br-3xl'>
-        <svg className='relative w-40 h-36 top-14 lg:top-16'>
-          <image href={logoEco} />
-        </svg>
-        <div className='w-46 flex flex-col mt-14 justify-center'>
-          <div className='text-white font-extrabold'>ECO</div>
-          <div className='text-white'>Estacionamiento Controlado</div>
+      <div className='absolute px-5 flex items-center top-0 w-full h-64 bg-[#8A43EF] rounded-br-3xl'>
+        <div className='container mx-auto flex'>
+          <svg className='relative w-48 h-30'>
+            <image className='w-[200px] lg:w-[210px] xl:w-[210px] 2xl:w-[210px]' href={logoEco} />
+          </svg>
+          <div className='w-46 flex flex-col mt-14 justify-center'>
+            <div className='text-white md:text-xl font-extrabold'>ECO</div>
+            <div className='text-white text-sm lg:text-base'>Estacionamiento Controlado</div>
+          </div>
         </div>
       </div>
-      <div className='flex lg:justify-center w-full h-[40vh] text-center p-4 md:p-10 lg:p-7 xl:p-11 text-base lg:text-xl text-white items-end bg-[#D85B35] rounded-bl-3xl'>
+      <div className='flex lg:justify-center w-full h-96 text-center p-4 md:p-10 lg:p-7 xl:p-9 text-base lg:text-xl text-white items-end bg-[#D85B35] rounded-bl-3xl'>
         <p className='lg:px-40'>El centro de la Ciudad de San Juan cuenta con un servicio de estacionamiento controlado,
           denominado ECO, que regula el estacionamiento en el área de mayor flujo vehicular.
         </p>
@@ -30,11 +32,8 @@ const Eco = () => {
       <div className='lg:flex-col lg:flex lg:items-center'>
         <div className='lg:container'>
           <div className='p-7 text-[#616161]'>
-            <h1 className='text-xl font-bold'>App Móvil</h1>
-            <p className='mt-2'>Puedes pagar a través de nuestra app para IOs y Android. La puedes descargar gratis desde las tiendas oficiales o bien haciendo clic acá:</p>
-          </div>
-          <div className='p-7 text-[#616161]'>
             <h1 className='text-xl font-bold'>Descarga la app</h1>
+            <p className='mt-2'>Puedes pagar a través de nuestra app para IOs y Android. La puedes descargar gratis desde las tiendas oficiales o bien haciendo clic acá:</p>
             <div className='flex gap-5 mt-3'>
               <svg className='bg-[#D85B35] rounded-full w-24 h-24'>
                 <image className='w-24 h-24' href={imgPlaystore} />
