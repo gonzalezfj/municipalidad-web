@@ -3,6 +3,7 @@ import ButtonAtras from '../components/Default/ButtonAtras'
 import img1 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo.svg'
 import img2 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img3 from '../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoTransito.svg'
+import { Link } from 'react-router-dom'
 export const Obleas = () => {
     return (
         <div className='w-full'>
@@ -21,9 +22,11 @@ export const Obleas = () => {
                 <h1 className='text-1xl font-extrabold text-purple-800 lg:text-3xl'>MEDIOS DE PRENSA</h1>
                 <p className='font-semibold text-[#D85B35] lg:text-2xl'>Obleas destinadas a facilitar la labor de los medios de prensa en la Ciudad de San Juan.</p>
                 <div className='rounded-xl'>
-                    <span className='inline-block font-bold bg-slate-100 rounded-full lg:px-4 lg:py-2 px-3 py-1 shadow-lg text-sm lg:text-base text-gray-700 mr-2 mb-2 cursor-pointer'>
-                        + info
-                    </span>
+                    <Link to='/plantillaObleas'>
+                        <span className='inline-block font-bold bg-slate-100 rounded-full lg:px-4 lg:py-2 px-3 py-1 shadow-lg text-sm lg:text-base text-gray-700 mr-2 mb-2 cursor-pointer'>
+                            + info
+                        </span>
+                    </Link>
                 </div>
                 <hr />
                 <h1 className='text-1xl font-extrabold text-purple-800 lg:text-3xl'>PERSONAS CON DISCAPACIDAD</h1>
