@@ -3,7 +3,7 @@ import BannerPlayaRemocion from '../components/PlayaRemocion/BannerPlayaRemocion
 import IframeConsulta from '../components/PlayaRemocion/IframeConsulta'
 import MapaPlaya from '../components/PlayaRemocion/MapaPlaya'
 import TextPlaya from '../components/PlayaRemocion/TextPlaya'
-import ButtonAtras from '../components/Default/ButtonAtras'
+import ButtonBack from '../components/Default/ButtonBack'
 
 const PlayaRemocion = () => {
   return (
@@ -13,7 +13,7 @@ const PlayaRemocion = () => {
       <TextPlaya />
       <MapaPlaya />
       <div className='container flex mx-auto items-center justify-center'>
-        <ButtonAtras />
+        <ButtonBack />
       </div>
     </div>
   )

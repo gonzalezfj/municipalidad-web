@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import buttonAtras from '../../assets/guiaDeTramitesMobile_botonAtras.svg'
 
-const ButtonAtras = () => {
+const ButtonBack = () => {
   const navigate = useNavigate()
   const handleClick = (path) => {
     navigate(path)
@@ -19,4 +19,4 @@ const ButtonAtras = () => {
   )
 }
 
-export default ButtonAtras
+export default ButtonBack
