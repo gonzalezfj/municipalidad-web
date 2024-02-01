@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-export default function CarruselEmpleo({
+export default function CarruselEmpleo ({
   autoSlide = true,
   autoSlideInterval = 3000,
   slides
@@ -70,7 +70,7 @@ export default function CarruselEmpleo({
         }
         `}
       </style>
-      <Slider  {...settings} afterChange={index => setCurr(index)}>
+      <Slider {...settings} afterChange={index => setCurr(index)}>
         {slides.map((img, key, index) => (
           <div
             data-aos='fade-left'
