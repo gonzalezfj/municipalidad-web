@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonAtras from '../../components/Default/ButtonAtras'
+import ButtonBack from '../Default/ButtonBack'
 import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoTransito.svg'
 
@@ -41,7 +41,7 @@ export const PlantillaObleas = () => {
                     </button>
                 </div>
                 <div className='items-center justify-center'>
-                    <ButtonAtras />
+                    <ButtonBack />
                 </div>
                 <div className='relative'>
                     <svg className='h-48 w-48 absolute right-0 -top-20'>
