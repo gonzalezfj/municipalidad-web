@@ -1,6 +1,6 @@
 import Categorias from '../components/Tramites/Categorias'
 import { useState } from 'react'
-import ButtonAtras from '../components/Default/ButtonAtras'
+import ButtonBack from '../components/Default/ButtonBack'
 
 const Tramites = () => {
   const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
@@ -15,7 +15,7 @@ const Tramites = () => {
         <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
       </div>
       <div className='flex justify-center'>
-        <ButtonAtras />
+        <ButtonBack />
       </div>
     </div>
   )

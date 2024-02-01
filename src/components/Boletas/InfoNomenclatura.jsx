@@ -1,4 +1,4 @@
-import ButtonAtras from '../Default/ButtonAtras'
+import ButtonBack from '../Default/ButtonBack'
 
 const InfoNomenclatura = () => {
   return (
@@ -19,7 +19,7 @@ const InfoNomenclatura = () => {
       </div>
       <div className='bg-[#9747FF] absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'>
         <div className='container mx-auto'>
-          <ButtonAtras />
+          <ButtonBack />
         </div>
       </div>
     </div>
