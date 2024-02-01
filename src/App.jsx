@@ -11,8 +11,10 @@ import Eco from './pages/Eco'
 import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
+import { Obleas } from './pages/Obleas'
+import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 
-function App () {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -27,6 +29,8 @@ function App () {
         <Route path='/estacionamientocontrolado' element={<Eco />} />
         <Route path='/playaderemocion' element={<PlayaRemocion />} />
         <Route path='/zoonosis' element={<Zoonosis />} />
+        <Route path='/obleas' element={<Obleas />} />
+        <Route path='/plantillaObleas' element={<PlantillaObleas />} />
       </Routes>
       <Footer />
     </Router>
