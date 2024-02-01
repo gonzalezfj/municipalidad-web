@@ -13,6 +13,7 @@ import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
 import { Obleas } from './pages/Obleas'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
+import { Transito } from './pages/Transito'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/zoonosis' element={<Zoonosis />} />
         <Route path='/obleas' element={<Obleas />} />
         <Route path='/plantillaObleas' element={<PlantillaObleas />} />
+        <Route path='/transito' element={<Transito />} />
       </Routes>
       <Footer />
     </Router>
