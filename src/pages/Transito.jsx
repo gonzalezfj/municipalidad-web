@@ -34,7 +34,7 @@ export const Transito = () => {
                 </div>
                 <div className='relative'>
                     <svg className='h-24 w-24 lg:h-40 lg:w-60 absolute right-0 -top-20'>
-                        <image href={img3} alt="img not found" className='w-full lg:w-full lg:h-full'/>
+                        <image href={img3} alt="img not found" className='w-full lg:w-full lg:h-full' />
                     </svg>
                 </div>
             </div>
