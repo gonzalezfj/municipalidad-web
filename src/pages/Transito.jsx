@@ -23,7 +23,7 @@ export const Transito = () => {
                     <p className='text-[#3E3E3E] font-extrabold lg:font-bold'>En caso de registrar deudas por infracciones de tránsito municipales, deberás dirigirte al Juzgado de Faltas correspondiente, en el edificio del Anexo Güemes ubicado en Güemes 480 sur, en horario de 8 a 17 de lunes a viernes.</p>
                 </div>
                 {/* IFRAME */}
-                <div className='flex items-center justify-center'>
+                <div className='flex items-center justify-center'> 
                     <div className='w-full h-96'>
                         <iframe className='w-full h-full' src="https://libredeudatransito.municipiosanjuan.gob.ar/Libre_Deuda_Transito"></iframe>
                     </div>
@@ -34,7 +34,7 @@ export const Transito = () => {
                 </div>
                 <div className='relative'>
                     <svg className='h-24 w-24 lg:h-40 lg:w-60 absolute right-0 -top-20'>
-                        <image href={img3} alt="img not found" className='w-full lg:w-full lg:h-full' />
+                        <image href={img3} alt="img not found" className='w-full lg:w-full lg:h-40' />
                     </svg>
                 </div>
             </div>
