@@ -15,6 +15,7 @@ import { Obleas } from './pages/Obleas'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 import { Transito } from './pages/Transito'
 import { Vehiculos } from './components/Transito/Vehiculos'
+import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 
 function App() {
   return (
@@ -33,8 +34,9 @@ function App() {
         <Route path='/zoonosis' element={<Zoonosis />} />
         <Route path='/obleas' element={<Obleas />} />
         <Route path='/plantillaObleas' element={<PlantillaObleas />} />
-        <Route path='/transito' element={<Transito />} /   >
+        <Route path='/transito' element={<Transito />} />
         <Route path='/vehiculos' element={<Vehiculos />} />
+        <Route path='/denuncia' element={<DenunciaVehiculos />} />
       </Routes>
       <Footer />
     </Router>
