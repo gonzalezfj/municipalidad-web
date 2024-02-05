@@ -44,6 +44,6 @@ export const Ocupacion = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     )
 }
