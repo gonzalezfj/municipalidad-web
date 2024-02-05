@@ -14,6 +14,9 @@ import Zoonosis from './pages/Zoonosis'
 import { Obleas } from './pages/Obleas'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 import { Transito } from './pages/Transito'
+import { Vehiculos } from './components/Transito/Vehiculos'
+import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
+import { Ocupacion } from './pages/Ocupacion'
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
         <Route path='/obleas' element={<Obleas />} />
         <Route path='/plantillaObleas' element={<PlantillaObleas />} />
         <Route path='/transito' element={<Transito />} />
+        <Route path='/vehiculos' element={<Vehiculos />} />
+        <Route path='/denuncia' element={<DenunciaVehiculos />} />
+        <Route path='/permisos' element={<Ocupacion />} />
       </Routes>
       <Footer />
     </Router>
