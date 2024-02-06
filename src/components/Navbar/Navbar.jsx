@@ -1,25 +1,37 @@
-import { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { MdExpandMore } from 'react-icons/md'
-import Sublinks from './Sublinks'
 import Links from './Links'
-import logoCapital from '../../assets/capital_sanjuan_blanco.png'
 import imgSearch from '../../assets/home_menu_buscador.svg'
 import sidebarImage from '../../assets/group_61.png'
 
 const Navbar = () => {
+  const [navData, setNavData] = useState()
   const [open, setOpen] = useState(false)
-  const [openDrop, setOpenDrop] = useState(false)
-  const navigate = useNavigate()
+  const [openDrops, setOpenDrops] = useState({})
 
-  const redirectTo = (path) => {
-    navigate(path)
-  }
+  useEffect(() => {
+    const getInfoStrapi = async () => {
+      try {
+        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
+        const responseLinks = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/navegacion?populate=*')
+        const dataLinks = await responseLinks.json()
+        const responseSubLinks = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems')
+        const dataSubLinks = await responseSubLinks.json()
+        const dataNavbar = Object.assign(dataLinks.data.attributes, dataSubLinks.data.attributes)
+        setNavData(dataNavbar)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+    getInfoStrapi()
+  }, [])
+
   return (
     <div className='container absolute p-2 left-0 right-0 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
         <div>
-          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={logoCapital} /></NavLink>
+          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={'https://0pd31rwn-3000.brs.devtunnels.ms' + navData?.Logo.data.attributes.url} /></NavLink>
         </div>
         <div className='flex items-center'>
           <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
@@ -28,57 +40,33 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-
         <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
-          <div className='relative' onBlur={() => setOpenDrop(false)}>
-            <button
-              className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu ${openDrop ? 'bg-[#4B0984] text-white rounded-b-lg ' : ''}`}
-              onClick={() => setOpenDrop(!openDrop)}
-            >
-              <span>Municipio</span>
-              <MdExpandMore />
-            </button>
-            <div className={`fixed mt-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrop ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrop(false)}>
-              <Sublinks />
+          {navData?.Items.map((e) => (
+            <div key={e?.id} className='relative'>
+              <button
+                className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu ${openDrops[e?.id] ? 'bg-[#4B0984] text-white rounded-b-lg ' : ''}`}
+                onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: !prevState[e?.id] || false }))}
+              >
+                <span>{e?.Titulo}</span>
+                {e?.Subitems && e?.Subitems.length > 0 && (
+                  <MdExpandMore />
+                )}
+              </button>
+              {e?.Subitems && e?.Subitems.length > 0 && (
+                <div className={`fixed mt-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrops[e?.id] ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: false }))}>
+                  <div className='container'>
+                    {e?.Subitems.map((subItem) => (
+                      <div key={subItem?.id} className='flex w-auto px-4'>
+                        <button className='text-[#4B0984] flex items-center justify-end text-l w-full py-2 mb-2'>
+                          {subItem?.Titulo}
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
-
-          <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
-            onClick={() => redirectTo('/servicios')}
-          >
-            Servicios
-          </button>
-
-          <button
-            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
-            onClick={() => redirectTo('/culturayturismo')}
-          >
-            <span>Cultura y Turismo</span>
-            <MdExpandMore />
-          </button>
-
-          <button
-            className='lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
-            onClick={() => redirectTo('/transparencia')}
-          >
-            <span>Transparencia</span>
-            <MdExpandMore />
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
-            onClick={() => redirectTo('/noticias')}
-          >
-            Noticias
-          </button>
-
-          <button
-            className='h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu'
-            onClick={() => redirectTo('/contacto')}
-          >
-            Contacto
-          </button>
+          ))}
         </div>
         <div className='hidden lg:block lg:container lg:w-60'>
           <div className='group'>
@@ -106,7 +94,7 @@ const Navbar = () => {
             <div className='flex justify-center'>
               <input placeholder='Buscar...' className='p-2 mb-2 w-60 rounded-full border border-[#4B0984]' />
             </div>
-            <Links />
+            <Links navData={navData} />
           </div>
           <img src={sidebarImage} className='absolute bottom-20 right-0' />
         </div>

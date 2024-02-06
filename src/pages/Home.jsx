@@ -1,16 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Banner } from '../components/Banner/Banner'
 import { Opciones } from '../components/Opciones/Opciones'
 import { Destacado } from '../components/Turismo y Cultura/Destacado'
 import { Noticias } from '../components/Noticias/Noticias'
 
 const Home = () => {
+  const [homeData, setHomeData] = useState()
+
+  useEffect(() => {
+    const getInfoStrapi = async () => {
+      try {
+        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
+        const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate=*')
+        const data = await response.json()
+        setHomeData(data.data.attributes)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+    getInfoStrapi()
+  }, [])
+
   return (
     <>
-      <Banner />
+      <Banner homeData={homeData} />
       <Opciones />
-      <Destacado />
-      <Noticias />
+      <Destacado homeData={homeData} />
+      <Noticias homeData={homeData} />
     </>
   )
 }
