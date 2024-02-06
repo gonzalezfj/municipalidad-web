@@ -16,7 +16,6 @@ export const Opciones = () => {
     }
     getInfoStrapi()
   }, [])
-  console.log(ButtonsData, 'opciones')
 
   return (
     <div className=''>
