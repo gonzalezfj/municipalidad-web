@@ -28,7 +28,6 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-
         <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
           <div className='relative' onBlur={() => setOpenDrop(false)}>
             <button
