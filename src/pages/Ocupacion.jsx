@@ -10,7 +10,7 @@ export const Ocupacion = () => {
             const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/ocupacion');
             const jsonResponse = await response.json();
             setDataOcupacion(jsonResponse.data.attributes)
-            console.log(jsonResponse.data.attributes, 'estado de datos')
+            // console.log(jsonResponse.data.attributes, 'estado de datos')
         } catch (error) {
             console.log(error)
         }
@@ -37,21 +37,21 @@ export const Ocupacion = () => {
                         <div className='lg:w-4/5'>
                             <h1 className='font-extrabold text-2xl text-[#4B0984] pb-10 lg:text-4xl'>{dataOcupacion?.Titulo}</h1>
                         </div>
-                        <p className='font-bold text-lg text-[#3E3E3E]'>Para solicitar permisos de ocupación de la calzada vea los requisitos aquí.</p>
+                        <p className='font-bold text-lg text-[#3E3E3E]'>{dataOcupacion?.Subtitulo}</p>
                         <div className=''>
-                            <p className='text-[#3E3E3E] text-base'>Para solicitar permisos de ocupación de la calzada en casos de mudanzas, descargas de materiales de construcción, colocación de contenedores y/o cualquier otra ocupación que no sea el estacionamiento de vehículos, es necesario iniciar un expediente por mesa de entrada del municipio con 48hs. de anticipación a la fecha en que se desea ocupar la calle. El canon del trámite lo determinará la dirección técnica administrativa según el espacio que necesite utilizar. Los requisitos son:</p>
+                            <p className='text-[#3E3E3E] text-base'>{dataOcupacion?.Contenido[0].children[0].text}</p>
                             <div className='text-[#3E3E3E] pl-2 scroll-pt-52 lg:pt-4'>
-                                <li>Nombre y Apellido</li>
-                                <li>DNI</li>
-                                <li>Domicilio</li>
-                                <li>Telefono y/o celular</li>
-                                <li>Lugar donde se solicita la ocupacíon</li>
+                                <li>{dataOcupacion?.Contenido[2].children[0].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[2].children[1].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[2].children[2].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[2].children[3].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[2].children[4].children[0].text}</li>
                             </div>
-                            <h3 className='text-[#3E3E3E] font-bold pt-5 pb-5'>Contacto</h3>
+                            <h3 className='text-[#3E3E3E] font-bold pt-5 pb-5'>{dataOcupacion?.Contenido[4].children[0].text}</h3>
                             <div className='list-none pl-2'>
-                                <li>Teléfonos dependencia: 4309692 - 4309800</li>
-                                <li>Días de atención: LUNES A VIERNESHorarios de atención: 8 a 13 hs.</li>
-                                <li>Conmutador y centro de atención remota al ciudadano 4309600 / 01 / 02 / 03 / 05</li>
+                                <li>{dataOcupacion?.Contenido[5].children[0].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[5].children[1].children[0].text}</li>
+                                <li>{dataOcupacion?.Contenido[5].children[2].children[0].text}</li>
                             </div>
                         </div>
                         <div className='pt-20'>
