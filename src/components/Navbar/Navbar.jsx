@@ -45,7 +45,12 @@ const Navbar = () => {
             <div key={e?.id} className='relative'>
               <button
                 className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu ${openDrops[e?.id] ? 'bg-[#4B0984] text-white rounded-b-lg ' : ''}`}
-                onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: !prevState[e?.id] || false }))}
+                onClick={() => {
+                  const newOpenDrops = Object.fromEntries(
+                    Object.keys(openDrops).map((key) => [key, false])
+                  )
+                  setOpenDrops((prevState) => ({ ...newOpenDrops, [e?.id]: !prevState[e?.id] || false }))
+                }}
               >
                 <span>{e?.Titulo}</span>
                 {e?.Subitems && e?.Subitems.length > 0 && (
