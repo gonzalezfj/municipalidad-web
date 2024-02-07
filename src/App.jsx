@@ -17,6 +17,7 @@ import { Transito } from './pages/Transito'
 import { Vehiculos } from './components/Transito/Vehiculos'
 import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 import { Ocupacion } from './pages/Ocupacion'
+import { Señaletica } from './pages/Señaletica'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path='/vehiculos' element={<Vehiculos />} />
         <Route path='/denuncia' element={<DenunciaVehiculos />} />
         <Route path='/permisos' element={<Ocupacion />} />
+        <Route path='/señaletica' element={<Señaletica />} />
       </Routes>
       <Footer />
     </Router>
