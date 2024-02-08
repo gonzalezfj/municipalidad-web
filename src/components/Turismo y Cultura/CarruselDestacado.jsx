@@ -11,12 +11,12 @@ export default function CarruselDestacado ({
   const [curr, setCurr] = useState(0)
 
   useEffect(() => {
-    const next = () => setCurr(c => curr === slides.length - 1 ? 0 : curr + 1)
+    const next = () => setCurr(c => curr === Object.keys(slides).length - 1 ? 0 : curr + 1)
 
     if (!autoSlide) return
     const slideInterval = setInterval(next, autoSlideInterval)
     return () => clearInterval(slideInterval)
-  }, [autoSlide, autoSlideInterval, slides.length, curr])
+  }, [autoSlide, autoSlideInterval, slides, curr])
   const settings = {
     dots: true,
     arrows: false,
@@ -80,19 +80,19 @@ export default function CarruselDestacado ({
         `}
       </style>
       <Slider {...settings}>
-        {slides.map((slide, key, index) => (
+        {slides?.Destacados.map((e, key, index) => (
           <div
-            key={key}
+            key={e?.id}
           >
             <div className='w-full h-[52vh] lg:h-[73vh] md:h-[50vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
               <div className='cursor-pointer'>
-                <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={slide.imagen} alt={`Slide ${index}`} />
+                <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={'https://0pd31rwn-3000.brs.devtunnels.ms' + e?.Imagen.data.attributes.url} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>
-                <h3 className='text-white lg:text-xl text-l font-bold text-center'>{slide.titulo}</h3>
+                <h3 className='text-white lg:text-xl text-l font-bold text-center'>{e?.Titulo}</h3>
               </div>
               <div className='items-center justify-center lg:visible invisible'>
-                <p className='text-white lg:text-base'>{slide.text}</p>
+                <p className='text-white lg:text-base'>{e.Descripcion}</p>
               </div>
             </div>
           </div>

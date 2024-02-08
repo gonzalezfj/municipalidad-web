@@ -19,7 +19,7 @@ import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
 
-function App() {
+function App () {
   return (
     <Router>
       <Navbar />
@@ -30,7 +30,7 @@ function App() {
         <Route path='/detalle' element={<DetalleNoticia />} />
         <Route path='/tramites' element={<Tramites />} />
         <Route path='/empleo' element={<Empleo />} />
-        <Route path='/agenda' element={<NuestraAgenda />} />
+        <Route path='/detalleagenda' element={<NuestraAgenda />} />
         <Route path='/estacionamientocontrolado' element={<Eco />} />
         <Route path='/playaderemocion' element={<PlayaRemocion />} />
         <Route path='/zoonosis' element={<Zoonosis />} />
