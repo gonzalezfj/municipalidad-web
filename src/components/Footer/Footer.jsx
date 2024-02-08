@@ -19,7 +19,6 @@ const Footer = () => {
     }
     getInfoStrapi()
   }, [])
-  console.log(footerData, 'footerdata')
 
   return (
     <footer className='bg-[#4B0984] z-20 text-white w-full'>
