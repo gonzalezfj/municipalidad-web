@@ -18,8 +18,9 @@ import { Vehiculos } from './components/Transito/Vehiculos'
 import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
+import { libreDeuda } from './components/InmuebleComercio/libreDeuda'
 
-function App () {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -41,6 +42,7 @@ function App () {
         <Route path='/denuncia' element={<DenunciaVehiculos />} />
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
+        <Route path='/libredeudainmueble' element={<libreDeuda />} />
       </Routes>
       <Footer />
     </Router>
