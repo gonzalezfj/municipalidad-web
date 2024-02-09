@@ -58,7 +58,7 @@ const Navbar = () => {
                 )}
               </button>
               {e?.Subitems && e?.Subitems.length > 0 && (
-                <div className={`fixed mt-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrops[e?.id] ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: false }))}>
+                <div className={`absolute mt-2 w-48 flex rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrops[e?.id] ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: false }))}>
                   <div className='container'>
                     {e?.Subitems.map((subItem) => (
                       <div key={subItem?.id} className='flex w-auto px-4'>
