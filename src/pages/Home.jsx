@@ -23,7 +23,6 @@ const Home = () => {
     }
     getInfoStrapi()
   }, [])
-  console.log(homeData, 'destacado data')
 
   return (
     <>
