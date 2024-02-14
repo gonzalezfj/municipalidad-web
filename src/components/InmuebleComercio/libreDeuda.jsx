@@ -5,10 +5,10 @@ import ButtonBack from '../Default/ButtonBack'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoTransito.svg'
 import img4 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 export const LibreDeuda = () => {
-    return (
+    return ( 
         <div className='w-full'>
             <div className='mx-auto gap-8 flex flex-col'>
-                {/* TITULO */}
+                {/* TITULO */}      
                 <div className='hidden lg:block lg:absolute lg:top-0 lg:w-0 lg:h-0 lg:border-t-[75px] lg:border-t-[#FFC14F] lg:border-l-[75px] lg:border-l-[#FFC14F] lg:border-b-[75px] lg:border-b-transparent lg:border-r-[75px] lg:border-r-transparent' />
                 <div className='bg-purple-700 h-44 lg:h-56 px-10 lg:w-full'>
                     <div className='pt-24 flex flex-col-2 gap-2 w-full items-center justify-center lg:items-center lg:justify-center lg:flex lg:pt-32'>
