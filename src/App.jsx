@@ -20,6 +20,7 @@ import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
 import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
 import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
+import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 function App() {
   return (
     <Router>
@@ -44,6 +45,7 @@ function App() {
         <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/libredeuda' element={<LibreDeuda />} />
         <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
+        <Route path='/eximicion' element={<EximicionPago />} />
       </Routes>
       <Footer />
     </Router>
