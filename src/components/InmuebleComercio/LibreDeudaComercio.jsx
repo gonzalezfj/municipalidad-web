@@ -11,8 +11,8 @@ export const LibreDeudaComercio = () => {
             <div className='mx-auto gap-8 flex flex-col'>
                 {/* TITLE */}
                 <div className='hidden lg:block lg:absolute lg:top-0 lg:w-0 lg:h-0 lg:border-t-[75px] lg:border-t-[#FFC14F] lg:border-l-[75px] lg:border-l-[#FFC14F] lg:border-b-[75px] lg:border-b-transparent lg:border-r-[75px] lg:border-r-transparent' />
-                <div className='bg-purple-700 h-44 lg:h-44 px-10 lg:w-full'>
-                    <div className='pt-24 flex flex-col-2 gap-2 w-full items-center justify-center lg:items-center lg:justify-center lg:flex lg:pt-20'>
+                <div className='bg-purple-700 h-44 lg:h-48 px-10 lg:w-full'>
+                    <div className='pt-24 flex flex-col-2 gap-2 w-full items-center justify-center lg:items-center lg:justify-center lg:flex lg:pt-28'>
                         <div className='w-14'>
                             <img src={img2} alt="img not found" className='object-cover w-full' />
                         </div>
