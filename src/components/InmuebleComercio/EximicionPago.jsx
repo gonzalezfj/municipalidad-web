@@ -14,12 +14,12 @@ export const EximicionPago = () => {
                         <div className='w-14'>
                             <img src={img2} alt="img not found" className='object-cover w-full' />
                         </div>
-                        <h1 className='text-1xl font-extrabold w-full text-white lg:items-center lg:justify-center lg:flex lg:w-1/3 lg:text-3xl'>EXIMICIÓN DE PAGO</h1>
+                        <h1 className='text-1xl font-extrabold text-white lg:items-center lg:justify-center lg:flex lg:w-1/3 lg:text-3xl'>EXIMICIÓN DE PAGO</h1>
                     </div>
                 </div>
                 {/* TEXT AND TITLE*/}
                 <div className='lg:px-96 px-8 gap-4 flex flex-col text-[#3E3E3E]'>
-                    <p className='text-[#3E3E3E] lg:text-2xl lg:w-3/5'>
+                    <p className='text-[#3E3E3E] lg:text-[1rem] lg:w-3/5'>
                         Para ser eximido de pago de la contribución de inmuebles.
                         Los requisitos para solicitar la exención de la tasa sobre inmuebles son:
                     </p>
@@ -46,7 +46,7 @@ export const EximicionPago = () => {
                         <li>9. Inscripción para el registro de cultos.</li>
                     </ul>
                     <div className='relative z-0'>
-                        <svg className='h-48 w-48 lg:h-64 lg:w-64 absolute lg:-right-44 -right-6 -top-[10px] rotate-180 scale-y-[-1]'>
+                        <svg className='h-48 w-48 lg:h-60 lg:w-60 absolute lg:-right-64 -right-6 -top-[10px] lg:-top-[90px] rotate-180 scale-y-[-1]'>
                             <image href={img5} alt="img not found" className='w-auto lg:w-96 lg:h-full' />
                         </svg>
                     </div>
