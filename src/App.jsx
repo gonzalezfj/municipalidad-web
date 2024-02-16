@@ -21,7 +21,7 @@ import { Señaletica } from './pages/Señaletica'
 import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
 import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
 import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
-function App() {
+function App () {
   return (
     <Router>
       <Navbar />
