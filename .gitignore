@@ -17,3 +17,7 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+# VARIABLES DE ENTORNO
+.env
+.env.*

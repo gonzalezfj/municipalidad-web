@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router'
 
-export const Card = ({ buttonsData }) => {
+const Card = ({ buttonsData }) => {
   const navigate = useNavigate()
   console.log()
   const handleClick = (path) => {
@@ -23,3 +23,5 @@ export const Card = ({ buttonsData }) => {
     </div>
   )
 }
+
+export default Card
