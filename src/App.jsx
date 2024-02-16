@@ -18,6 +18,7 @@ import { Vehiculos } from './components/Transito/Vehiculos'
 import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
+import { Recategorizacion } from './components/Recategorizacion/Recategorizacion'
 
 function App () {
   return (
@@ -41,6 +42,7 @@ function App () {
         <Route path='/denuncia' element={<DenunciaVehiculos />} />
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
+        <Route path='/recategorizacion' element={<Recategorizacion />} />
       </Routes>
       <Footer />
     </Router>
