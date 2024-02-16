@@ -13,12 +13,8 @@ const Eco = () => {
   useEffect(() => {
     const getInfoStrapi = async () => {
       try {
-        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
-        const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/eco?populate=*')
+        const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/eco?populate=*')
         const data = await response.json()
-        // const responseImagen = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Destacados&populate[1]=Destacados.Imagen')
-        // const dataImagen = await responseImagen.json()
-        // const dataHome = Object.assign(data.data.attributes, dataImagen.data.attributes)
         setEcoData(data.data.attributes)
       } catch (error) {
         console.error('Error fetching data:', error)

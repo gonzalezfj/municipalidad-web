@@ -6,8 +6,7 @@ export const Opciones = () => {
   useEffect(() => {
     const getInfoStrapi = async () => {
       try {
-        const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
-        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate=*')
+        const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
         const data = await response.json()
         setButtonsData(data.data.attributes)
       } catch (error) {

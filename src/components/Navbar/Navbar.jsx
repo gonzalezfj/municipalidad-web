@@ -13,10 +13,9 @@ const Navbar = () => {
   useEffect(() => {
     const getInfoStrapi = async () => {
       try {
-        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
-        const responseLinks = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/navegacion?populate=*')
+        const responseLinks = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate=*')
         const dataLinks = await responseLinks.json()
-        const responseSubLinks = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems')
+        const responseSubLinks = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems')
         const dataSubLinks = await responseSubLinks.json()
         const dataNavbar = Object.assign(dataLinks.data.attributes, dataSubLinks.data.attributes)
         setNavData(dataNavbar)
@@ -31,7 +30,7 @@ const Navbar = () => {
     <div className='container absolute p-2 left-0 right-0 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
         <div>
-          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={'https://0pd31rwn-3000.brs.devtunnels.ms' + navData?.Logo.data.attributes.url} /></NavLink>
+          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={import.meta.env.VITE_STRAPI_URL + navData?.Logo.data.attributes.url} /></NavLink>
         </div>
         <div className='flex items-center'>
           <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>

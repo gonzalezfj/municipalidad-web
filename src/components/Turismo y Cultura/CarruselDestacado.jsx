@@ -86,7 +86,7 @@ export default function CarruselDestacado ({
           >
             <div className='w-full h-[52vh] lg:h-[73vh] md:h-[50vh] 2xl:h-[58vh] flex-col rounded-full items-center justify-center flex'>
               <div className='cursor-pointer'>
-                <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={'https://0pd31rwn-3000.brs.devtunnels.ms' + e?.Imagen.data.attributes.url} alt={`Slide ${index}`} />
+                <img className='w-72 h-72 lg:w-96 lg:h-96 md:w-56 md:h-56 object-cover rounded-full shadow-xl' src={import.meta.env.VITE_STRAPI_URL + e?.Imagen.data.attributes.url} alt={`Slide ${index}`} />
               </div>
               <div className='flex items-center justify-center'>
                 <h3 className='text-white lg:text-xl text-l font-bold text-center'>{e?.Titulo}</h3>

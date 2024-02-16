@@ -7,7 +7,7 @@ export const Ocupacion = () => {
   const [dataOcupacion, setDataOcupacion] = useState([])
   const fetchDataResult = async () => {
     try {
-      const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/ocupacion')
+      const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/ocupacion')
       const jsonResponse = await response.json()
       setDataOcupacion(jsonResponse.data.attributes)
       // console.log(jsonResponse.data.attributes, 'estado de datos')

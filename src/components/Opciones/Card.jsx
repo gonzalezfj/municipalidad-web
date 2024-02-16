@@ -13,7 +13,7 @@ export const Card = ({ buttonsData }) => {
       {buttonsData?.Botones.map((e) => (
         <div key={e?.id} onClick={() => handleClick(e?.Link)} className='w-40 h-52 lg:w-52 lg:h-62 overflow-hidden shadow-lg bg-third rounded-primary flex flex-col items-center justify-center cursor-pointer' data-aos='fade-right'>
           <div className='w-36 h-36'>
-            <img src={'https://0pd31rwn-3000.brs.devtunnels.ms' + e.Icono.data.attributes.url} className='object-cover' alt='Boletas' />
+            <img src={import.meta.env.VITE_STRAPI_URL + e.Icono.data.attributes.url} className='object-cover' alt='Boletas' />
           </div>
           <div className='flex-1 w-40 lg:w-full flex items-center justify-center transition ease-in-out delay-150 bg-secondary hover:bg-purple-600 duration-200'>
             <h4 className='text-sm uppercase text-center w-full h-full items-center justify-center flex text-slate-50'>{e?.Titulo}</h4>
