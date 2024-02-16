@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import imgPlaystore from '../assets/ecoMobile_seccion2_botonPlaystore.svg'
 import imgApplestore from '../assets/ecoMobile_seccion2_botonApplestore.svg'
 import BannerEco from '../components/Eco/BannerEco'
@@ -8,9 +8,25 @@ import ButtonsEco from '../components/Eco/ButtonsEco'
 import ButtonBack from '../components/Default/ButtonBack'
 
 const Eco = () => {
+  const [ecoData, setEcoData] = useState()
+
+  useEffect(() => {
+    const getInfoStrapi = async () => {
+      try {
+        const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/eco?populate=*')
+        const data = await response.json()
+        setEcoData(data.data.attributes)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+    getInfoStrapi()
+  }, [])
+  console.log(ecoData, 'dataeco')
+
   return (
     <>
-      <BannerEco />
+      <BannerEco ecoData={ecoData} />
       <div className='lg:flex-col lg:flex lg:items-center'>
         <div className='lg:container'>
           <div className='p-7 text-[#616161]'>
@@ -25,9 +41,9 @@ const Eco = () => {
               </svg>
             </div>
           </div>
-          <InfoEco />
+          <InfoEco ecoData={ecoData} />
         </div>
-        <DestacadaEco />
+        <DestacadaEco ecoData={ecoData} />
         <ButtonsEco />
         <div className='lg:container flex justify-center lg:justify-normal p-6'>
           <ButtonBack />

@@ -1,8 +1,7 @@
-import CarruselDestacado from './CarruselDestacado'
+// import CarruselDestacado from '../Carousel/Carousel'
+import { Carousel as CarruselDestacado } from '../Carousel'
 
-export const Destacado = ({ homeData }) => {
-  // const slides = [img1, img2, img3]
-
+const Destacado = ({ homeData }) => {
   return (
     <div className='lg:max-w-full mt-10'>
       <h3 className='mt-3 text-3xl text-gray-500 font-bold text-center'>DESTACADO</h3>
@@ -12,3 +11,5 @@ export const Destacado = ({ homeData }) => {
     </div>
   )
 }
+
+export default Destacado

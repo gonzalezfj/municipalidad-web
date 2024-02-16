@@ -6,10 +6,9 @@ const Footer = () => {
   useEffect(() => {
     const getInfoStrapi = async () => {
       try {
-        // const response = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/home?populate[0]=Botones&populate[1]=Botones.Icono')
-        const responseLogo = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/pie-de-pagina?populate=*')
+        const responseLogo = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/pie-de-pagina?populate=*')
         const dataLogo = await responseLogo.json()
-        const responseRedes = await fetch('https://0pd31rwn-3000.brs.devtunnels.ms/api/pie-de-pagina?populate[0]=Redes&populate[1]=Redes.Icono')
+        const responseRedes = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/pie-de-pagina?populate[0]=Redes&populate[1]=Redes.Icono')
         const dataRedes = await responseRedes.json()
         const dataFooter = Object.assign(dataLogo.data.attributes, dataRedes.data.attributes)
         setFooterData(dataFooter)
@@ -27,7 +26,7 @@ const Footer = () => {
         {/* Logo a la izquierda */}
         <div className='flex justify-center items-center sm:px-12 lg:w-[20%] lg:px-0 px-4 pt-4'>
           <svg className='h-36'>
-            <image className='lg:w-full' href={'https://0pd31rwn-3000.brs.devtunnels.ms' + footerData?.Logo.data.attributes.url} />
+            <image className='lg:w-full' href={import.meta.env.VITE_STRAPI_URL + footerData?.Logo.data.attributes.url} />
           </svg>
         </div>
 
@@ -42,7 +41,7 @@ const Footer = () => {
             <div className='flex justify-between items-center md:px-64 sm:px-12 lg:h-5 lg:px-44 2xl:px-72 px-24'>
               {footerData?.Redes.map((e) => (
                 <svg key={e?.id} className='h-12 w-12'>
-                  <image className='h-12' href={'https://0pd31rwn-3000.brs.devtunnels.ms' + e?.Icono.data.attributes.url} />
+                  <image className='h-12' href={import.meta.env.VITE_STRAPI_URL + e?.Icono.data.attributes.url} />
                 </svg>
               ))}
             </div>
@@ -52,7 +51,7 @@ const Footer = () => {
         {/* Logo de telefono a la derecha */}
         <div className='flex justify-center items-center sm:px-12 lg:h-full lg:w-[20%] lg:px-0 lg:ml-7 lg:mt-5 px-6 py-5'>
           <svg className='h-36'>
-            <image className='w-full' href={'https://0pd31rwn-3000.brs.devtunnels.ms' + footerData?.Telefono.data.attributes.url} />
+            <image className='w-full' href={import.meta.env.VITE_STRAPI_URL + footerData?.Telefono.data.attributes.url} />
           </svg>
         </div>
       </div>

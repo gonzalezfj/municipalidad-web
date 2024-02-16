@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar'
-import Home from './pages/Home'
+import { Home } from './pages'
 import Footer from './components/Footer/Footer'
 import Boletas from './pages/Boletas'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
@@ -19,7 +19,9 @@ import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
 import { Recategorizacion } from './components/Recategorizacion/Recategorizacion'
-
+import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
+import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
+import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 function App () {
   return (
     <Router>
@@ -43,6 +45,9 @@ function App () {
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/recategorizacion' element={<Recategorizacion />} />
+        <Route path='/libredeuda' element={<LibreDeuda />} />
+        <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
+        <Route path='/eximicion' element={<EximicionPago />} />
       </Routes>
       <Footer />
     </Router>

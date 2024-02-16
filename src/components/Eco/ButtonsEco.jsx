@@ -9,6 +9,11 @@ const ButtonsEco = () => {
   return (
     <div className='container'>
       <div className='p-7 text-[#616161]'>
+        <h1 className='text-xl font-bold'>Gestionar Obleas de Estacionamiento</h1>
+        <p className='mt-2'> </p>
+        <button className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>OBLEAS</button>
+      </div>
+      <div className='p-7 text-[#616161]'>
         <h1 className='text-xl font-bold mt-2'>Remoción por grúa</h1>
         <p className='mt-2'>¿Tu vehículo fue removido por nuestras grúas?</p>
         <button onClick={() => handleClick('/playaderemocion')} className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>PLAYA DE REMOCIÓN</button>

@@ -1,7 +1,7 @@
 import React from 'react'
 import logoEco from '../../assets/Eco-Icono-Blanco.svg'
 
-const BannerEco = () => {
+const BannerEco = ({ ecoData }) => {
   return (
     <>
       <div className='absolute px-5 flex items-center top-0 w-full h-64 bg-[#8A43EF] rounded-br-3xl'>
@@ -16,9 +16,7 @@ const BannerEco = () => {
         </div>
       </div>
       <div className='flex lg:justify-center w-full h-96 text-center p-4 md:p-10 lg:p-7 xl:p-9 text-base lg:text-xl text-white items-end bg-[#D85B35] rounded-bl-3xl'>
-        <p className='lg:px-40'>El centro de la Ciudad de San Juan cuenta con un servicio de estacionamiento controlado,
-          denominado ECO, que regula el estacionamiento en el área de mayor flujo vehicular.
-        </p>
+        <p className='lg:px-40'>{ecoData?.Banner}</p>
       </div>
     </>
   )
