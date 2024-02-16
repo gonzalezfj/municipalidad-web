@@ -2,7 +2,7 @@ import React from 'react'
 import img2 from '@assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoRentas.svg'
 import ButtonBack from '../Default/ButtonBack'
 import img5 from '@assets/Libre Deuda/LibreDeuda_fondo.svg'
-import img6 from '@assets/img temporal/formInmueble.jpg'
+import img6 from '@assets/img temporal/imgFormRecategorizacion.jpg'
 export const RecategorizacionForm = () => {
   return (
     <div className='w-full'>

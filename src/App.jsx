@@ -22,6 +22,7 @@ import { Recategorizacion } from './components/Recategorizacion/Recategorizacion
 import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
 import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
 import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
+import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 function App () {
   return (
     <Router>
@@ -45,6 +46,7 @@ function App () {
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/recategorizacion' element={<Recategorizacion />} />
+        <Route path='/formrecategorizacion' element={<RecategorizacionForm />} />
         <Route path='/libredeuda' element={<LibreDeuda />} />
         <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
         <Route path='/eximicion' element={<EximicionPago />} />
