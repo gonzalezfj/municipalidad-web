@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Card } from './Card'
+import { Card } from '../Card'
 
-export const Opciones = () => {
+const Opciones = () => {
   const [ButtonsData, setButtonsData] = useState()
   useEffect(() => {
     const getInfoStrapi = async () => {
@@ -26,3 +26,5 @@ export const Opciones = () => {
     </div>
   )
 }
+
+export default Opciones

@@ -1,11 +1,11 @@
 import React from 'react'
-import img1 from '../../assets/home_seccion3_agenda_foto.jpg'
-import img2 from '../../assets/home_seccion3_circuito_foto.jpg'
-import img3 from '../../assets/home_seccion3_deporteysalud_foto.jpg'
-import img4 from '../../assets/home_seccion3_ferias_foto.jpg'
-import fondo from '../../assets/home_seccion4_fondo.svg'
+import img1 from '../../../../../assets/home_seccion3_agenda_foto.jpg'
+import img2 from '../../../../../assets/home_seccion3_circuito_foto.jpg'
+import img3 from '../../../../../assets/home_seccion3_deporteysalud_foto.jpg'
+import img4 from '../../../../../assets/home_seccion3_ferias_foto.jpg'
+import fondo from '../../../../../assets/home_seccion4_fondo.svg'
 
-export const NoticiasDesktop = () => {
+const NoticiasDesktop = () => {
   return (
     <div className='container relative flex grid-cols-2 justify-center items-center lg:mb-3'>
       <svg className='lg:absolute lg:top-2 2xl:left-44 xl:left-10 lg:-left-16 lg:w-full lg:h-full'>
@@ -70,3 +70,5 @@ export const NoticiasDesktop = () => {
     </div>
   )
 }
+
+export default NoticiasDesktop

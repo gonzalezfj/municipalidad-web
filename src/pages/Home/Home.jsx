@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Banner } from '../components/Banner/Banner'
-import { Opciones } from '../components/Opciones/Opciones'
-import { Destacado } from '../components/Turismo y Cultura/Destacado'
-import { Noticias } from '../components/Noticias/Noticias'
+import { Banner, ItemDestacadas as Destacado, ItemNoticias as Noticias, Opciones } from './components'
 
 const Home = () => {
   const [homeData, setHomeData] = useState()

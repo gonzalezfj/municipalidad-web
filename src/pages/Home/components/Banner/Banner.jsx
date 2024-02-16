@@ -1,4 +1,4 @@
-export const Banner = ({ homeData }) => {
+const Banner = ({ homeData }) => {
   return (
     <div className='h-[60vh] w-full bg-secondary overflow-hidden relative'>
       {homeData &&
@@ -9,3 +9,5 @@ export const Banner = ({ homeData }) => {
     </div>
   )
 }
+
+export default Banner

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { NoticiasDesktop } from './NoticiasDesktop'
+import { Squares as NoticiasDesktop } from '../Squares'
 
 export default function CarruselNoticias ({
   autoSlide = true,

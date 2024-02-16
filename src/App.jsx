@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar'
-import Home from './pages/Home'
+import { Home } from './pages'
 import Footer from './components/Footer/Footer'
 import Boletas from './pages/Boletas'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
