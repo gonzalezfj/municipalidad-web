@@ -8,7 +8,9 @@
         "lint": "eslint src --ext .js,.jsx,.tsx --quiet --fix",
         "build": "vite build",
         "preview": "vite preview",
-        "deploy": "npm run build"
+        "deploy": "npm run build",
+        "deploy:prod": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment",
+        "deploy:dev": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment"
     },
     "dependencies": {
         "aos": "2.3.4",
