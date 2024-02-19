@@ -5,10 +5,11 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "lint": "eslint src --ext .js,.jsx,.tsx --quiet --fix",
-        "build": "vite build",
         "preview": "vite preview",
-        "deploy": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment"
+        "deploy": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment",
+        "build": "vite build",
+        "lint": "eslint --ignore-path .gitignore --ext .ts src/",
+        "lint:fix": "npm run lint -- --fix"
     },
     "dependencies": {
         "aos": "2.3.4",
