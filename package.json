@@ -8,18 +8,18 @@
         "lint": "eslint src --ext .js,.jsx,.tsx --quiet --fix",
         "build": "vite build",
         "preview": "vite preview",
-        "deploy": "npm run build && gh-pages -d dist"
+        "deploy": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment"
     },
     "dependencies": {
-        "aos": "^2.3.4",
+        "aos": "2.3.4",
         "path": "0.12.7",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-feather": "^2.0.10",
+        "react-feather": "2.0.10",
         "react-icons": "4.12.0",
         "react-router-dom": "6.21.1",
-        "react-slick": "^0.29.0",
-        "slick-carousel": "^1.8.1"
+        "react-slick": "0.29.0",
+        "slick-carousel": "1.8.1"
     },
     "devDependencies": {
         "@types/react": "18.2.43",
@@ -30,10 +30,10 @@
         "eslint-plugin-react": "7.33.2",
         "eslint-plugin-react-hooks": "4.6.0",
         "eslint-plugin-react-refresh": "0.4.5",
-        "gh-pages": "^6.1.1",
+        "pm2": "5.3.1",
         "postcss": "8.4.33",
         "standard": "17.1.0",
         "tailwindcss": "3.4.1",
-        "vite": "^5.0.12"
+        "vite": "5.0.12"
     }
 }
