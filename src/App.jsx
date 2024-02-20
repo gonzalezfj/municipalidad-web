@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Home, Eco, Boletas } from '@pages'
+import { Home, Eco, Boletas, Empleo } from '@pages'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -12,7 +12,6 @@ import Footer from '@components/Footer/Footer'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
-import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
 import { Obleas } from './pages/Obleas'
