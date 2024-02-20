@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar'
-import { Home } from './pages'
+import { Home, Eco } from './pages'
 import Footer from './components/Footer/Footer'
 import Boletas from './pages/Boletas'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
@@ -7,7 +7,6 @@ import Tramites from './pages/Tramites'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
-import Eco from './pages/Eco'
 import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
@@ -24,6 +23,7 @@ import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaCome
 import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 import { ParadaTaxi } from './components/Transito/ParadaTaxi'
+
 function App () {
   return (
     <Router>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logoEco from '../../assets/Eco-Icono-Blanco.svg'
+import logoEco from '@assets/Eco-Icono-Blanco.svg'
 
 const BannerEco = ({ ecoData }) => {
   return (
