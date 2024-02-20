@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import imgPlaystore from '../assets/ecoMobile_seccion2_botonPlaystore.svg'
-import imgApplestore from '../assets/ecoMobile_seccion2_botonApplestore.svg'
-import BannerEco from '../components/Eco/BannerEco'
-import InfoEco from '../components/Eco/InfoEco'
-import DestacadaEco from '../components/Eco/DestacadaEco'
-import ButtonsEco from '../components/Eco/ButtonsEco'
-import ButtonBack from '../components/Default/ButtonBack'
+import imgPlaystore from '@assets/ecoMobile_seccion2_botonPlaystore.svg'
+import imgApplestore from '@assets/ecoMobile_seccion2_botonApplestore.svg'
+import BannerEco from './components/Banner/BannerEco'
+import InfoEco from './components/Informacion/InfoEco'
+import DestacadaEco from './components/Destacadas/DestacadaEco'
+import ButtonsEco from './components/Buttons/ButtonsEco'
+import ButtonBack from '@components/Default/ButtonBack'
 
 const Eco = () => {
   const [ecoData, setEcoData] = useState()
@@ -22,7 +22,6 @@ const Eco = () => {
     }
     getInfoStrapi()
   }, [])
-  console.log(ecoData, 'dataeco')
 
   return (
     <>
