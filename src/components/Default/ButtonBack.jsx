@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import buttonAtras from '../../assets/guiaDeTramitesMobile_botonAtras.svg'
+import buttonAtras from '@assets/guiaDeTramitesMobile_botonAtras.svg'
 
 const ButtonBack = () => {
   const navigate = useNavigate()
