@@ -10,7 +10,7 @@
         "build": "vite build",
         "prepare": "husky install",
         "test": "echo Testeo aún no implementado",
-        "lint": "eslint --ignore-path .gitignore --ext .ts src/",
+        "lint": "eslint --ignore-path .gitignore --ext .js,jsx,ts,tsx src/",
         "lint:fix": "npm run lint -- --fix"
     },
     "dependencies": {
@@ -43,8 +43,8 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
-            "npm run lint:fix",
-            "git add"
+            "eslint --fix",
+            "git add ."
         ]
     }
 }
