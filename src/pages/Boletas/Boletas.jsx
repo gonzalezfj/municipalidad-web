@@ -1,8 +1,6 @@
 import React from 'react'
-import videoBoletas from '../assets/Libre_deuda_2024.mp4'
-import BannerBoletas from '../components/Boletas/BannerBoletas'
-import InfoBoletas from '../components/Boletas/InfoBoletas'
-import InfoNomenclatura from '../components/Boletas/InfoNomenclatura'
+import videoBoletas from '@assets/Libre_deuda_2024.mp4'
+import { BannerBoletas, InfoBoletas, InfoNomenclatura } from './components'
 
 const Boletas = () => {
   return (

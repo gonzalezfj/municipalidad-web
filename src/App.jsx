@@ -1,11 +1,16 @@
-import Navbar from './components/Navbar/Navbar'
-import { Home, Eco } from './pages'
-import Footer from './components/Footer/Footer'
-import Boletas from './pages/Boletas'
+// Dependencies
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+// Pages
+import { Home, Eco, Boletas } from '@pages'
+
+// All page components
+import Navbar from '@components/Navbar/Navbar'
+import Footer from '@components/Footer/Footer'
+
+// Content (Refactor)
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
 import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
@@ -24,6 +29,9 @@ import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 import { ParadaTaxi } from './components/Transito/ParadaTaxi'
 import { Infraccion } from './components/Transito/Infraccion'
+
+// Style
+import './App.css'
 
 function App () {
   return (

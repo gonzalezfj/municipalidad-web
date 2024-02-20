@@ -1,4 +1,4 @@
-import img1 from '../../assets/iconosBlancos/Boleta-Icono-Blanco.svg'
+import img1 from '@assets/iconosBlancos/Boleta-Icono-Blanco.svg'
 
 const BannerBoletas = () => {
   return (
