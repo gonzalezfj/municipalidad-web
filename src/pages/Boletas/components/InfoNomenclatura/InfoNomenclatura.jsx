@@ -1,4 +1,4 @@
-import ButtonBack from '../Default/ButtonBack'
+import ButtonBack from '@components/Default/ButtonBack'
 
 const InfoNomenclatura = () => {
   return (
