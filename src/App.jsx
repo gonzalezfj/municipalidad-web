@@ -24,6 +24,7 @@ import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaCome
 import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 import { ParadaTaxi } from './components/Transito/ParadaTaxi'
+import { Infraccion } from './components/Transito/Infraccion'
 function App () {
   return (
     <Router>
@@ -52,6 +53,7 @@ function App () {
         <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
         <Route path='/eximicion' element={<EximicionPago />} />
         <Route path='/paradataxi' element={<ParadaTaxi />} />
+        <Route path='/infracción' element={<Infraccion />} />
       </Routes>
       <Footer />
     </Router>
