@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Home, Eco, Boletas, Empleo } from '@pages'
+import { Home, Eco, Boletas, Empleo, Obleas } from '@pages'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -14,7 +14,6 @@ import Tramites from './pages/Tramites'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
-import { Obleas } from './pages/Obleas'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 import { Transito } from './pages/Transito'
 import { Vehiculos } from './components/Transito/Vehiculos'
@@ -30,7 +29,7 @@ import { ParadaTaxi } from './components/Transito/ParadaTaxi'
 import { Infraccion } from './components/Transito/Infraccion'
 
 // Style
-import './App.css'
+import '@/App.css'
 
 function App () {
   return (
