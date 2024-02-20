@@ -21,3 +21,6 @@ dist
 # VARIABLES DE ENTORNO
 .env
 .env.*
+
+# ASSETS
+src/assets/*
