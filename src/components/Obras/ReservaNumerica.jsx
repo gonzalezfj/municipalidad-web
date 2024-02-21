@@ -2,8 +2,7 @@ import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img1 from '@assets/Libre Deuda/LibreDeuda_fondo.svg'
 import img2 from '@assets/obras/obras_icono.svg'
-
-export const DerechoEdificacion = () => {
+export const ReservaNumerica = () => {
   return (
     <div className='w-full'>
       <div className='mx-auto gap-8 flex flex-col'>
@@ -16,26 +15,25 @@ export const DerechoEdificacion = () => {
         <div className='pt-44 gap-10 flex flex-col text-[#3E3E3E] font-semibold'>
           {/* PARRAFOS */}
           <div className='flex flex-col gap-4 lg:px-96 px-8 lg:text-2xl'>
-            <h1 className='text-1xl font-extrabold text-[#4B0984] lg:w-2/3 lg:text-4xl'>DERECHO DE EDIFICACIÓN</h1>
+            <h1 className='text-2xl font-extrabold text-[#4B0984] lg:w-2/3 lg:text-4xl'>RESERVA NUMÉRICA DOMICILIARIA</h1>
             <p className='lg:text-xl text-[#3E3E3E]'>
-              Pago de derechos de edificación
+              Para determinar la numeración domiciliaria en caso de nuevas urbanizaciones o subdivisiones parcelarias.
             </p>
             <section className='flex flex-col gap-2'>
-              <h1 className='font-extrabold'>Requisitos para obtención de autorización:</h1>
-              <div className='pl-4 lg:text-lg'>
-                <li>Formulario D.P.D.U. “Tasa Municipal por Derecho de Construcción”;</li>
-                <li>Plano general para visar (copia);</li>
-                <li>Estado de cuenta de la parcela;</li>
-                <li>Declaración Jurada: Dpto. Catastro Municipalidad (solicitada por el titular o apoderado).</li>
-              </div>
+              <h1 className='font-extrabold'>Reserva Numérica Domiciliaria</h1>
+              <p className='font-bold lg:font-semibold'>
+                Trámite vía WEB exclusivo para Organismos Provinciales, Empresas Constructoras, Ing. Agrimensores, Inmobiliarias registradas, Notarios y Escribanos.
+              </p>
+              <p className='lg:font-normal'>
+                Sirve para determinar la numeración domiciliaria en caso de nuevas urbanizaciones o subdivisiones parcelarias, para evitar conflictos por errores involuntarios en las
+                Escrituras o documentación.
+              </p>
             </section>
             <section className='flex flex-col gap-2'>
-              <h1 className='font-extrabold'>Requisitos para obtención de autorización digital:</h1>
+              <h1 className='font-extrabold'>Documentación necesaria:</h1>
               <div className='pl-4 lg:text-lg'>
-                <li>Escaneo del formulario de la Dirección de Planeamiento Urbano(DPU) “Tasa Municipal por Derecho de Construcción”</li>
-                <li>Plano general de la construcción en forma digital</li>
-                <li>Verificación a través de N.C. el estado de deuda</li>
-                <li>Solicitar a través online la Declaración Jurada</li>
+                <li>Correo electrónico a la dirección:catastro@municipiosanjuan.gob.ar</li>
+                <li>Plano de subdivisión en PDF o DWG.</li>
               </div>
             </section>
           </div>

@@ -26,6 +26,7 @@ import { RecategorizacionForm } from './components/Recategorizacion/Recategoriza
 import { InstalacionesElectricas } from './components/Obras/InstalacionesElectricas'
 import { AutorizacionObras } from './components/Obras/AutorizacionObras'
 import { DerechoEdificacion } from './components/Obras/DerechoEdificacion'
+import { ReservaNumerica } from './components/Obras/ReservaNumerica'
 function App () {
   return (
     <Router>
@@ -56,6 +57,7 @@ function App () {
         <Route path='/obras' element={<InstalacionesElectricas />} />
         <Route path='/autorizacionobras' element={<AutorizacionObras />} />
         <Route path='/derechoedificacion' element={<DerechoEdificacion />} />
+        <Route path='/reservanumericadomicilio' element={<ReservaNumerica />} />
       </Routes>
       <Footer />
     </Router>
