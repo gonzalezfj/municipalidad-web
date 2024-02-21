@@ -27,6 +27,7 @@ import { InstalacionesElectricas } from './components/Obras/InstalacionesElectri
 import { AutorizacionObras } from './components/Obras/AutorizacionObras'
 import { DerechoEdificacion } from './components/Obras/DerechoEdificacion'
 import { ReservaNumerica } from './components/Obras/ReservaNumerica'
+import { AltasYBajasParcela } from './components/Obras/AltasYBajasParcela'
 function App () {
   return (
     <Router>
@@ -58,6 +59,7 @@ function App () {
         <Route path='/autorizacionobras' element={<AutorizacionObras />} />
         <Route path='/derechoedificacion' element={<DerechoEdificacion />} />
         <Route path='/reservanumericadomicilio' element={<ReservaNumerica />} />
+        <Route path='/altasparcelas' element={<AltasYBajasParcela />} />
       </Routes>
       <Footer />
     </Router>
