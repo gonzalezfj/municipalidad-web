@@ -16,7 +16,7 @@ export const InstalacionesElectricas = () => {
         <div className='pt-44 gap-10 flex flex-col text-[#3E3E3E] font-semibold'>
           {/* PARRAFOS */}
           <div className='flex flex-col gap-4 lg:px-96 px-8 lg:text-2xl'>
-            <h1 className='text-1xl font-extrabold text-[#4B0984] lg:items-center lg:justify-center lg:flex lg:w-2/3 lg:text-3xl'>BOLETAS PARA EL PAGO DE CONTRIBUCIONES SOBRE INSTALACIONES ELÉCTRICAS</h1>
+            <h1 className='text-1xl font-extrabold text-[#4B0984] lg:items-center lg:justify-center lg:flex lg:w-2/3 lg:text-4xl'>BOLETAS PARA EL PAGO DE CONTRIBUCIONES SOBRE INSTALACIONES ELÉCTRICAS</h1>
             <p className='lg:text-xl'>
               Desde esta sección se podrán descargar las boletas para el pago de las contribuciones eléctricas.
             </p>
