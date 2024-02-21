@@ -25,6 +25,7 @@ import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 import { InstalacionesElectricas } from './components/Obras/InstalacionesElectricas'
 import { AutorizacionObras } from './components/Obras/AutorizacionObras'
+import { DerechoEdificacion } from './components/Obras/DerechoEdificacion'
 function App () {
   return (
     <Router>
@@ -54,6 +55,7 @@ function App () {
         <Route path='/eximicion' element={<EximicionPago />} />
         <Route path='/obras' element={<InstalacionesElectricas />} />
         <Route path='/autorizacionobras' element={<AutorizacionObras />} />
+        <Route path='/derechoedificacion' element={<DerechoEdificacion />} />
       </Routes>
       <Footer />
     </Router>
