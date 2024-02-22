@@ -40,6 +40,7 @@ import { Infraccion } from './components/Transito/Infraccion'
 
 // Style
 import '@/App.css'
+import Expediente from './pages/Expediente/Expediente'
 
 function App () {
   return (
@@ -80,6 +81,7 @@ function App () {
         <Route path='/reposiciondemedidores' element={<ReposiciónDeMedidores />} />
         <Route path='/paradataxi' element={<ParadaTaxi />} />
         <Route path='/infracción' element={<Infraccion />} />
+        <Route path='/expediente' element={<Expediente />} />
       </Routes>
       <Footer />
     </Router>
