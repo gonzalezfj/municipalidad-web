@@ -6,6 +6,28 @@ export default {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            strong: {
+              color: 'inherit'
+            },
+            h1: {
+              color: 'inherit'
+            },
+            h2: {
+              color: 'inherit'
+            },
+            h3: {
+              color: 'inherit'
+            },
+            'li::marker': {
+              color: 'inherit'
+            }
+
+          }
+        }
+      },
       colors: {
         primary: '#FFC14F',
         secondary: '#D85B35',
