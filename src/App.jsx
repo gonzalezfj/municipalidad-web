@@ -41,6 +41,7 @@ import { Infraccion } from './components/Transito/Infraccion'
 // Style
 import '@/App.css'
 import Expediente from './pages/Expediente/Expediente'
+import ConsultaTurnos from './pages/ConsultaTurnos/ConsultaTurnos'
 
 function App () {
   return (
@@ -82,6 +83,7 @@ function App () {
         <Route path='/paradataxi' element={<ParadaTaxi />} />
         <Route path='/infracción' element={<Infraccion />} />
         <Route path='/expediente' element={<Expediente />} />
+        <Route path='/consultaturnos' element={<ConsultaTurnos />} />
       </Routes>
       <Footer />
     </Router>
