@@ -1,0 +1,25 @@
+import img1 from '@assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoGeneral.svg'
+import React from 'react'
+
+const ConsultaTurnos = () => {
+  return (
+    <div>
+      <div className='container mx-auto pt-32 flex-col justify-center items-center text-center'>
+        <div>
+          <h1 className='text-2xl font-bold text-[#D85B35]'>CONSULTA DE TURNOS WEB</h1>
+          <h3 className='text-lg'>Si pediste un turno podés controlarlo acá</h3>
+        </div>
+        <div className='flex justify-center items-center'>
+          <iframe style={{ width: '95%', height: '473px', border: 'none' }} src='https://api.municipiosanjuan.gob.ar/consulta-turno-web.html' />
+        </div>
+        <div className='relative'>
+          <svg className='h-40 w-40 lg:h-60 lg:w-60 absolute right-0 -top-[190px]'>
+            <image href={img1} alt='img not found' className='w-36 lg:w-auto lg:h-auto' />
+          </svg>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ConsultaTurnos

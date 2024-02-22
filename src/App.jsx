@@ -41,9 +41,11 @@ import { Infraccion } from './components/Transito/Infraccion'
 // Style
 import '@/App.css'
 import Expediente from './pages/Expediente/Expediente'
+
 import { ErradicaciónArbolado } from './components/Arbolado/ErradicaciónArbolado'
 import { PodaArbolado } from './components/Arbolado/PodaArbolado'
 import { SolicitudDePoda } from './components/Arbolado/SolicitudDePoda'
+import ConsultaTurnos from './pages/ConsultaTurnos/ConsultaTurnos'
 
 function App () {
   return (
@@ -88,6 +90,7 @@ function App () {
         <Route path='/erradicacionarbolado' element={<ErradicaciónArbolado />} />
         <Route path='/podadearbolado' element={<PodaArbolado />} />
         <Route path='/solicituddepoda' element={<SolicitudDePoda />} />
+        <Route path='/consultaturnos' element={<ConsultaTurnos />} />
       </Routes>
       <Footer />
     </Router>
