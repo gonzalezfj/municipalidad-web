@@ -7,7 +7,7 @@ import { Tooltip } from 'react-tooltip'
 const ButtonTurnos = () => {
   const navigate = useNavigate()
   const handleClick = () => {
-    navigate('/')
+    navigate('/consultaturnos')
   }
 
   return (
