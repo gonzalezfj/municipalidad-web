@@ -2,7 +2,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Home, Eco, Boletas, Empleo, Obleas } from '@pages'
+import { Eco, Boletas, Empleo, Obleas } from '@pages'
+
+// Routes
+import { ApplicationRoutes } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -51,8 +54,8 @@ function App () {
   return (
     <Router>
       <Navbar />
+      <ApplicationRoutes />
       <Routes>
-        <Route index element={<Home />} />
         <Route path='/boletas' element={<Boletas />} />
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/detalle' element={<DetalleNoticia />} />
