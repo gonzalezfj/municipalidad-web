@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Eco, Empleo, Obleas } from '@pages'
 
 // Routes
-import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes, AmbienteRoutes } from '@routes'
+import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes, AmbienteRoutes, GeneralRoutes } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -25,8 +25,6 @@ import { Señaletica } from './pages/Señaletica'
 import '@/App.css'
 import Expediente from './pages/Expediente/Expediente'
 
-import ConsultaTurnos from './pages/ConsultaTurnos/ConsultaTurnos'
-
 function App () {
   return (
     <Router>
@@ -36,6 +34,7 @@ function App () {
       <ObrasRoutes />
       <RentasRoutes />
       <AmbienteRoutes />
+      <GeneralRoutes />
       <Routes>
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/detalle' element={<DetalleNoticia />} />
@@ -51,7 +50,6 @@ function App () {
         <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/expediente' element={<Expediente />} />
 
-        <Route path='/consultaturnos' element={<ConsultaTurnos />} />
       </Routes>
       <Footer />
     </Router>
