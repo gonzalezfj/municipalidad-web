@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Eco, Boletas, Empleo, Obleas } from '@pages'
 
 // Routes
-import { ApplicationRoutes, TransitoRoutes } from '@routes'
+import { ApplicationRoutes, TransitoRoutes, ObrasRoutes } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -26,16 +26,6 @@ import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
 import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
 import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
 import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
-import { InstalacionesElectricas } from './components/Obras/InstalacionesElectricas'
-import { AutorizacionObras } from './components/Obras/AutorizacionObras'
-import { DerechoEdificacion } from './components/Obras/DerechoEdificacion'
-import { ReservaNumerica } from './components/Obras/ReservaNumerica'
-import { AltasYBajasParcela } from './components/Obras/AltasYBajasParcela'
-import { CambioDeTitularidad } from './components/Obras/CambioDeTitularidad'
-import { ValladosDeObras } from './components/Obras/ValladosDeObras'
-import { OcupacionConMaterial } from './components/Obras/OcupacionConMaterial'
-import { DeclaracionJurada } from './components/Obras/DeclaracionJurada'
-import { ReposiciónDeMedidores } from './components/Obras/ReposiciónDeMedidores'
 
 // Style
 import '@/App.css'
@@ -52,6 +42,7 @@ function App () {
       <Navbar />
       <ApplicationRoutes />
       <TransitoRoutes />
+      <ObrasRoutes />
       <Routes>
         <Route path='/boletas' element={<Boletas />} />
         <Route path='/empleo' element={<Empleo />} />
@@ -71,16 +62,6 @@ function App () {
         <Route path='/libredeuda' element={<LibreDeuda />} />
         <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
         <Route path='/eximicion' element={<EximicionPago />} />
-        <Route path='/obras' element={<InstalacionesElectricas />} />
-        <Route path='/autorizacionobras' element={<AutorizacionObras />} />
-        <Route path='/derechoedificacion' element={<DerechoEdificacion />} />
-        <Route path='/reservanumericadomicilio' element={<ReservaNumerica />} />
-        <Route path='/altasparcelas' element={<AltasYBajasParcela />} />
-        <Route path='/cambiotitularidad' element={<CambioDeTitularidad />} />
-        <Route path='/valladosdeobra' element={<ValladosDeObras />} />
-        <Route path='/ocupaciondematerial' element={<OcupacionConMaterial />} />
-        <Route path='/declaracionjurada' element={<DeclaracionJurada />} />
-        <Route path='/reposiciondemedidores' element={<ReposiciónDeMedidores />} />
         <Route path='/expediente' element={<Expediente />} />
         <Route path='/erradicacionarbolado' element={<ErradicaciónArbolado />} />
         <Route path='/podadearbolado' element={<PodaArbolado />} />
