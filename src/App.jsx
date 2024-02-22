@@ -1,17 +1,19 @@
-import Navbar from './components/Navbar/Navbar'
-import { Home } from './pages'
-import Footer from './components/Footer/Footer'
-import Boletas from './pages/Boletas'
+// Dependencies
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+// Pages
+import { Home, Eco, Boletas, Empleo, Obleas } from '@pages'
+
+// All page components
+import Navbar from '@components/Navbar/Navbar'
+import Footer from '@components/Footer/Footer'
+
+// Content (Refactor)
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
-import Eco from './pages/Eco'
-import { Empleo } from './pages/Empleo'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
-import { Obleas } from './pages/Obleas'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 import { Transito } from './pages/Transito'
 import { Vehiculos } from './components/Transito/Vehiculos'
@@ -33,6 +35,12 @@ import { ValladosDeObras } from './components/Obras/ValladosDeObras'
 import { OcupacionConMaterial } from './components/Obras/OcupacionConMaterial'
 import { DeclaracionJurada } from './components/Obras/DeclaracionJurada'
 import { ReposiciónDeMedidores } from './components/Obras/ReposiciónDeMedidores'
+import { ParadaTaxi } from './components/Transito/ParadaTaxi'
+import { Infraccion } from './components/Transito/Infraccion'
+
+// Style
+import '@/App.css'
+
 function App () {
   return (
     <Router>
@@ -70,6 +78,8 @@ function App () {
         <Route path='/ocupaciondematerial' element={<OcupacionConMaterial />} />
         <Route path='/declaracionjurada' element={<DeclaracionJurada />} />
         <Route path='/reposiciondemedidores' element={<ReposiciónDeMedidores />} />
+        <Route path='/paradataxi' element={<ParadaTaxi />} />
+        <Route path='/infracción' element={<Infraccion />} />
       </Routes>
       <Footer />
     </Router>

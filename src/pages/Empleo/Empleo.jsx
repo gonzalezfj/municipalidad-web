@@ -1,12 +1,12 @@
 import React from 'react'
-import CarruselEmpleo from '../components/Empleo/CarruselEmpleo'
-import boton from '../assets/mobilEmpleo/empleo_botonCalendario.svg'
-import img1 from '../assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
-import img2 from '../assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
-import img3 from '../assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
-import ButtonBack from '../components/Default/ButtonBack'
+import { CarruselEmpleo } from './components/CarruselEmpleo'
+import boton from '@assets/mobilEmpleo/empleo_botonCalendario.svg'
+import img1 from '@assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
+import img2 from '@assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
+import img3 from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+import ButtonBack from '@components/Default/ButtonBack'
 
-export const Empleo = () => {
+const Empleo = () => {
   const slides = [img1, img2, img3, img3, img3, img3, img3]
   return (
     <div className='pt-20'>
@@ -43,3 +43,5 @@ export const Empleo = () => {
     </div>
   )
 }
+
+export default Empleo
