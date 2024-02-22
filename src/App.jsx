@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Eco, Boletas, Empleo, Obleas } from '@pages'
 
 // Routes
-import { ApplicationRoutes } from '@routes'
+import { ApplicationRoutes, TransitoRoutes } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -18,9 +18,7 @@ import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
 import PlayaRemocion from './pages/PlayaRemocion'
 import Zoonosis from './pages/Zoonosis'
 import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
-import { Transito } from './pages/Transito'
-import { Vehiculos } from './components/Transito/Vehiculos'
-import { DenunciaVehiculos } from './components/Transito/DenunciaVehiculos'
+
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
 import { Recategorizacion } from './components/Recategorizacion/Recategorizacion'
@@ -38,8 +36,6 @@ import { ValladosDeObras } from './components/Obras/ValladosDeObras'
 import { OcupacionConMaterial } from './components/Obras/OcupacionConMaterial'
 import { DeclaracionJurada } from './components/Obras/DeclaracionJurada'
 import { ReposiciónDeMedidores } from './components/Obras/ReposiciónDeMedidores'
-import { ParadaTaxi } from './components/Transito/ParadaTaxi'
-import { Infraccion } from './components/Transito/Infraccion'
 
 // Style
 import '@/App.css'
@@ -55,6 +51,7 @@ function App () {
     <Router>
       <Navbar />
       <ApplicationRoutes />
+      <TransitoRoutes />
       <Routes>
         <Route path='/boletas' element={<Boletas />} />
         <Route path='/empleo' element={<Empleo />} />
@@ -67,9 +64,6 @@ function App () {
         <Route path='/zoonosis' element={<Zoonosis />} />
         <Route path='/obleas' element={<Obleas />} />
         <Route path='/plantillaObleas' element={<PlantillaObleas />} />
-        <Route path='/transito' element={<Transito />} />
-        <Route path='/vehiculos' element={<Vehiculos />} />
-        <Route path='/denuncia' element={<DenunciaVehiculos />} />
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/recategorizacion' element={<Recategorizacion />} />
@@ -87,8 +81,6 @@ function App () {
         <Route path='/ocupaciondematerial' element={<OcupacionConMaterial />} />
         <Route path='/declaracionjurada' element={<DeclaracionJurada />} />
         <Route path='/reposiciondemedidores' element={<ReposiciónDeMedidores />} />
-        <Route path='/paradataxi' element={<ParadaTaxi />} />
-        <Route path='/infracción' element={<Infraccion />} />
         <Route path='/expediente' element={<Expediente />} />
         <Route path='/erradicacionarbolado' element={<ErradicaciónArbolado />} />
         <Route path='/podadearbolado' element={<PodaArbolado />} />
