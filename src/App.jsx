@@ -2,10 +2,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Eco, Boletas, Empleo, Obleas } from '@pages'
+import { Eco, Empleo, Obleas } from '@pages'
 
 // Routes
-import { ApplicationRoutes, TransitoRoutes, ObrasRoutes } from '@routes'
+import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -21,11 +21,6 @@ import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
 
 import { Ocupacion } from './pages/Ocupacion'
 import { Señaletica } from './pages/Señaletica'
-import { Recategorizacion } from './components/Recategorizacion/Recategorizacion'
-import { LibreDeuda } from './components/InmuebleComercio/LibreDeuda'
-import { LibreDeudaComercio } from './components/InmuebleComercio/LibreDeudaComercio'
-import { EximicionPago } from './components/InmuebleComercio/EximicionPago'
-import { RecategorizacionForm } from './components/Recategorizacion/RecategorizacionForm'
 
 // Style
 import '@/App.css'
@@ -43,8 +38,8 @@ function App () {
       <ApplicationRoutes />
       <TransitoRoutes />
       <ObrasRoutes />
+      <RentasRoutes />
       <Routes>
-        <Route path='/boletas' element={<Boletas />} />
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/detalle' element={<DetalleNoticia />} />
         <Route path='/tramites' element={<Tramites />} />
@@ -57,11 +52,6 @@ function App () {
         <Route path='/plantillaObleas' element={<PlantillaObleas />} />
         <Route path='/permisos' element={<Ocupacion />} />
         <Route path='/señaletica' element={<Señaletica />} />
-        <Route path='/recategorizacion' element={<Recategorizacion />} />
-        <Route path='/formrecategorizacion' element={<RecategorizacionForm />} />
-        <Route path='/libredeuda' element={<LibreDeuda />} />
-        <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
-        <Route path='/eximicion' element={<EximicionPago />} />
         <Route path='/expediente' element={<Expediente />} />
         <Route path='/erradicacionarbolado' element={<ErradicaciónArbolado />} />
         <Route path='/podadearbolado' element={<PodaArbolado />} />
