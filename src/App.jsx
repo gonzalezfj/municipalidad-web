@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Eco, Empleo, Obleas } from '@pages'
+import { Eco, Empleo } from '@pages'
 
 // Routes
 import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes, AmbienteRoutes, GeneralRoutes } from '@routes'
@@ -16,10 +16,6 @@ import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
 import PlayaRemocion from './pages/PlayaRemocion'
-import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
-
-import { Ocupacion } from './pages/Ocupacion'
-import { Señaletica } from './pages/Señaletica'
 
 // Style
 import '@/App.css'
@@ -44,10 +40,6 @@ function App () {
         <Route path='/estacionamientocontrolado' element={<Eco />} />
         <Route path='/playaderemocion' element={<PlayaRemocion />} />
 
-        <Route path='/obleas' element={<Obleas />} />
-        <Route path='/plantillaObleas' element={<PlantillaObleas />} />
-        <Route path='/permisos' element={<Ocupacion />} />
-        <Route path='/señaletica' element={<Señaletica />} />
         <Route path='/expediente' element={<Expediente />} />
 
       </Routes>
