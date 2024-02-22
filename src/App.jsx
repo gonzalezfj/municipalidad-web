@@ -15,7 +15,6 @@ import Footer from '@components/Footer/Footer'
 import { DetalleNoticia } from './components/DetalleNoticias/DetalleNoticia'
 import Tramites from './pages/Tramites'
 import { NuestraAgenda } from './components/Agenda/NuestraAgenda'
-import PlayaRemocion from './pages/PlayaRemocion'
 
 // Style
 import '@/App.css'
@@ -38,7 +37,6 @@ function App () {
         <Route path='/empleo' element={<Empleo />} />
         <Route path='/detalleagenda' element={<NuestraAgenda />} />
         <Route path='/estacionamientocontrolado' element={<Eco />} />
-        <Route path='/playaderemocion' element={<PlayaRemocion />} />
 
         <Route path='/expediente' element={<Expediente />} />
 

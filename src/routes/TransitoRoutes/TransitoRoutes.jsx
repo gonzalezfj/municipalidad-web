@@ -4,11 +4,12 @@ import { Obleas } from '@pages'
 import { Transito } from '@pages/Transito.jsx'
 import { Ocupacion } from '@pages/Ocupacion'
 import { Señaletica } from '@pages/Señaletica'
+import PlayaRemocion from '@pages/PlayaRemocion'
 import { Vehiculos } from '@components/Transito/Vehiculos'
 import { DenunciaVehiculos } from '@components/Transito/DenunciaVehiculos'
 import { ParadaTaxi } from '@components/Transito/ParadaTaxi'
 import { Infraccion } from '@components/Transito/Infraccion'
-import { PlantillaObleas } from './components/Obleas/PlantillaObleas'
+import { PlantillaObleas } from '@components/Obleas/PlantillaObleas'
 
 const TransitoRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const TransitoRoutes = () => {
       <Route path='/plantillaObleas' element={<PlantillaObleas />} />
       <Route path='/permisos' element={<Ocupacion />} />
       <Route path='/señaletica' element={<Señaletica />} />
+      <Route path='/playaderemocion' element={<PlayaRemocion />} />
     </Routes>
   )
 }
