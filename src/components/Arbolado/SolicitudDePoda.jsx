@@ -11,22 +11,24 @@ export const SolicitudDePoda = () => {
        lg:block lg:absolute lg:top-0 lg:w-0 lg:h-0 lg:border-t-[140px] lg:border-t-[#FFC14F] lg:border-l-[140px] lg:border-l-[#FFC14F] lg:border-b-[140px] lg:border-b-transparent lg:border-r-[140px] lg:border-r-transparent'
         />
         <div className='pt-44 gap-10 flex flex-col text-[#3E3E3E] font-semibold'>
-          <div className='flex flex-col items-center justify-center gap-4 lg:px-96 px-8 lg:text-2xl'>
+          <div className='flex flex-col items-center justify-center lg:items-stretch lg:justify-stretch gap-4 lg:px-96 px-8 lg:text-2xl'>
             {/* TITLE */}
-            <div className='w-72'>
-              <h1 className='text-1xl font-extrabold text-[#D85B35] lg:w-2/3 lg:text-4xl'>SEGUIMIENTO DE SOLICITUDES DE PODA O ERRADICACION</h1>
+            <div className='lg:w-3/4'>
+              <h1 className='text-1xl font-extrabold text-[#D85B35] lg:text-4xl lg:w-full'>SEGUIMIENTO DE SOLICITUDES DE PODA O ERRADICACION</h1>
             </div>
             {/* FORM */}
-            <div className='flex flex-col gap-6 items-center pt-20'>
+            <div className='flex flex-col gap-6 items-center lg:items-baseline pt-20'>
               <div>
-                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8' />
+                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8 lg:w-[30rem] lg:h-10' />
                 <p className='items-center flex justify-center text-[#8E8E8E]'>DNI Titular</p>
               </div>
               <div>
-                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8' />
+                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8 lg:w-[30rem] lg:h-10' />
                 <p className='items-center flex justify-center text-[#8E8E8E]'>Número de trámite DNI</p>
               </div>
-              <button className='text-white bg-[#D85B35] rounded-2xl w-36 h-8'>Buscar</button>
+              <div className='lg:pl-40'>
+                <button className='text-white bg-[#D85B35] rounded-2xl w-36 h-8'>Buscar</button>
+              </div>
             </div>
           </div>
           <div className='relative z-0'>
