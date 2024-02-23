@@ -28,7 +28,7 @@ export const ErradicaciónArbolado = () => {
                 </div>
                 <li className='text-sm text-[#616161] lg:text-xl'>La nomenclatura de tu casa, recordá que este trámite solo puede solicitarlo el frentista. Si no la conocés,podés consultarlo acá:</li>
                 <div className='items-center flex justify-center'>
-                  <button className='bg-[#FFC14F] rounded-xl w-44 lg:text-xl lg:w-auto lg:px-4 font-extrabold'>NOMENCLATURA</button>
+                  <a href='https://nomenclaturas.municipiosanjuan.gob.ar/' target='_blank' className='bg-[#FFC14F] rounded-xl w-44 lg:text-xl lg:w-auto lg:px-4 font-extrabold' rel='noreferrer'>NOMENCLATURA</a>
                 </div>
               </ul>
             </section>

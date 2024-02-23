@@ -29,7 +29,7 @@ export const PodaArbolado = () => {
                   podés consultarlo acá:
                 </li>
                 <div className='flex items-center justify-center'>
-                  <button className='bg-[#FFC14F] rounded-xl w-44 lg:text-xl lg:w-auto lg:px-4 font-extrabold'>NOMENCLATURA</button>
+                  <a href='https://nomenclaturas.municipiosanjuan.gob.ar/' target='_blank' className='bg-[#FFC14F] rounded-xl w-44 lg:text-xl lg:w-auto lg:px-4 font-extrabold' rel='noreferrer'>NOMENCLATURA</a>
                 </div>
                 <li>También podrás adjuntar imágenes de los ejemplares a podar.</li>
               </ul>
