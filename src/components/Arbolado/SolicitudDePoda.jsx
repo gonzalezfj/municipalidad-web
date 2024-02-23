@@ -13,7 +13,7 @@ export const SolicitudDePoda = () => {
         <div className='pt-44 gap-10 flex flex-col text-[#3E3E3E] font-semibold'>
           <div className='flex flex-col items-center justify-center lg:items-stretch lg:justify-stretch gap-4 lg:px-96 px-8 lg:text-2xl'>
             {/* TITLE */}
-            <div className='lg:w-3/4'>
+            <div className='lg:w-3/4 w-3/4'>
               <h1 className='text-1xl font-extrabold text-[#D85B35] lg:text-4xl lg:w-full'>SEGUIMIENTO DE SOLICITUDES DE PODA O ERRADICACION</h1>
             </div>
             {/* FORM */}
