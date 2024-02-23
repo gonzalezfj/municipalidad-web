@@ -1,6 +1,6 @@
-import Categorias from '../components/Tramites/Categorias'
+import Categorias from '../../components/Tramites/Categorias'
 import { useState } from 'react'
-import ButtonBack from '../components/Default/ButtonBack'
+import ButtonBack from '../../components/Default/ButtonBack'
 
 const Tramites = () => {
   const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
