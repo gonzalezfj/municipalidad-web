@@ -19,11 +19,11 @@ export const SolicitudDePoda = () => {
             {/* FORM */}
             <div className='flex flex-col gap-6 items-center lg:items-baseline pt-20'>
               <div>
-                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8 lg:w-[30rem] lg:h-10' />
+                <input type='text' className='bg-[#FFC14F] rounded-xl lg:rounded-2xl w-72 h-8 lg:w-[30rem] lg:h-10' />
                 <p className='items-center flex justify-center text-[#8E8E8E]'>DNI Titular</p>
               </div>
               <div>
-                <input type='text' className='bg-[#FFC14F] rounded-xl w-72 h-8 lg:w-[30rem] lg:h-10' />
+                <input type='text' className='bg-[#FFC14F] rounded-xl lg:rounded-2xl w-72 h-8 lg:w-[30rem] lg:h-10' />
                 <p className='items-center flex justify-center text-[#8E8E8E]'>Número de trámite DNI</p>
               </div>
               <div className='lg:pl-40'>
