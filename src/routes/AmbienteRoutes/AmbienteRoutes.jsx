@@ -5,6 +5,7 @@ import { PodaArbolado } from '@components/Arbolado/PodaArbolado'
 import { SolicitudDePoda } from '@components/Arbolado/SolicitudDePoda'
 import Zoonosis from '@pages/Zoonosis'
 import { CorteDeRamas } from '../../components/Arbolado/CorteDeRamas'
+import { CodigoDeTramite } from '../../components/Arbolado/CodigoDeTramite'
 
 const AmbienteRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AmbienteRoutes = () => {
       <Route path='/podadearbolado' element={<PodaArbolado />} />
       <Route path='/solicituddepoda' element={<SolicitudDePoda />} />
       <Route path='/cortederamas' element={<CorteDeRamas />} />
+      <Route path='/codigodetramite' element={<CodigoDeTramite />} />
     </Routes>
   )
 }
