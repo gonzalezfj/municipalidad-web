@@ -2,7 +2,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 
 // Routes
-import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes, AmbienteRoutes, GeneralRoutes } from '@routes'
+import { ApplicationRoutes, TransitoRoutes, ObrasRoutes, RentasRoutes, AmbienteRoutes, GeneralRoutes, IntendenciaRoute } from '@routes'
 
 // All page components
 import Navbar from '@components/Navbar/Navbar'
@@ -21,6 +21,7 @@ function App () {
       <RentasRoutes />
       <AmbienteRoutes />
       <GeneralRoutes />
+      <IntendenciaRoute />
       <Footer />
     </Router>
   )
