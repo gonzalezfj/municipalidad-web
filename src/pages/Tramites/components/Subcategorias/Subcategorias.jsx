@@ -1,4 +1,4 @@
-import iconoComercio from '../../assets/guíadeTramitesMobile_iconoComercio.svg'
+import iconoComercio from '@assets/guíadeTramitesMobile_iconoComercio.svg'
 
 const Sublinks = () => {
   return (

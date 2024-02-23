@@ -1,9 +1,26 @@
-import Categorias from '../../components/Tramites/Categorias'
-import { useState } from 'react'
+import Categorias from './components/Categorias/Categorias'
+import { useEffect, useState } from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
 
 const Tramites = () => {
   const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
+  const [tramiteData, setTramiteData] = useState()
+  useEffect(() => {
+    const getInfoStrapi = async () => {
+      try {
+        const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/tramite?populate=*')
+        const data = await response.json()
+        const responseTramite = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/tramite?populate[0]=Categoria&populate[1]=Categoria.Tramite')
+        const dataPrime = await responseTramite.json()
+        const dataTramite = Object.assign(data.data.attributes, dataPrime.data.attributes)
+        setTramiteData(dataTramite)
+        console.log(dataTramite, 'tramites')
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+    getInfoStrapi()
+  }, [])
 
   return (
     <>
@@ -12,7 +29,7 @@ const Tramites = () => {
         <h1>GESTIÓN DE TRAMITES</h1>
       </div>
       <div className='container mx-auto'>
-        <Categorias dropdownStates={dropdownStates} setDropdownStates={setDropdownStates} />
+        <Categorias tramiteData={tramiteData} dropdownStates={dropdownStates} setDropdownStates={setDropdownStates} />
       </div>
       <div className='flex justify-between'>
         <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
