@@ -9,7 +9,7 @@ const Categorias = ({ tramiteData, dropdownStates, setDropdownStates }) => {
   return (
     <div className='container lg:relative px-4 rounded-xl transition-all transform-gpu ease-in-out duration-300'>
       {tramiteData?.Categoria?.map((e, index) => (
-        <div key={index} className={`flex flex-col w-full lg:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
+        <div key={index} className={`flex flex-col w-full lg:w-[17%] xl:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
           <button
             onClick={() => toggleDropdown(index)}
             className={`flex flex-col items-center text-xl lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}

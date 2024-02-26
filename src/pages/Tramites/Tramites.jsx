@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
 
 const Tramites = () => {
-  const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false])
+  const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false, false])
   const [tramiteData, setTramiteData] = useState()
   useEffect(() => {
     const getInfoStrapi = async () => {
