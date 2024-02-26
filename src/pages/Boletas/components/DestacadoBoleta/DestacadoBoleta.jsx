@@ -6,7 +6,7 @@ const DestacadoBoletas = ({ BoletasData }) => {
     <div className='bg-[#9747FF] relative w-full h-auto text-white lg:text-xl'>
       <div className='bg-white w-full h-20 rounded-br-full' />
       <div className='p-6 lg:container lg:mx-auto lg:flex lg:flex-col lg:py-20'>
-        <Markdown className='prose text-white'>{BoletasData?.Destacado}</Markdown>
+        <Markdown className='prose max-w-full text-white'>{BoletasData?.Destacado}</Markdown>
         {/* <style>{
           `.prose h1,
           .prose h2,
