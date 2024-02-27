@@ -33,7 +33,7 @@ export const Recategorizacion = () => {
           </div>
           <div className='w-full flex flex-col gap-8 items-center justify-center bg-[#FFC14F] p-10 rounded-t-2xl'>
             <p className='text-center w-60 text-[#3E3E3E] lg:text-3xl lg:w-3/5'>Si deseas que revisemos la calificación catastral o de rentas de un inmueble puede solicitarlo acá.</p>
-            <button className='rounded-3xl bg-[#D85B35] text-white py-4 px-6 shadow-md lg:py-8 lg:px-12 lg:text-3xl'>TRAMITES ONLINE</button>
+            <a href='https://municipiosanjuan.gob.ar/recategorizacion-de-inmuebles' target='_blank' className='rounded-3xl bg-[#D85B35] text-white py-4 px-6 shadow-md lg:py-8 lg:px-12 lg:text-3xl' rel='noreferrer'>TRAMITES ONLINE</a>
           </div>
           <div className='relative z-0'>
             <svg className='h-48 w-48 lg:h-60 lg:w-60 absolute -top-[10px] -right-0 lg:-top-[90px] rotate-180 scale-y-[-1]'>
