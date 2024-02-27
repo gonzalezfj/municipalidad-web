@@ -4,6 +4,7 @@ import Galerias from '../../components/Comercio/Galerias'
 import Geriatricos from '../../components/Comercio/Geriatricos'
 import PlayaEstacionamiento from '../../components/Comercio/PlayaEstacionamiento'
 import SalasVelatorias from '../../components/Comercio/SalasVelatorias'
+import Habilitaciones from '../../components/Comercio/Habilitaciones'
 
 const ComercioRoutes = () => {
   return (
@@ -13,7 +14,7 @@ const ComercioRoutes = () => {
       <Route path='/geriatricos' element={<Geriatricos />} />
       <Route path='/playaestacionamiento' element={<PlayaEstacionamiento />} />
       <Route path='/salasvelatorias' element={<SalasVelatorias />} />
-      {/* <Route path='/detalleagenda' element={<NuestraAgenda />} /> */}
+      <Route path='/habilitaciones' element={<Habilitaciones />} />
       {/* <Route path='/estacionamientocontrolado' element={<Eco />} /> */}
     </Routes>
   )
