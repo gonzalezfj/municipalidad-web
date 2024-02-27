@@ -43,3 +43,5 @@ export const DetalleNoticia = () => {
     </div>
   )
 }
+
+export default DetalleNoticia

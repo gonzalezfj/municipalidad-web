@@ -1,11 +1,12 @@
 import React from 'react'
 import { FaPlusCircle } from 'react-icons/fa'
-import ButtonBack from '../Default/ButtonBack'
+import ButtonBack from '@components/Default/ButtonBack'
 import img1 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_foto1.jpg'
 import img2 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_foto2.jpg'
 import img3 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_foto3.jpg'
 import img4 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo.svg'
 import img5 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo2.svg'
+
 export const Noticias = () => {
   return (
     <div className='w-full'>
@@ -76,3 +77,5 @@ export const Noticias = () => {
     </div>
   )
 }
+
+export default Noticias
