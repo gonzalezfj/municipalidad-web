@@ -27,7 +27,7 @@ const Boletas = () => {
           <p>Para pagar en línea boletas de contribución de inmuebles y tasa de comercio</p>
         </div>
         <div className='text-white mt-5'>
-          <button className='bg-[#4B0984] p-3 rounded-full'>GENERAR BOLETA</button>
+          <a href='https://generadorboletas.municipiosanjuan.gob.ar/' target='_blank' className='bg-[#4B0984] p-3 rounded-full' rel='noreferrer'>GENERAR BOLETA</a>
         </div>
       </div>
       <InfoBoletas BoletasData={BoletasData} />
@@ -36,7 +36,7 @@ const Boletas = () => {
           <source src={videoBoletas} type='video/mp4' />
         </video>
         <p className='p-6 font-bold text-[#4B0984]'>Asimismo, podés completar la siguiente encuesta sobre la gestión de trámites online que brinda el municipio. Tu opinión es importante para la mejora continua de nuestra atención.</p>
-        <button className='w-52 rounded-full bg-[#D85B35] text-white p-3'>REALIZAR ENCUESTA</button>
+        <a href='https://municipiosanjuan.gob.ar/component/chronoforms6/?chronoform=encuesta-web-rentas' target='_blank' className='w-52 rounded-full bg-[#D85B35] text-white p-3 text-center' rel='noreferrer'>REALIZAR ENCUESTA</a>
       </div>
       <DestacadoBoletas BoletasData={BoletasData} />
     </div>
