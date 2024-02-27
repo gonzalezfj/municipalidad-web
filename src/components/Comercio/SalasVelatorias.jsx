@@ -2,8 +2,14 @@ import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoComercio.svg'
+import { useNavigate } from 'react-router'
 
 const SalasVelatorias = () => {
+  const navigate = useNavigate()
+  const handleClick = (path) => {
+    navigate(path)
+    window.scrollTo(0, 0)
+  }
   return (
     <div className='w-full'>
       <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[75px] border-l-[#FFC14F] border-b-[75px] border-b-transparent border-r-[75px] border-r-transparent' />
@@ -24,7 +30,7 @@ const SalasVelatorias = () => {
         </div>
         {/* INFO  */}
         <div className='mb-5'>
-          <button className='hover:bg-transparent bg-[#FFC14F] text-#3E3E3E text-1xl font-extrabold  hover:text-[#FFC14F] py-4 px-8  border-[#FFC14F] border-2 hover:border-[#FFC14F] rounded-3xl'>
+          <button onClick={() => handleClick('/habilitaciones')} className='hover:bg-transparent bg-[#FFC14F] text-#3E3E3E text-1xl font-extrabold  hover:text-[#FFC14F] py-4 px-8  border-[#FFC14F] border-2 hover:border-[#FFC14F] rounded-3xl'>
             REQUISITOS GENERALES
           </button>
         </div>
