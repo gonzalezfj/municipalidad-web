@@ -14,7 +14,7 @@ import { ReposiciónDeMedidores } from '@components/Obras/ReposiciónDeMedidores
 const ObrasRoutes = () => {
   return (
     <Routes>
-      <Route path='/obras' element={<InstalacionesElectricas />} />
+      <Route path='/instalacioneselectricas' element={<InstalacionesElectricas />} />
       <Route path='/autorizacionobras' element={<AutorizacionObras />} />
       <Route path='/derechoedificacion' element={<DerechoEdificacion />} />
       <Route path='/reservanumericadomicilio' element={<ReservaNumerica />} />
