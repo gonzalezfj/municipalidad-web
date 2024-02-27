@@ -1,6 +1,12 @@
 import { MdExpandMore } from 'react-icons/md'
+import { useNavigate } from 'react-router'
 
 const Categorias = ({ tramiteData, dropdownStates, setDropdownStates }) => {
+  const navigate = useNavigate()
+  const handleClick = (path) => {
+    navigate(path)
+    window.scrollTo(0, 0)
+  }
   const toggleDropdown = (index) => {
     const newStates = dropdownStates.map((state, i) => (i === index ? !state : false))
     setDropdownStates(newStates)
@@ -34,7 +40,7 @@ const Categorias = ({ tramiteData, dropdownStates, setDropdownStates }) => {
                   {e?.Tramite?.map((x) => (
                     <div key={x?.id} className=''>
                       <div className='flex'>
-                        <button className='text-[#D85B35] flex flex-col items-center rounded-xl border border-[#D85B35] justify-center lg:hover:scale-95 text-l w-full py-3 mb-1 transition-all transform-gpu ease-in-out lg:duration-500'>
+                        <button onClick={() => handleClick(x?.Link)} className='text-[#D85B35] flex flex-col items-center rounded-xl border border-[#D85B35] justify-center lg:hover:scale-95 text-l w-full py-3 mb-1 transition-all transform-gpu ease-in-out lg:duration-500'>
                           {x?.Titulo}
                           <p className='font-normal p-1'>
                             {x?.Descripcion}
