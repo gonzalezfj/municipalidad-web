@@ -10,6 +10,7 @@ import Footer from '@components/Footer/Footer'
 
 // Style
 import '@/App.css'
+import ComercioRoutes from './routes/ComercioRoutes/ComercioRoutes'
 
 function App () {
   return (
@@ -22,6 +23,7 @@ function App () {
       <AmbienteRoutes />
       <GeneralRoutes />
       <IntendenciaRoute />
+      <ComercioRoutes />
       <Footer />
     </Router>
   )
