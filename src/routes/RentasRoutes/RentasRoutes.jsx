@@ -14,7 +14,7 @@ const RentasRoutes = () => {
       <Route path='/recategorizacion' element={<Recategorizacion />} />
       <Route path='/formrecategorizacion' element={<RecategorizacionForm />} />
       <Route path='/libredeuda' element={<LibreDeuda />} />
-      <Route path='/libredeudacomercio' element={<LibreDeudaComercio />} />
+      <Route path='/autenticidad' element={<LibreDeudaComercio />} />
       <Route path='/eximicion' element={<EximicionPago />} />
     </Routes>
   )
