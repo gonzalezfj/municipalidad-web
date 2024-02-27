@@ -3,6 +3,7 @@ import ManipulacionAlimentos from '../../components/Comercio/ManipulacionAliment
 import Galerias from '../../components/Comercio/Galerias'
 import Geriatricos from '../../components/Comercio/Geriatricos'
 import PlayaEstacionamiento from '../../components/Comercio/PlayaEstacionamiento'
+import SalasVelatorias from '../../components/Comercio/SalasVelatorias'
 
 const ComercioRoutes = () => {
   return (
@@ -11,7 +12,7 @@ const ComercioRoutes = () => {
       <Route path='/galerias' element={<Galerias />} />
       <Route path='/geriatricos' element={<Geriatricos />} />
       <Route path='/playaestacionamiento' element={<PlayaEstacionamiento />} />
-      {/* <Route path='/tramites' element={<Tramites />} /> */}
+      <Route path='/salasvelatorias' element={<SalasVelatorias />} />
       {/* <Route path='/detalleagenda' element={<NuestraAgenda />} /> */}
       {/* <Route path='/estacionamientocontrolado' element={<Eco />} /> */}
     </Routes>
