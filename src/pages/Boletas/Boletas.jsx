@@ -36,7 +36,7 @@ const Boletas = () => {
           <source src={videoBoletas} type='video/mp4' />
         </video>
         <p className='p-6 font-bold text-[#4B0984]'>Asimismo, podés completar la siguiente encuesta sobre la gestión de trámites online que brinda el municipio. Tu opinión es importante para la mejora continua de nuestra atención.</p>
-        <button className='w-52 rounded-full bg-[#D85B35] text-white p-3'>REALIZAR ENCUESTA</button>
+        <a href='https://municipiosanjuan.gob.ar/component/chronoforms6/?chronoform=encuesta-web-rentas' target='_blank' className='w-52 rounded-full bg-[#D85B35] text-white p-3 text-center' rel='noreferrer'>REALIZAR ENCUESTA</a>
       </div>
       <DestacadoBoletas BoletasData={BoletasData} />
     </div>
