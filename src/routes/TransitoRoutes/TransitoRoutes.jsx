@@ -18,7 +18,7 @@ const TransitoRoutes = () => {
       <Route path='/vehiculos' element={<Vehiculos />} />
       <Route path='/denuncia' element={<DenunciaVehiculos />} />
       <Route path='/paradataxi' element={<ParadaTaxi />} />
-      <Route path='/infracción' element={<Infraccion />} />
+      <Route path='/infraccion' element={<Infraccion />} />
       <Route path='/obleas' element={<Obleas />} />
       <Route path='/plantillaObleas' element={<PlantillaObleas />} />
       <Route path='/permisos' element={<Ocupacion />} />
