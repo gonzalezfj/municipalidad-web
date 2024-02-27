@@ -27,7 +27,7 @@ const Boletas = () => {
           <p>Para pagar en línea boletas de contribución de inmuebles y tasa de comercio</p>
         </div>
         <div className='text-white mt-5'>
-          <button className='bg-[#4B0984] p-3 rounded-full'>GENERAR BOLETA</button>
+          <a href='https://generadorboletas.municipiosanjuan.gob.ar/' target='_blank' className='bg-[#4B0984] p-3 rounded-full' rel='noreferrer'>GENERAR BOLETA</a>
         </div>
       </div>
       <InfoBoletas BoletasData={BoletasData} />
