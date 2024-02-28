@@ -59,7 +59,7 @@ export const Noticias = () => {
           : <p>Cargando Noticias</p>}
 
       </div>
-      {news && <Pagination actualPage={page} totalPages={news.meta.pagination.pageCount} incrementPage={incrementPage} decrementPage={decrementPage} />}
+      {news.meta && <Pagination actualPage={page} totalPages={news.meta.pagination.pageCount} incrementPage={incrementPage} decrementPage={decrementPage} />}
       <div className='lg:pt-8 lg:flex justify-end hidden'>
         <div className='bg-amber-400 w-[30rem] h-36 flex flex-col items-center justify-center rounded-room lg:transform lg:rotate-180'>
           <label className='text-white text-2xl lg:transform lg:rotate-180'>Buscar Noticias</label>
