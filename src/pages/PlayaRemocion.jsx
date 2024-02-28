@@ -12,7 +12,7 @@ const PlayaRemocion = () => {
       <IframeConsulta />
       <TextPlaya />
       <MapaPlaya />
-      <div className='container flex mx-auto items-center justify-center'>
+      <div className='container flex mx-auto'>
         <ButtonBack />
       </div>
     </div>

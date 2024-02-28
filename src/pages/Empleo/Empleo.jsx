@@ -35,7 +35,7 @@ const Empleo = () => {
           </div>
         </div>
         <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'>
-          <div className='flex items-center justify-center'>
+          <div className=' container mx-auto flex items-center justify-center xl:block'>
             <ButtonBack />
           </div>
         </div>

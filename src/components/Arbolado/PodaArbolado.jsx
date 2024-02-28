@@ -21,7 +21,7 @@ export const PodaArbolado = () => {
               Formulario para solicitud de permisos de poda de arbolado público.
             </p>
             {/* BODY */}
-            <section className='flex flex-col gap-2 pt-4 lg:text-xl'>
+            {/* <section className='flex flex-col gap-2 pt-4 lg:text-xl'>
               <h1 className='font-bold text-1xl text-[#616161]'>Para hacer este trámite deberás informar:</h1>
               <ul className='flex flex-col gap-2 list-disc text-[#616161] pl-8'>
                 <li>Tu DNI y datos personales.</li>
@@ -33,11 +33,12 @@ export const PodaArbolado = () => {
                 </div>
                 <li>También podrás adjuntar imágenes de los ejemplares a podar.</li>
               </ul>
-            </section>
-            <p className='text-[#616161]'>Una vez que la Dirección de Ambiente constate la información aportada y se realizen las inspecciones pertinentes, se procederá a informar al solicitante si la solicitud fue aprobada o rechazada.</p>
+            </section> */}
+            {/* <p className='text-[#616161]'>Una vez que la Dirección de Ambiente constate la información aportada y se realizen las inspecciones pertinentes, se procederá a informar al solicitante si la solicitud fue aprobada o rechazada.</p> */}
             <div className='flex flex-col-2 gap-2 lg:items-center lg:flex lg:justify-center'>
-              <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>ACCEDER A SOLICITUD</button>
-              <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>CONSULTAR SOLICITUDES</button>
+              {/* <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>ACCEDER A SOLICITUD</button>
+              <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>CONSULTAR SOLICITUDES</button> */}
+              <iframe width='750' height='600' src='https://poda.municipiosanjuan.gob.ar/Inicio_poda' frameBorder='0' scrolling='no' />
             </div>
             <h3 className='text-[#616161]'>Tipo de poda no autorizada:</h3>
             <p className='font-bold text-[#616161]'>Si poda los árboles sin autorización estará en contravención con la Ordenanza Municipal artículo</p>

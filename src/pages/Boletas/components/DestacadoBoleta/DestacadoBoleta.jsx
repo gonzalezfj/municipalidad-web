@@ -31,7 +31,7 @@ const DestacadoBoletas = ({ BoletasData }) => {
         </p> */}
       </div>
       <div className='bg-[#9747FF] absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'>
-        <div className='container mx-auto'>
+        <div className='container mx-auto flex justify-center items-center xl:block'>
           <ButtonBack />
         </div>
       </div>

@@ -11,10 +11,10 @@ const Zoonosis = () => {
         <TextZoonosis />
         <ButtonTurnos />
       </div>
-      <div className='container mx-auto flex justify-center lg:justify-normal'>
+      <div className='container mx-auto flex justify-center xl:justify-normal lg:pb-20 lg:mb-2'>
         <ButtonBack />
       </div>
-      <div className='absolute -bottom-20 lg:top-0 lg:right-0'>
+      <div className='absolute -bottom-20 lg:top-0 lg:right-0 lg:-z-10'>
         <svg className='h-32 w-32 lg:rotate-180 lg:w-52 lg:h-52 xl:w-80 xl:h-80'>
           <image className='w-full' href={fondo} />
         </svg>
