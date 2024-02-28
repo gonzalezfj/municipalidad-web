@@ -13,7 +13,7 @@ const Card = ({ imageUrl, date, title, description }) => {
   }
 
   return (
-    <div className='flex flex-col gap-3'>
+    <div className='flex flex-col gap-3 min-h-72'>
       <div className='lg:flex lg:flex-col-2 lg:gap-8'>
         {/* IMAGE */}
         <img src={import.meta.env.VITE_STRAPI_URL + imageUrl} alt='img not found' className='lg:w-[30rem] rounded-2xl object-cover' />
