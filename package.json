@@ -9,7 +9,7 @@
     "deploy": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment",
     "build": "vite build",
     "prepare": "husky",
-    "test": "echo Testeo aún no implementado",
+    "test": "echo Testeo aun no implementado",
     "lint": "eslint --ignore-path .gitignore --ext .js,jsx,ts,tsx src/",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -46,8 +46,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add ."
+      "eslint --fix"
     ]
   }
 }
