@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '../../assets/home_seccion3_circuito_foto.jpg'
-import img2 from '../../assets/home_seccion3_agenda_foto.jpg'
-import img3 from '../../assets/home_seccion3_deporteysalud_foto.jpg'
+import img1 from '@assets/home_seccion3_circuito_foto.jpg'
+import img2 from '@assets/home_seccion3_agenda_foto.jpg'
+import img3 from '@assets/home_seccion3_deporteysalud_foto.jpg'
 
 export const NoticiasRelacionadas = () => {
   return (
