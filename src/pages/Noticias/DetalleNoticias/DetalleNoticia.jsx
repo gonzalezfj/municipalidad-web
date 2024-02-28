@@ -1,6 +1,6 @@
 import React from 'react'
-import { NoticiasRelacionadas } from './NoticiasRelacionadas'
-import img from '../../assets/home_seccion4_noticiaPirotecnia.jpg'
+import { NoticiasRelacionadas } from '../NoticiasRelacionadas'
+import img from '@assets/home_seccion4_noticiaPirotecnia.jpg'
 
 export const DetalleNoticia = () => {
   return (
