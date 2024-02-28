@@ -50,6 +50,7 @@ export const Noticias = () => {
           ? news.data.map((newItem) => (
             <Card
               key={newItem.id}
+              identifier={newItem.id}
               date={newItem.attributes.createdAt}
               description={newItem.attributes.Contenido.slice(0, 190) + '...'}
               imageUrl={newItem.attributes.Imagen.data.attributes.url}

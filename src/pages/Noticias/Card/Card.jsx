@@ -3,13 +3,13 @@ import { slugify, formatDate } from '@utils'
 import { FaPlusCircle } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
-const Card = ({ imageUrl, date, title, description }) => {
+const Card = ({ imageUrl, date, title, description, identifier }) => {
   const navigate = useNavigate()
 
   const handleClick = () => {
     const slugifyTitle = slugify(title)
-    console.log(slugifyTitle)
-    navigate(slugifyTitle)
+    // Navigate to: /noticias/:identifier/title
+    navigate(`/noticias/${identifier}/${slugifyTitle}`)
   }
 
   return (
