@@ -16,10 +16,12 @@ const Links = ({ navData }) => {
       {navData?.Items.map((e) => (
         <div key={e?.id} className='relative'>
           <div className='container px-9'>
-            <button onClick={() => handleToggle(e?.id)} className='text-[#4B0984] flex items-center justify-between text-xl w-full py-3 mb-2'>
-              <MdArrowBackIos className={`${e?.Subitems && e?.Subitems.length > 0 ? 'visible' : 'invisible'}`} />
-              {e?.Titulo}
-            </button>
+            <a href={e?.Link}>
+              <button onClick={() => handleToggle(e?.id)} className='text-[#4B0984] flex items-center justify-between text-xl w-full py-3 mb-2'>
+                <MdArrowBackIos className={`${e?.Subitems && e?.Subitems.length > 0 ? 'visible' : 'invisible'}`} />
+                {e?.Titulo}
+              </button>
+            </a>
           </div>
           <div className={`${!openItems[e?.id] && 'hidden'} bg-gray-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-10`} onClick={() => handleToggle(e?.id)}> </div>
           <div className={`${openItems[e?.id] ? 'translate-x-0' : 'translate-x-80'} bg-white min-h-screen w-80 fixed top-0 right-0 transition-all duration-300 z-20`}>
@@ -31,10 +33,12 @@ const Links = ({ navData }) => {
               </button>
               <div className='container'>
                 {e?.Subitems?.map(subItem => (
-                  <div key={subItem?.id} className='flex mr-10'>
-                    <button className='text-[#4B0984] flex items-center justify-end text-xl w-full py-3 mb-2'>
-                      {subItem?.Titulo}
-                    </button>
+                  <div key={subItem?.id} className='flex ml-10'>
+                    <a href={subItem?.Link}>
+                      <button className='text-[#4B0984] flex items-center justify-end text-xl w-full py-3 mb-2'>
+                        {subItem?.Titulo}
+                      </button>
+                    </a>
                   </div>
                 ))}
               </div>
