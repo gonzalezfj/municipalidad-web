@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoTransito.svg'
 import img4 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
+
 export const ParadaTaxi = () => {
   return (
     <div className='w-full'>
@@ -18,14 +19,16 @@ export const ParadaTaxi = () => {
         {/* CUERPO */}
         <div className='gap-10 flex flex-col text-[#3E3E3E] font-semibold w-full'>
           <div className='flex flex-col gap-4 lg:px-96 px-8 pt-36 lg:text-2xl'>
-            <h1 className='text-2xl font-extrabold text-[#4B0984] lg:text-3xl'>PARA DE TAXI</h1>
+            <h1 className='text-2xl font-extrabold text-[#4B0984] lg:text-3xl'>PARADA DE TAXI</h1>
             <p className='text-[#D85B35] italic font-bold'>Solicitud de oblea de estacionamiento para taxi.</p>
             <p className='text-[#3E3E3E] font-semibold lg:text-lg'>
               Para solicitar la oblea de estacionamiento para taxi el primer paso es dirigirse a la dirección de Eco, ubicada en esquina Ig. de la Roza y Las Heras, para corroborar disponibilidad de estacionamiento y efectivamente iniciar el trámite por mesa de entrada en el edificio municipal.
             </p>
             <h2 className='text-[#D85B35] italic font-bold'>Requisitos para obtener oblea de estacionamiento:</h2>
             <div className='items-center justify-center flex lg:items-baseline lg:justify-stretch'>
-              <button className='border-2 border-secondary rounded-3xl py-2 px-3 w-48 lg:w-60 text-[#D85B35] font-extrabold lg:text-lg'>FORMULARIO DE ESTACIONAMIENTO</button>
+              <a href='https://drive.google.com/file/d/18FyzbUJGUXUu_iiKb3NJlUBU_ctc1vyY/view' target='_blank' rel='noreferrer'>
+                <button className='border-2 border-secondary rounded-3xl py-2 px-3 w-48 lg:w-60 text-[#D85B35] font-extrabold lg:text-lg hover:text-white hover:bg-[#D85B35]'>FORMULARIO DE ESTACIONAMIENTO</button>
+              </a>
             </div>
             <div className='flex flex-col gap-4 lg:text-lg pl-4'>
               <li>Solicitud firmada por el titular de la licencia;</li>
@@ -56,7 +59,7 @@ export const ParadaTaxi = () => {
         </div>
         {/* BTN BACK */}
         <div className='lg:px-96 px-8 py-4 lg:-left-20'>
-          <div className='pt-10'>
+          <div className='pt-24'>
             <ButtonBack />
           </div>
         </div>

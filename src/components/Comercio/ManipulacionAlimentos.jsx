@@ -32,9 +32,11 @@ const ManipulacionAlimentos = () => {
         </div>
         {/* INFO  */}
         <div className='py-4'>
-          <button className='hover:bg-transparent bg-[#D85B35] text-white text-1xl font-extrabold  hover:text-[#D85B35] py-4 px-8  border-[#D85B35] border-2 hover:border-[#D85B35] rounded-3xl'>
-            INGRESA AL AULA VIRTUAL
-          </button>
+          <a href='https://capitalsanjuan.edu.ar/moodle/' target='_blank' rel='noreferrer'>
+            <button className='hover:bg-transparent bg-[#D85B35] text-white text-1xl font-extrabold  hover:text-[#D85B35] py-4 px-8  border-[#D85B35] border-2 hover:border-[#D85B35] rounded-3xl'>
+              INGRESA AL AULA VIRTUAL
+            </button>
+          </a>
         </div>
         <div className='items-center justify-center'>
           <ButtonBack />

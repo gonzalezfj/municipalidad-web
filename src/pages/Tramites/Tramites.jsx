@@ -14,7 +14,6 @@ const Tramites = () => {
         const dataPrime = await responseTramite.json()
         const dataTramite = Object.assign(data.data.attributes, dataPrime.data.attributes)
         setTramiteData(dataTramite)
-        console.log(dataTramite, 'tramites')
       } catch (error) {
         console.error('Error fetching data:', error)
       }
@@ -34,7 +33,7 @@ const Tramites = () => {
       <div className='flex justify-between'>
         <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
       </div>
-      <div className='flex justify-center'>
+      <div className='container mx-auto flex justify-center items-center xl:block xl:p-4'>
         <ButtonBack />
       </div>
     </>

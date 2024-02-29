@@ -18,7 +18,7 @@ const Categorias = ({ tramiteData, dropdownStates, setDropdownStates }) => {
         <div key={index} className={`flex flex-col w-full lg:w-[17%] xl:w-[12%] border border-transparent bg-[#D85B35] rounded-xl font-bold mb-1 focus:bg-white ${dropdownStates[index] ? 'bg-white' : 'bg-[#D85B35]'}`}>
           <button
             onClick={() => toggleDropdown(index)}
-            className={`flex flex-col items-center text-xl lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}
+            className={`flex flex-col items-center text-lg lg:w-[100%] w-full py-3 group transition-all transform-gpu ease-in-out duration-300 ${dropdownStates[index] ? 'text-[#D85B35]' : 'text-white'}`}
           >
             <div className='relative flex items-center w-full'>
               <div className='flex w-[95%] lg:w-[80%] ml-4 justify-center'>

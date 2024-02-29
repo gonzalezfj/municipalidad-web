@@ -9,7 +9,7 @@ const ButtonBack = () => {
     window.scrollTo(0, 0)
   }
   return (
-    <div>
+    <div className='container flex justify-center lg:justify-normal'>
       <button onClick={() => handleClick(-1)}>
         <svg className='w-16 h-16'>
           <image className='w-full' href={buttonAtras} />

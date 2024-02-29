@@ -20,10 +20,11 @@ export const InstalacionesElectricas = () => {
             <p className='lg:text-xl'>
               Desde esta sección se podrán descargar las boletas para el pago de las contribuciones eléctricas.
             </p>
-            <section className='gap-4 flex flex-col-2'>
+            <iframe width='700' height='450' src='https://permisosobras.municipiosanjuan.gob.ar/' frameBorder='0' scrolling='no' />
+            {/* <section className='gap-4 flex flex-col-2'>
               <input type='text' placeholder='Increse la Nomenclatura o Inscripción' className='w-60 lg:w-2/5 h-10 bg-[#E6E6E6] rounded-xl py-4 px-4 text-slate-800' />
               <button className='rounded-xl bg-[#9C9C9C] px-4 text-white'>Iniciar</button>
-            </section>
+            </section> */}
           </div>
           <div className='relative z-0'>
             <svg className='h-32 w-32 lg:h-60 lg:w-60 absolute -top-[10px] -right-0 lg:-top-[280px] rotate-180 scale-y-[-1]'>
