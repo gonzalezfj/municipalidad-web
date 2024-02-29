@@ -24,9 +24,9 @@ export const RegistrarOficio = () => {
         <div className='items-center justify-center flex'>
           <img src={img3} alt='img not found' className='w-[32rem] h-[32rem] object-cover' />
         </div>
-        {/* FINAL */}
         <div className='flex flex-col gap-2'>
           <h1 className='text-[#8A43EF] font-extrabold text-1xl lg:text-2xl'>Dirección de Empleo y Desarrollo Productivo</h1>
+          {/* FINAL */}
           <section>
             <h3 className='font-extrabold text-sm lg:text-[1.2rem]'>Anexo Municipal Güemes.</h3>
             <ul className='font-bold text-sm lg:text-[1.2rem]'>
@@ -35,6 +35,7 @@ export const RegistrarOficio = () => {
               <li>Horarios de atención: De 7 a 13hs.</li>
             </ul>
           </section>
+          {/* FALTA RECURSO  !!!! */}
         </div>
       </div>
     </div>

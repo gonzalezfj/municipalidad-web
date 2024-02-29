@@ -7,6 +7,7 @@ import Zoonosis from '@pages/Zoonosis'
 import { CorteDeRamas } from '../../components/Arbolado/CorteDeRamas'
 import { CodigoDeTramite } from '../../components/Arbolado/CodigoDeTramite'
 import { RegistrarOficio } from '../../pages/Empleo/RegistrarOficio'
+import { PromovéOficio } from '../../pages/Empleo/PromovéOficio'
 
 const AmbienteRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AmbienteRoutes = () => {
       <Route path='/cortederamas' element={<CorteDeRamas />} />
       <Route path='/codigodetramite' element={<CodigoDeTramite />} />
       <Route path='/registraroficio' element={<RegistrarOficio />} />
+      <Route path='/promoveroficio' element={<PromovéOficio />} />
     </Routes>
   )
 }
