@@ -23,9 +23,11 @@ export const Vehiculos = () => {
         {/* IFRAME */}
         <div className='flex items-center justify-center'>
           <div className='py-4'>
-            <button className='bg-transparent hover:bg-[#D85B35] text-[#D85B35] text-1xl lg:text-2xl font-extrabold  hover:text-white py-2 px-4 lg:py-8 lg:px-32 border-[#D85B35] border-2 hover:border-transparent rounded-2xl'>
-              TRAMITAR ONLINE
-            </button>
+            <a href='https://municipiosanjuan.gob.ar/vehiculos-abandonados' target='_blank' rel='noreferrer'>
+              <button className='bg-transparent hover:bg-[#D85B35] text-[#D85B35] text-1xl lg:text-2xl font-extrabold  hover:text-white py-2 px-4 lg:py-8 lg:px-32 border-[#D85B35] border-2 hover:border-transparent rounded-2xl'>
+                TRAMITAR ONLINE
+              </button>
+            </a>
           </div>
         </div>
         {/* PARRAFO */}

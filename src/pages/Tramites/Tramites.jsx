@@ -14,7 +14,6 @@ const Tramites = () => {
         const dataPrime = await responseTramite.json()
         const dataTramite = Object.assign(data.data.attributes, dataPrime.data.attributes)
         setTramiteData(dataTramite)
-        console.log(dataTramite, 'tramites')
       } catch (error) {
         console.error('Error fetching data:', error)
       }
