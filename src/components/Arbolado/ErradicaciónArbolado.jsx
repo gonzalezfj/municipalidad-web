@@ -19,7 +19,7 @@ export const ErradicaciónArbolado = () => {
             <p className='lg:text-1xl text-[#3E3E3E] font-extrabold'>
               Formulario para solicitud de permisos de erradicación de arbolado público.
             </p>
-            <section className='flex flex-col gap-2 pt-4 lg:text-xl'>
+            {/* <section className='flex flex-col gap-2 pt-4 lg:text-xl'>
               <h1 className='font-bold text-1xl text-[#616161]'>Para hacer este trámite deberás informar:</h1>
               <ul className='flex flex-col gap-2 list-disc text-[#616161] pl-8'>
                 <li className='text-sm text-[#616161] lg:text-xl'>Tu DNI y número de trámite del mismo ,acá podés ver como consultarlo:</li>
@@ -39,11 +39,12 @@ export const ErradicaciónArbolado = () => {
                 <li>Si el motivo de la erradicación es que hay daños estructurales, se deberá adjuntar imágenes de estos, o un informe de algún técnico habilitado (formato pdf o imagen)</li>
                 <li>Si el motivo de la erradicación es que hay o habrá una construcción edilicia, se deberá adjuntar un plano de la misma (formato pdf o imagen)</li>
               </ul>
-            </section>
-            <p className='text-[#616161] lg:text-xl'>Una vez que la Dirección de Ambiente constate la información aportada y se realizen las inspecciones pertinentes, se procederá a informar al solicitante si la solicitud fue aprobada o rechazada.</p>
+            </section> */}
+            {/* <p className='text-[#616161] lg:text-xl'>Una vez que la Dirección de Ambiente constate la información aportada y se realizen las inspecciones pertinentes, se procederá a informar al solicitante si la solicitud fue aprobada o rechazada.</p> */}
             <div className='flex flex-col-2 gap-2 lg:items-center lg:flex lg:justify-center'>
-              <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>ACCEDER A SOLICITUD</button>
-              <button className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>CONSULTAR SOLICITUDES</button>
+              {/* <a href='https://municipiosanjuan.gob.ar/guia-de-tramites/item/1298-erradicacion' target='_blank' className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2' rel='noreferrer'>ACCEDER A SOLICITUD</a> */}
+              {/* <a className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>CONSULTAR SOLICITUDES</a> */}
+              <iframe width='750' height='900' src='https://poda.municipiosanjuan.gob.ar/' frameBorder='0' scrolling='no' />
             </div>
           </div>
           <div className='relative z-0'>
@@ -53,8 +54,8 @@ export const ErradicaciónArbolado = () => {
           </div>
         </div>
         {/* BTN BACK */}
-        <div className='lg:px-96 px-8 py-4 lg:-left-20'>
-          <div className='pt-10'>
+        <div className='container mx-auto'>
+          <div className=''>
             <ButtonBack />
           </div>
         </div>

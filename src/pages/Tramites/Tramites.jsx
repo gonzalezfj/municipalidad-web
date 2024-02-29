@@ -33,7 +33,7 @@ const Tramites = () => {
       <div className='flex justify-between'>
         <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
       </div>
-      <div className='flex justify-center'>
+      <div className='container mx-auto flex justify-center items-center xl:block xl:p-4'>
         <ButtonBack />
       </div>
     </>
