@@ -9,6 +9,7 @@ import { CodigoDeTramite } from '../../components/Arbolado/CodigoDeTramite'
 import { RegistrarOficio } from '../../pages/Empleo/RegistrarOficio'
 import { PromovéOficio } from '../../pages/Empleo/PromovéOficio'
 import { ProgramaEntrenamiento } from '../../pages/Empleo/ProgramaEntrenamiento'
+import { CapacitacionLaboral } from '../../pages/Empleo/CapacitacionLaboral'
 
 const AmbienteRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AmbienteRoutes = () => {
       <Route path='/registraroficio' element={<RegistrarOficio />} />
       <Route path='/promoveroficio' element={<PromovéOficio />} />
       <Route path='/programaentrenamientotrabajo' element={<ProgramaEntrenamiento />} />
+      <Route path='/capacitacionlaboral' element={<CapacitacionLaboral />} />
     </Routes>
   )
 }

@@ -7,16 +7,16 @@ import { Accordion, AccordionTab } from 'primereact/accordion'
 export const ProgramaEntrenamiento = () => {
   return (
     <div>
+      {/* IMG */}
       <img src={img} alt='img not found' className='w-full object-cover h-80' />
       <div className='container mx-auto flex flex-col gap-6 pt-10 px-10'>
-        {/* IMG */}
         {/* TITULO */}
         <h1 className='text-[#4B0984] font-extrabold text-2xl lg:text-3xl'>PROGRAMA DE ENTRENAMIENTO PARA EL TRABAJO</h1>
         {/* TEXT */}
         <section className='font-semibold text-[#3E3E3E] text-sm lg:text-[1.1rem] flex flex-col gap-2'>
           <p>El programa de entrenamiento para el trabajo (EPT) tiene como objetivo brindar incentivos económicos para formar, capacitar y entrenar aprendices en puestos laborales.</p>
           <div className='card'>
-            <Accordion activeIndex={0}>
+            <Accordion activeIndex={0} className='pt-4'>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] lg:text-[1.4rem] pb-4 lg:pb-10' header='Quienes pueden accerder al programa'>
                 <div className='list-item text-sm lg:text-base text-slate-900 pl-2'>
                   <li>Jóvenes que tengan entre 18 y hasta 24 años </li>
