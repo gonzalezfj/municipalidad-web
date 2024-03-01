@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { MdExpandMore } from 'react-icons/md'
 import Links from './Links'
 // import imgSearch from '../../assets/home_menu_buscador.svg'
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
           {navData?.Items.map((e) => (
             <div key={e?.id} className='relative'>
-              <a href={e?.Link}>
+              <Link to={e?.Link}>
                 <button
                   className={`lg:flex lg:items-center h-20 px-6 hover:bg-[#4B0984] hover:text-white hover:rounded-b-lg transition-transform transform-gpu ${openDrops[e?.id] ? 'bg-[#4B0984] text-white rounded-b-lg ' : ''}`}
                   onClick={() => {
@@ -57,17 +57,17 @@ const Navbar = () => {
                     <MdExpandMore />
                   )}
                 </button>
-              </a>
+              </Link>
               {e?.Subitems && e?.Subitems.length > 0 && (
                 <div className={`absolute mt-2 w-48 flex rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 transition-transform transform-gpu duration-300 origin-top ${openDrops[e?.id] ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} onClick={() => setOpenDrops(prevState => ({ ...prevState, [e?.id]: false }))}>
                   <div className='container'>
                     {e?.Subitems.map((subItem) => (
                       <div key={subItem?.id} className='flex w-auto px-4'>
-                        <a href={subItem?.Link}>
+                        <Link to={subItem?.Link}>
                           <button className='text-[#4B0984] flex items-center justify-end text-l w-full py-2 mb-2'>
                             {subItem?.Titulo}
                           </button>
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>
