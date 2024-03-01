@@ -11,6 +11,7 @@ import { PromovéOficio } from '../../pages/Empleo/PromovéOficio'
 import { ProgramaEntrenamiento } from '../../pages/Empleo/ProgramaEntrenamiento'
 import { CapacitacionLaboral } from '../../pages/Empleo/CapacitacionLaboral'
 import { ProgramaInsercionLaboral } from '../../pages/Empleo/ProgramaInsercionLaboral'
+import { ProgramaPromover } from '../../pages/Empleo/ProgramaPromover'
 
 const AmbienteRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AmbienteRoutes = () => {
       <Route path='/programaentrenamientotrabajo' element={<ProgramaEntrenamiento />} />
       <Route path='/capacitacionlaboral' element={<CapacitacionLaboral />} />
       <Route path='/programainsercionlaboral' element={<ProgramaInsercionLaboral />} />
+      <Route path='/proframapromover' element={<ProgramaPromover />} />
     </Routes>
   )
 }
