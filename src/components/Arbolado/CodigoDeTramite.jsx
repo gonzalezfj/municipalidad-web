@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img1 from '@assets/Libre Deuda/LibreDeuda_fondo.svg'
+import img1 from '@assets/LibreDeuda/LibreDeuda_fondo.svg'
 import doc1 from '@assets/img temporal/documentoImgDePrueba.jpg'
 import doc2 from '@assets/img temporal/documentoImgDePruebaAtras.jpg'
 export const CodigoDeTramite = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img1 from '@assets/Libre Deuda/LibreDeuda_fondo.svg'
+import img1 from '@assets/LibreDeuda/LibreDeuda_fondo.svg'
 export const SolicitudDePoda = () => {
   return (
     <div className='w-full'>

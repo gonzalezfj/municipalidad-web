@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from '../../assets/img temporal/img form ubi domicilio.jpg'
 import img2 from '../../assets/img temporal/img mapa.jpg'
 import img3 from '../../assets/img temporal/img form2.jpg'
-import img4 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoTransito.svg'
+import img4 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 import img5 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import ButtonBack from '../Default/ButtonBack'
 

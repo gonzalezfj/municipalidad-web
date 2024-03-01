@@ -1,8 +1,8 @@
 import React from 'react'
-import img2 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoRentas.svg'
-// import img3 from '../../assets/Libre Deuda/LibreDeuda_graficoInmueble.svg'
-// import img4 from '../../assets/Libre Deuda/LibreDeuda_graficoComercio.svg'
-import img5 from '../../assets/Libre Deuda/LibreDeuda_fondo.svg'
+import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
+// import img3 from '../../assets/LibreDeuda/LibreDeuda_graficoInmueble.svg'
+// import img4 from '../../assets/LibreDeuda/LibreDeuda_graficoComercio.svg'
+import img5 from '../../assets/LibreDeuda/LibreDeuda_fondo.svg'
 import ButtonBack from '../Default/ButtonBack'
 
 export const LibreDeudaComercio = () => {
@@ -31,7 +31,7 @@ export const LibreDeudaComercio = () => {
                   <img src={img3} alt='img not found' className='w-8 h-8' />
                   <h1 className='font-extrabold text-[#4B0984] text-[20px] lg:text-3xl'>Inmueble</h1>
                 </div>
-                <p className='font-bold text-purple-900 italic lg:text-2xl'>Para verificar la Autenticidad del Libre Deuda ingrese el Numero de control del mismo.</p>
+                <p className='font-bold text-purple-900 italic lg:text-2xl'>Para verificar la Autenticidad del LibreDeuda ingrese el Numero de control del mismo.</p>
               </div>
               <div className='lg:flex lg:flex-col-3 lg:gap-8'>
                 <div className='flex py-4'>
@@ -49,7 +49,7 @@ export const LibreDeudaComercio = () => {
                   <img src={img4} alt='img not found' className='w-8 h-8' />
                   <h1 className='font-extrabold text-[#4B0984] text-[20px] lg:text-3xl'>Comercio</h1>
                 </div>
-                <p className='font-bold text-purple-900 italic lg:text-2xl'>Para verificar la Autenticidad del Libre Deuda ingrese el Numero de control del mismo.</p>
+                <p className='font-bold text-purple-900 italic lg:text-2xl'>Para verificar la Autenticidad del LibreDeuda ingrese el Numero de control del mismo.</p>
               </div>
               <div className='lg:flex lg:flex-col-3 lg:gap-8'>
                 <div className='flex py-4'>
