@@ -1,4 +1,4 @@
-import img1 from '@assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoGeneral.svg'
+import img1 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoGeneral.svg'
 import React from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
 

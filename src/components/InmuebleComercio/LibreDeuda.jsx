@@ -1,10 +1,10 @@
 import React from 'react'
-import img2 from '@assets/gia_tramites_turnos_obleas/guíaDeTramitesMobile_iconoRentas.svg'
+import img2 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
 import ButtonBack from '../Default/ButtonBack'
 import img4 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
-import img5 from '@assets/Libre Deuda/rentas_botonComercio.svg'
-import img6 from '@assets/Libre Deuda/rentas_botonInmueble.svg'
-import videoBoletas from '@assets/Libre Deuda/Libre_deuda_2024_1.mp4'
+import img5 from '@assets/LibreDeuda/rentas_botonComercio.svg'
+import img6 from '@assets/LibreDeuda/rentas_botonInmueble.svg'
+import videoBoletas from '@assets/LibreDeuda/Libre_deuda_2024_1.mp4'
 import { useNavigate } from 'react-router'
 
 export const LibreDeuda = () => {

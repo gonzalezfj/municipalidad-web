@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
-import img3 from '../../assets/gia_tramites_turnos_obleas/guíadeTramitesMobile_iconoComercio.svg'
+import img3 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoComercio.svg'
 import { useNavigate } from 'react-router'
 
 const PlayaEstacionamiento = () => {
