@@ -10,7 +10,7 @@ export const CapacitacionLaboral = () => {
         <h1 className='text-[#4B0984] font-extrabold text-2xl lg:text-3xl'>PROGRAMAS Y CURSOS DE CAPACITACIÓN LABORAL</h1>
         {/* TEXT */}
         <p className='text-[#3E3E3E]'>El Municipio de la Capital brinda la posibilidad para todos los vecinos de Capital de participar en distintos cursos y capacitaciones.</p>
-        <h1 className='text-[#8A43EF] font-extrabold text-1xl'>Programas y Cursos de Capacitación dictados por la Direccion de Empleo y Desarrollo Productivo</h1>
+        <h1 className='text-[#8A43EF] font-extrabold text-1xl lg:text-2xl'>Programas y Cursos de Capacitación dictados por la Direccion de Empleo y Desarrollo Productivo</h1>
         <section>
           <ul className='list-decimal pl-4'>
             <li>Diseñador Gráfico.</li>
