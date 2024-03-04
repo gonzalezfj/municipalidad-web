@@ -41,7 +41,9 @@ const Footer = () => {
             <div className='flex justify-between items-center md:px-64 sm:px-12 lg:h-5 lg:px-44 2xl:px-72 px-24'>
               {footerData?.Redes.map((e) => (
                 <svg key={e?.id} className='h-12 w-12'>
-                  <image className='h-12' href={import.meta.env.VITE_STRAPI_URL + e?.Icono.data.attributes.url} />
+                  <a href={e?.Link} target='_blank' rel='noreferrer'>
+                    <image className='h-12' href={import.meta.env.VITE_STRAPI_URL + e?.Icono.data.attributes.url} />
+                  </a>
                 </svg>
               ))}
             </div>
