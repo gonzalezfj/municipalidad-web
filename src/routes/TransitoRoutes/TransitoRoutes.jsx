@@ -9,7 +9,10 @@ import { Vehiculos } from '@components/Transito/Vehiculos'
 import { DenunciaVehiculos } from '@components/Transito/DenunciaVehiculos'
 import { ParadaTaxi } from '@components/Transito/ParadaTaxi'
 import { Infraccion } from '@components/Transito/Infraccion'
-import { PlantillaObleas } from '@components/Obleas/PlantillaObleas'
+import { MediosDePrensa } from '@/components/Obleas/MediosDePrensa'
+import { PersonasConDiscapacidad } from '@/components/Obleas/PersonasConDiscapacidad'
+import { CargaYDescargaMercaderia } from '@/components/Obleas/CargaYDescargaMercaderia'
+import { ParadaDeTaxi } from '@/components/Obleas/ParadaDeTaxi'
 
 const TransitoRoutes = () => {
   return (
@@ -20,10 +23,13 @@ const TransitoRoutes = () => {
       <Route path='/paradataxi' element={<ParadaTaxi />} />
       <Route path='/infraccion' element={<Infraccion />} />
       <Route path='/obleas' element={<Obleas />} />
-      <Route path='/plantillaObleas' element={<PlantillaObleas />} />
+      <Route path='/plantillaobleas' element={<MediosDePrensa />} />
       <Route path='/permisos' element={<Ocupacion />} />
       <Route path='/Senaletica' element={<Senaletica />} />
       <Route path='/playaderemocion' element={<PlayaRemocion />} />
+      <Route path='/personascondiscapacidad' element={<PersonasConDiscapacidad />} />
+      <Route path='/cargaydescargamercaderia' element={<CargaYDescargaMercaderia />} />
+      <Route path='/paradataxi' element={<ParadaDeTaxi />} />
     </Routes>
   )
 }

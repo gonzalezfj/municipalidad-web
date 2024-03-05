@@ -23,23 +23,29 @@ export const IntendenciaPage = () => {
           </div>
           {/* REDES */}
           <div className='flex flex-col-3 gap-2 lg:gap-8'>
-            <div className='border-purple-800 border-2 rounded-full px-2 py-2 flex items-center justify-center lg:px-5'>
-              <FaInstagram className='cursor-pointer lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+            <div className='border-purple-800 border-2 rounded-full cursor-pointer px-2 py-2 flex items-center justify-center lg:px-5'>
+              <a href='https://www.instagram.com/susy.laciar' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className='lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+              </a>
             </div>
-            <div className='border-purple-800 border-2 rounded-full px-2 py-2 flex items-center justify-center lg:px-5'>
-              <FaFacebookF className='cursor-pointer lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+            <div className='border-purple-800 border-2 rounded-full cursor-pointer px-2 py-2 flex items-center justify-center lg:px-5'>
+              <a href='https://www.facebook.com/@susy.laciar' target='_blank' rel='noopener noreferrer'>
+                <FaFacebookF className='lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+              </a>
             </div>
-            <div className='border-purple-800 border-2 rounded-full px-2 py-2 flex items-center justify-center lg:px-5'>
-              <BsTwitterX className='cursor-pointer lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+            <div className='border-purple-800 border-2 rounded-full px-2 cursor-pointer py-2 flex items-center justify-center lg:px-5'>
+              <a href='https://www.twitter.com/@SusanaLaciar' target='_blank' rel='noopener noreferrer'>
+                <BsTwitterX className='lg:w-8 lg:h-8' style={{ color: '#4B0984' }} />
+              </a>
             </div>
           </div>
         </div>
         {/* TEXT */}
-        <section className='text-[#3E3E3E] flex flex-col gap-2 lg:text-[1.3rem] lg:pt-10'>
+        <section className='text-[#3E3E3E] flex flex-col gap-2 lg:text-[1.1rem] lg:pt-10'>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
           <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
         </section>
-        <h3 className='text-[#3E3E3E] font-bold lg:text-2xl'>Palacio Municipal Ciudad de San Juan- Primer piso. Caseros 298 sur. Tel.: 264 430 9601.</h3>
+        <h3 className='text-[#3E3E3E] font-bold lg:text-[1.2rem]'>Palacio Municipal Ciudad de San Juan- Primer piso. Caseros 298 sur. Tel.: 264 430 9601.</h3>
         {/* FORM */}
         {/* <div>
           <div className='w-full h-[15rem] object-cover'>
