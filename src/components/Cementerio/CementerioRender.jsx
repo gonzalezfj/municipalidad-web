@@ -46,12 +46,12 @@ export const CementerioRender = () => {
   return (
     <div>
       <div className='container mx-auto px-10 flex flex-col gap-4 lg:pt-36 pt-36'>
-        <div className='lg:pl-36 lg:flex lg:flex-col lg:gap-4'>
-          <h1 className='font-extrabold text-[#4B0984] text-2xl lg:text-3xl lg:w-44'>CEMENTERIO MUNICIPAL</h1>
+        <div className='lg:flex lg:flex-col lg:gap-4'>
+          <h1 className='font-extrabold text-[#4B0984] text-2xl lg:text-3xl '>CEMENTERIO MUNICIPAL</h1>
         </div>
         <CementerioHome menuItems={menuItems} />
-        <div className='rounded-2xl'>
-          <img src={img} alt='img not found' className='rounded-2xl' />
+        <div className='rounded-2xl lg:w-full lg:h-72'>
+          <img src={img} alt='img not found' className='rounded-2xl lg:w-full lg:h-full object-cover' />
         </div>
         {/* FALTA RECURSO !!! */}
       </div>
