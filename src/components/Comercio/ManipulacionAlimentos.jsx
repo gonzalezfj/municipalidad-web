@@ -42,8 +42,8 @@ const ManipulacionAlimentos = () => {
           <ButtonBack />
         </div>
         <div className='relative'>
-          <svg className='h-48 w-48 absolute right-0 -top-20'>
-            <image href={img3} alt='img not found' className='w-auto' />
+          <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
+            <image href={img3} alt='img not found' className='w-28 h-28' />
           </svg>
         </div>
       </div>

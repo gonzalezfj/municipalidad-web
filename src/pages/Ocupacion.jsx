@@ -27,42 +27,40 @@ export const Ocupacion = () => {
       <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[100px] border-b-[100px] lg:border-l-[200px] lg:border-b-[200px] border-l-[#FFC14F]  border-b-transparent border-r-[75px] border-r-transparent' />
       <div className='absolute right-0 top-24'>
         <svg className='h-20 w-20 lg:h-64 lg:w-64  -rotate-90 scale-y-[-1]'>
-          <image className='w-[190px] lg:w-[590px] object-cover ' href={img1} alt='img not found' />
+          <image className='w-[190px] lg:w-[590px] object-cover' href={img1} alt='img not found' />
         </svg>
       </div>
       {/* HOME CONTENIDO */}
-      <div className='container mx-auto flex flex-col gap-4 w-80 lg:w-8/12 pt-48'>
-        <div>
-          <div className='lg:w-4/5'>
-            <h1 className='font-extrabold text-2xl text-[#4B0984] pb-10 lg:text-4xl'>{dataOcupacion?.Titulo}</h1>
+      <div className='container mx-auto flex flex-col p-4 pt-48'>
+        <div className='lg:w-4/5'>
+          <h1 className='font-extrabold text-2xl text-[#4B0984] pb-10 lg:text-4xl'>{dataOcupacion?.Titulo}</h1>
+        </div>
+        <p className='font-bold text-lg text-[#3E3E3E]'>{dataOcupacion?.Subtitulo}</p>
+        <div className=''>
+          <p className='text-[#3E3E3E] text-base'>{dataOcupacion?.Contenido[0].children[0].text}</p>
+          <div className='text-[#3E3E3E] pl-2 scroll-pt-52 lg:pt-4'>
+            <li>{dataOcupacion?.Contenido[2].children[0].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[2].children[1].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[2].children[2].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[2].children[3].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[2].children[4].children[0].text}</li>
           </div>
-          <p className='font-bold text-lg text-[#3E3E3E]'>{dataOcupacion?.Subtitulo}</p>
-          <div className=''>
-            <p className='text-[#3E3E3E] text-base'>{dataOcupacion?.Contenido[0].children[0].text}</p>
-            <div className='text-[#3E3E3E] pl-2 scroll-pt-52 lg:pt-4'>
-              <li>{dataOcupacion?.Contenido[2].children[0].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[2].children[1].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[2].children[2].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[2].children[3].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[2].children[4].children[0].text}</li>
-            </div>
-            <h3 className='text-[#3E3E3E] font-bold pt-5 pb-5'>{dataOcupacion?.Contenido[4].children[0].text}</h3>
-            <div className='list-none pl-2'>
-              <li>{dataOcupacion?.Contenido[5].children[0].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[5].children[1].children[0].text}</li>
-              <li>{dataOcupacion?.Contenido[5].children[2].children[0].text}</li>
-            </div>
+          <h3 className='text-[#3E3E3E] font-bold pt-5 pb-5'>{dataOcupacion?.Contenido[4].children[0].text}</h3>
+          <div className='list-none pl-2'>
+            <li>{dataOcupacion?.Contenido[5].children[0].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[5].children[1].children[0].text}</li>
+            <li>{dataOcupacion?.Contenido[5].children[2].children[0].text}</li>
           </div>
-          <div className='pt-20'>
-            <div className='items-center justify-center'>
-              <ButtonBack />
-            </div>
-            <div className='relative lg:pb-10'>
-              <svg className='h-36 w-36 lg:h-60 lg:w-60 absolute right-0 -top-20'>
-                <image href={img2} alt='img not found' className='w-36 lg:w-auto lg:h-auto' />
-              </svg>
-            </div>
+        </div>
+        <div className='pt-20'>
+          <div className='items-center justify-center'>
+            <ButtonBack />
           </div>
+        </div>
+        <div className='relative'>
+          <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
+            <image href={img2} alt='img not found' className='w-28 h-28' />
+          </svg>
         </div>
       </div>
     </div>
