@@ -3,7 +3,7 @@ import ButtonBack from '../components/Default/ButtonBack'
 import img1 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img2 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 
-export const Señaletica = () => {
+export const Senaletica = () => {
   return (
     <div className='w-full'>
       <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[100px] border-b-[100px] lg:border-l-[200px] lg:border-b-[200px] border-l-[#FFC14F]  border-b-transparent border-r-[75px] border-r-transparent' />

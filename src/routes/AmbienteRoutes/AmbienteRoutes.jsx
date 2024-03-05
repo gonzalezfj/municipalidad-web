@@ -7,7 +7,7 @@ import Zoonosis from '@pages/Zoonosis'
 import { CorteDeRamas } from '../../components/Arbolado/CorteDeRamas'
 import { CodigoDeTramite } from '../../components/Arbolado/CodigoDeTramite'
 import { RegistrarOficio } from '../../pages/Empleo/RegistrarOficio'
-import { PromovéOficio } from '../../pages/Empleo/PromovéOficio'
+import { PromoveOficio } from '../../pages/Empleo/PromoveOficio'
 import { ProgramaEntrenamiento } from '../../pages/Empleo/ProgramaEntrenamiento'
 import { CapacitacionLaboral } from '../../pages/Empleo/CapacitacionLaboral'
 import { ProgramaInsercionLaboral } from '../../pages/Empleo/ProgramaInsercionLaboral'
@@ -23,7 +23,7 @@ const AmbienteRoutes = () => {
       <Route path='/cortederamas' element={<CorteDeRamas />} />
       <Route path='/codigodetramite' element={<CodigoDeTramite />} />
       <Route path='/registraroficio' element={<RegistrarOficio />} />
-      <Route path='/promoveroficio' element={<PromovéOficio />} />
+      <Route path='/promoveroficio' element={<PromoveOficio />} />
       <Route path='/programaentrenamientotrabajo' element={<ProgramaEntrenamiento />} />
       <Route path='/capacitacionlaboral' element={<CapacitacionLaboral />} />
       <Route path='/programainsercionlaboral' element={<ProgramaInsercionLaboral />} />
