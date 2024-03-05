@@ -44,7 +44,7 @@ export const ErradicaciónArbolado = () => {
             <div className='flex flex-col-2 gap-2 lg:items-center lg:flex lg:justify-center'>
               {/* <a href='https://municipiosanjuan.gob.ar/guia-de-tramites/item/1298-erradicacion' target='_blank' className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2' rel='noreferrer'>ACCEDER A SOLICITUD</a> */}
               {/* <a className='bg-[#4B0984] rounded-3xl text-white py-2 lg:px-2'>CONSULTAR SOLICITUDES</a> */}
-              <iframe width='750' height='900' src='https://poda.municipiosanjuan.gob.ar/' frameBorder='0' scrolling='no' />
+              <iframe width='750' height='1000' src='https://poda.municipiosanjuan.gob.ar/' frameBorder='0' scrolling='no' />
             </div>
           </div>
           <div className='relative z-0'>

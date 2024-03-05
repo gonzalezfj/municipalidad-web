@@ -51,17 +51,15 @@ export const ParadaTaxi = () => {
               <li>La vigencia de la misma será igual al tiempo estipulado en el comprobante de pago. (Boleta de ingreso).</li>
             </div>
           </div>
-          <div className='relative z-0'>
-            <svg className='h-48 w-48 lg:h-60 lg:w-96 absolute -top-[10px] right-10 lg:-top-[90px] rotate-180 scale-y-[-1]'>
-              <image href={img3} alt='img not found' className='w-auto lg:w-96 lg:h-full' />
-            </svg>
-          </div>
         </div>
         {/* BTN BACK */}
-        <div className='lg:px-96 px-8 py-4 lg:-left-20'>
-          <div className='pt-24'>
-            <ButtonBack />
-          </div>
+        <div className='pt-20'>
+          <ButtonBack />
+        </div>
+        <div className='relative'>
+          <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
+            <image href={img3} alt='img not found' className='w-28 h-28' />
+          </svg>
         </div>
       </div>
     </div>

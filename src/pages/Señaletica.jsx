@@ -79,12 +79,10 @@ export const Señaletica = () => {
           </div>
         </div>
         <div className='pt-20'>
-          <div className='items-center justify-center'>
-            <ButtonBack />
-          </div>
+          <ButtonBack />
           <div className='relative lg:pb-10'>
-            <svg className='h-36 w-36 lg:h-60 lg:w-60 absolute right-0 -top-20'>
-              <image href={img2} alt='img not found' className='w-36 lg:w-auto lg:h-auto' />
+            <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
+              <image href={img2} alt='img not found' className='w-28 h-28' />
             </svg>
           </div>
         </div>

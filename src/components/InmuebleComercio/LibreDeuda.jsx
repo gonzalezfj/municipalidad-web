@@ -70,7 +70,7 @@ export const LibreDeuda = () => {
           </div>
           {/* IMG */}
           <div className='relative z-0'>
-            <svg className='h-48 w-48 lg:h-64 lg:w-64 absolute lg:-right-10 -top-20 rotate-90 scale-y-[-1]'>
+            <svg className='h-48 w-48 lg:h-64 lg:w-64 absolute lg:-right-10 lg:top-0 -right-20 top-12 rotate-90 scale-y-[-1]'>
               <image href={img4} alt='img not found' className='w-auto lg:w-96 lg:h-full' />
             </svg>
           </div>
