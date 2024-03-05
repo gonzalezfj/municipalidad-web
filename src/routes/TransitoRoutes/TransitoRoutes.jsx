@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router'
 import { Obleas } from '@pages'
 import { Transito } from '@pages/Transito.jsx'
 import { Ocupacion } from '@pages/Ocupacion'
-import { Señaletica } from '@pages/Señaletica'
+import { Senaletica } from '@pages/Senaletica'
 import PlayaRemocion from '@pages/PlayaRemocion'
 import { Vehiculos } from '@components/Transito/Vehiculos'
 import { DenunciaVehiculos } from '@components/Transito/DenunciaVehiculos'
@@ -22,7 +22,7 @@ const TransitoRoutes = () => {
       <Route path='/obleas' element={<Obleas />} />
       <Route path='/plantillaObleas' element={<PlantillaObleas />} />
       <Route path='/permisos' element={<Ocupacion />} />
-      <Route path='/señaletica' element={<Señaletica />} />
+      <Route path='/Senaletica' element={<Senaletica />} />
       <Route path='/playaderemocion' element={<PlayaRemocion />} />
     </Routes>
   )

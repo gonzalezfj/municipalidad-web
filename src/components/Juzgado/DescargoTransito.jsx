@@ -36,7 +36,7 @@ const DescargoTransito = () => {
             </div>
           </div>
           <div className='relative z-0'>
-            <svg className='h-36 w-36 lg:h-44 lg:w-44 absolute -top-[10px] lg:-top-[100px] right-10 lg:-top-[280px] rotate-180 scale-y-[-1]'>
+            <svg className='h-36 w-36 lg:h-44 lg:w-44 absolute -top-[10px] right-10 lg:-top-[280px] rotate-180 scale-y-[-1]'>
               <image href={img1} alt='img not found' className='w-24 lg:w-44 lg:h-44' />
             </svg>
           </div>
