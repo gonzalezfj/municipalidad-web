@@ -12,6 +12,7 @@ import { ProgramaEntrenamiento } from '../../pages/Empleo/ProgramaEntrenamiento'
 import { CapacitacionLaboral } from '../../pages/Empleo/CapacitacionLaboral'
 import { ProgramaInsercionLaboral } from '../../pages/Empleo/ProgramaInsercionLaboral'
 import { ProgramaPromover } from '../../pages/Empleo/ProgramaPromover'
+import { ServicioFunebre } from '@/components/ServicioFunebre/ServicioFunebre'
 
 const AmbienteRoutes = () => {
   return (
@@ -28,6 +29,8 @@ const AmbienteRoutes = () => {
       <Route path='/capacitacionlaboral' element={<CapacitacionLaboral />} />
       <Route path='/programainsercionlaboral' element={<ProgramaInsercionLaboral />} />
       <Route path='/proframapromover' element={<ProgramaPromover />} />
+      {/* ESTA RUTA ES TEMPORAL EN ESTE COMPONENTE */}
+      <Route path='/serviciofunenbre' element={<ServicioFunebre />} />
     </Routes>
   )
 }
