@@ -15,6 +15,7 @@ import { ProgramaPromover } from '../../pages/Empleo/ProgramaPromover'
 import { ServicioFunebre } from '@/components/ServicioFunebre/ServicioFunebre'
 import { CementerioRender } from '@/components/Cementerio/CementerioRender'
 import { Tasas } from '@/components/Cementerio/Tasas'
+import { TransferenciaConcesion } from '@/components/Cementerio/TransferenciaConcesion'
 
 const AmbienteRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const AmbienteRoutes = () => {
       <Route path='/serviciofunenbre' element={<ServicioFunebre />} />
       <Route path='/cementeriomunicipal' element={<CementerioRender />} />
       <Route path='/tasas' element={<Tasas />} />
+      <Route path='/transferenciaconcesion' element={<TransferenciaConcesion />} />
     </Routes>
   )
 }
