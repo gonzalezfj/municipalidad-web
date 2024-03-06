@@ -12,7 +12,6 @@ import { Infraccion } from '@components/Transito/Infraccion'
 import { MediosDePrensa } from '@/components/Obleas/MediosDePrensa'
 import { PersonasConDiscapacidad } from '@/components/Obleas/PersonasConDiscapacidad'
 import { CargaYDescargaMercaderia } from '@/components/Obleas/CargaYDescargaMercaderia'
-import { ParadaDeTaxi } from '@/components/Obleas/ParadaDeTaxi'
 
 const TransitoRoutes = () => {
   return (
@@ -29,7 +28,6 @@ const TransitoRoutes = () => {
       <Route path='/playaderemocion' element={<PlayaRemocion />} />
       <Route path='/personascondiscapacidad' element={<PersonasConDiscapacidad />} />
       <Route path='/cargaydescargamercaderia' element={<CargaYDescargaMercaderia />} />
-      <Route path='/paradataxi' element={<ParadaDeTaxi />} />
     </Routes>
   )
 }
