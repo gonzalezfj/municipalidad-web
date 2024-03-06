@@ -1,7 +1,8 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img1 from '@assets/LibreDeuda/LibreDeuda_fondo.svg'
-import img2 from '@assets/obras/obras_icono.svg'
+// import img2 from '@assets/obras/obras_icono.svg'
+
 export const OcupacionConMaterial = () => {
   return (
     <div className='w-full'>
@@ -36,11 +37,11 @@ export const OcupacionConMaterial = () => {
               <image href={img1} alt='img not found' className='w-20 lg:w-96 lg:h-96' />
             </svg>
           </div>
-          <div className='relative z-0'>
+          {/* <div className='relative z-0'>
             <svg className='h-48 w-48 lg:h-64 lg:w-64 absolute -top-[10px] right-32 lg:right-96 lg:-top-[20px] rotate-180 scale-y-[-1]'>
               <image href={img2} alt='img not found' className='w-auto lg:w-64 lg:h-64' />
             </svg>
-          </div>
+          </div> */}
         </div>
         {/* BTN BACK */}
         <div className='lg:px-96 px-8 py-4 lg:-left-20'>

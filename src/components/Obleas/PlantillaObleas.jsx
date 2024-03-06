@@ -44,8 +44,8 @@ export const PlantillaObleas = () => {
           <ButtonBack />
         </div>
         <div className='relative'>
-          <svg className='h-48 w-48 absolute right-0 -top-20'>
-            <image href={img3} alt='img not found' className='w-auto' />
+          <svg className='h-28 w-28 absolute right-0 -top-20'>
+            <image href={img3} alt='img not found' className='h-28 w-28' />
           </svg>
         </div>
       </div>
