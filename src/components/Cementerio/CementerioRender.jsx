@@ -5,13 +5,15 @@ import { CementerioHome } from './CementerioHome'
 export const CementerioRender = () => {
   const menuItems = [
     {
-      title: 'Tasas 2024'
+      title: 'Tasas 2024',
+      path: '/tasas'
     },
     {
-      title: 'Transferencia de los Derechos de Concesión'
+      title: 'Transferencia de los Derechos de Concesión',
+      path: '/transferencia-de-derechos'
     },
     {
-      title: 'Servicio de Mantenimiento:'
+      title: 'Servicio de Mantenimiento'
     },
     {
       title: 'Obras y reparaciones'

@@ -14,6 +14,7 @@ import { ProgramaInsercionLaboral } from '../../pages/Empleo/ProgramaInsercionLa
 import { ProgramaPromover } from '../../pages/Empleo/ProgramaPromover'
 import { ServicioFunebre } from '@/components/ServicioFunebre/ServicioFunebre'
 import { CementerioRender } from '@/components/Cementerio/CementerioRender'
+import { Tasas } from '@/components/Cementerio/Tasas'
 
 const AmbienteRoutes = () => {
   return (
@@ -33,6 +34,7 @@ const AmbienteRoutes = () => {
       {/* ESTA RUTA ES TEMPORAL EN ESTE COMPONENTE */}
       <Route path='/serviciofunenbre' element={<ServicioFunebre />} />
       <Route path='/cementeriomunicipal' element={<CementerioRender />} />
+      <Route path='/tasas' element={<Tasas />} />
     </Routes>
   )
 }
