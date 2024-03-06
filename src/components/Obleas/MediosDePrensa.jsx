@@ -3,7 +3,7 @@ import ButtonBack from '../Default/ButtonBack'
 import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 
-export const PlantillaObleas = () => {
+export const MediosDePrensa = () => {
   return (
     <div className='w-full'>
       <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[75px] border-l-[#FFC14F] border-b-[75px] border-b-transparent border-r-[75px] border-r-transparent' />
@@ -40,12 +40,11 @@ export const PlantillaObleas = () => {
             SOLICITAR OBLEA
           </button>
         </div>
-        <div className='items-center justify-center'>
-          <ButtonBack />
-        </div>
+        {/* BTN BACK */}
+        <ButtonBack />
         <div className='relative'>
-          <svg className='h-48 w-48 absolute right-0 -top-20'>
-            <image href={img3} alt='img not found' className='w-auto' />
+          <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
+            <image href={img3} alt='img not found' className='w-28 h-28' />
           </svg>
         </div>
       </div>
