@@ -32,7 +32,7 @@ const AmbienteRoutes = () => {
       <Route path='/proframapromover' element={<ProgramaPromover />} />
       {/* ESTA RUTA ES TEMPORAL EN ESTE COMPONENTE */}
       <Route path='/serviciofunenbre' element={<ServicioFunebre />} />
-      <Route path='/cementeriormunicipal' element={<CementerioRender />} />
+      <Route path='/cementeriomunicipal' element={<CementerioRender />} />
     </Routes>
   )
 }
