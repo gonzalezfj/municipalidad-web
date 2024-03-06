@@ -6,19 +6,19 @@ import img4 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_f
 export const ParadaTaxi = () => {
   return (
     <div className='w-full'>
-      <div className='mx-auto gap-8 flex flex-col'>
-        {/* TITLE */}
-        <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[75px] border-l-[#FFC14F] border-b-[75px] border-b-transparent border-r-[75px] border-r-transparent
+      <div className='absolute top-0 w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[75px] border-l-[#FFC14F] border-b-[75px] border-b-transparent border-r-[75px] border-r-transparent
         lg:block lg:absolute lg:top-0 lg:w-0 lg:h-0 lg:border-t-[75px] lg:border-t-[#FFC14F] lg:border-l-[75px] lg:border-l-[#FFC14F] lg:border-b-[75px] lg:border-b-transparent lg:border-r-[75px] lg:border-r-transparent'
-        />
-        <div className='relative z-0'>
-          <svg className='lg:w-48 lg:top-[8rem] absolute top-[140px] lg:-right-0 -right-16 rotate-90'>
-            <image href={img4} alt='img not found' className='lg:h-40 lg:w-auto' />
-          </svg>
-        </div>
+      />
+      <div className='relative z-0'>
+        <svg className='lg:w-48 lg:top-[8rem] absolute top-[140px] lg:-right-0 -right-16 rotate-90'>
+          <image href={img4} alt='img not found' className='lg:h-40 lg:w-auto' />
+        </svg>
+      </div>
+      <div className='container px-8 mx-auto gap-8 flex flex-col'>
         {/* CUERPO */}
         <div className='gap-10 flex flex-col text-[#3E3E3E] font-semibold w-full'>
-          <div className='flex flex-col gap-4 lg:px-96 px-8 pt-36 lg:text-2xl'>
+          <div className='flex flex-col gap-4 pt-36 lg:text-2xl'>
+            {/* TITLE */}
             <h1 className='text-2xl font-extrabold text-[#4B0984] lg:text-3xl'>PARADA DE TAXI</h1>
             <p className='text-[#D85B35] italic font-bold'>Solicitud de oblea de estacionamiento para taxi.</p>
             <p className='text-[#3E3E3E] font-semibold lg:text-lg'>
@@ -53,9 +53,7 @@ export const ParadaTaxi = () => {
           </div>
         </div>
         {/* BTN BACK */}
-        <div className='pt-20'>
-          <ButtonBack />
-        </div>
+        <ButtonBack />
         <div className='relative'>
           <svg className='h-28 w-28 lg:w-36 lg:h-36 absolute right-5 -top-20'>
             <image href={img3} alt='img not found' className='w-28 h-28' />
