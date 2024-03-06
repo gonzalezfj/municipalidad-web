@@ -16,7 +16,7 @@ const Obleas = () => {
       {/* CONTENIDO */}
       <div className='container mx-auto flex flex-col gap-5 p-10 pt-28'>
         <div className='pt-10 w-24 flex flex-col-2 lg:w-full '>
-          <h1 className='font-extrabold text-1xl text-purple-800 lg:text-[2rem]'>OBLEAS DE ESTACIONAMIENTO</h1>
+          <h1 className='font-extrabold text-2xl text-purple-800 lg:text-[2rem]'>OBLEAS DE ESTACIONAMIENTO</h1>
         </div>
         <p className='font-semibold text-neutral-600 text-base lg:text-[1rem] lg:w-1/2'>Destinadas a personas con discapacidad, medios de prensa y carga y descarga de mercadería.</p>
         <h1 className='text-1xl font-extrabold text-purple-800 lg:text-[1.2rem]'>MEDIOS DE PRENSA</h1>
