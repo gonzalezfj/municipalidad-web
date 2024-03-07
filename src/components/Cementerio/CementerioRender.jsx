@@ -10,19 +10,23 @@ export const CementerioRender = () => {
     },
     {
       title: 'Transferencia de los Derechos de Concesión',
-      path: '/transferencia-de-derechos'
+      path: '/transferenciaconcesion'
     },
     {
-      title: 'Servicio de Mantenimiento'
+      title: 'Servicio de Mantenimiento',
+      path: '/'
     },
     {
-      title: 'Obras y reparaciones'
+      title: 'Obras y reparaciones',
+      path: '/'
     },
     {
-      title: 'Inhumaciones y Exhumaciones:'
+      title: 'Inhumaciones y Exhumaciones:',
+      path: '/'
     },
     {
-      title: 'Regularización de la deuda'
+      title: 'Regularización de la deuda',
+      path: '/'
     }
   ]
   return (

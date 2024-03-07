@@ -16,6 +16,10 @@ import { ServicioFunebre } from '@/components/ServicioFunebre/ServicioFunebre'
 import { CementerioRender } from '@/components/Cementerio/CementerioRender'
 import { Tasas } from '@/components/Cementerio/Tasas'
 import { TransferenciaConcesion } from '@/components/Cementerio/TransferenciaConcesion'
+import { ServicioMantenimiento } from '@/components/Cementerio/ServicioMantenimiento'
+import { ObrasReparaciones } from '@/components/Cementerio/ObrasReparaciones'
+import { InhumacionesExhumaciones } from '@/components/Cementerio/InhumacionesExhumaciones'
+import { RegulacionDeudas } from '@/components/Cementerio/RegulacionDeudas'
 
 const AmbienteRoutes = () => {
   return (
@@ -37,6 +41,10 @@ const AmbienteRoutes = () => {
       <Route path='/cementeriomunicipal' element={<CementerioRender />} />
       <Route path='/tasas' element={<Tasas />} />
       <Route path='/transferenciaconcesion' element={<TransferenciaConcesion />} />
+      <Route path='/serviciomantenimiento' element={<ServicioMantenimiento />} />
+      <Route path='/obrasreparaciones' element={<ObrasReparaciones />} />
+      <Route path='/inhumacionesexhumaciones' element={<InhumacionesExhumaciones />} />
+      <Route path='/regulaciondeudas' element={<RegulacionDeudas />} />
     </Routes>
   )
 }
