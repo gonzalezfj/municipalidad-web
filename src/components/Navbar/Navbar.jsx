@@ -102,7 +102,7 @@ const Navbar = () => {
             {/* <div className='flex justify-center'>
               <input placeholder='Buscar...' className='p-2 mb-2 w-60 rounded-full border border-[#4B0984]' />
             </div> */}
-            <Links navData={navData} />
+            <Links navData={navData} setOpen={setOpen} />
           </div>
           <img src={sidebarImage} className='absolute bottom-20 right-0' />
         </div>
