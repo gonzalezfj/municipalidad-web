@@ -1,6 +1,6 @@
 import React from 'react'
 import img5 from '@assets/Ocupacion_Calzada/espacioUrbano_iconoFondo2.svg'
-import ButtonBack from '../Default/ButtonBack'
+import ButtonBack from '@/components/Default/ButtonBack'
 
 export const SoporteAntena = () => {
   return (

@@ -12,6 +12,8 @@ import Footer from '@components/Footer/Footer'
 import '@/App.css'
 import ComercioRoutes from './routes/ComercioRoutes/ComercioRoutes'
 import { JuzgadoRoutes } from './routes/JuzgadoRoutes'
+import { EmpleoRoutes } from './routes/EmpleoRoutes'
+import { UrbanoRoutes } from './routes/UrbanoRoutes'
 
 function App () {
   return (
@@ -27,6 +29,8 @@ function App () {
       <ComercioRoutes />
       <NewsRoutes />
       <JuzgadoRoutes />
+      <EmpleoRoutes />
+      <UrbanoRoutes />
       <Footer />
     </Router>
   )

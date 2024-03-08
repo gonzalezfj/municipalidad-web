@@ -3,7 +3,7 @@ import img1 from '@assets/Ocupacion_Calzada/formulario.jpg'
 import img2 from '@assets/Ocupacion_Calzada/mapCalzada.jpg'
 import img3 from '@assets/Ocupacion_Calzada/formularioCalzada.jpg'
 import img4 from '@assets/Ocupacion_Calzada/espacioUrbano_iconoCartel.svg'
-import ButtonBack from '../Default/ButtonBack'
+import ButtonBack from '@/components/Default/ButtonBack'
 
 export const OcupacionCalzada = () => {
   return (
