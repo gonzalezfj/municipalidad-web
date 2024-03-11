@@ -6,6 +6,7 @@ import InfoEco from './components/Informacion/InfoEco'
 import DestacadaEco from './components/Destacadas/DestacadaEco'
 import ButtonsEco from './components/Buttons/ButtonsEco'
 import ButtonBack from '@components/Default/ButtonBack'
+import { Link } from 'react-router-dom'
 
 const Eco = () => {
   const [ecoData, setEcoData] = useState()
@@ -32,12 +33,16 @@ const Eco = () => {
             <h1 className='text-xl font-bold'>Descarga la app</h1>
             <p className='mt-2'>Puedes pagar a través de nuestra app para IOs y Android. La puedes descargar gratis desde las tiendas oficiales o bien haciendo clic acá:</p>
             <div className='flex gap-5 mt-3'>
-              <svg className='bg-[#D85B35] rounded-full w-24 h-24'>
-                <image className='w-24 h-24' href={imgPlaystore} />
-              </svg>
-              <svg className='bg-[#D85B35] rounded-full w-24 h-24'>
-                <image className='w-24 h-24' href={imgApplestore} />
-              </svg>
+              <Link to='https://play.google.com/store/apps/details?id=com.elinpar.mpark.mobile.android.eco_sanjuan&pli=1'>
+                <svg className='bg-[#D85B35] rounded-full w-24 h-24'>
+                  <image className='w-24 h-24' href={imgPlaystore} />
+                </svg>
+              </Link>
+              <Link to='https://apps.apple.com/ar/app/eco-san-juan/id1389422806'>
+                <svg className='bg-[#D85B35] rounded-full w-24 h-24'>
+                  <image className='w-24 h-24' href={imgApplestore} />
+                </svg>
+              </Link>
             </div>
           </div>
           <InfoEco ecoData={ecoData} />
