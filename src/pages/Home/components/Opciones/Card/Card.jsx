@@ -1,6 +1,5 @@
 import ContentLoader from 'react-content-loader'
 import { useNavigate } from 'react-router'
-
 import range from '@/utils/range'
 
 const CardItem = ({ title, icon, onClick }) => {

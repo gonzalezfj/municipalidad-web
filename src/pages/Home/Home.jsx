@@ -15,6 +15,7 @@ const Home = () => {
     const getInfoStrapi = async () => {
       try {
         setIsLoading(true)
+        await new Promise(resolve => setTimeout(resolve, 1500))
         const response = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/home?populate=*')
         const data = await response.json()
         const responseImagen = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/home?populate[0]=Destacados&populate[1]=Destacados.Imagen')

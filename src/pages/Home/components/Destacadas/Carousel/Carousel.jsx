@@ -1,5 +1,4 @@
 import Slider from 'react-slick'
-
 import range from '@/utils/range'
 
 const settings = {
@@ -65,6 +64,7 @@ const Item = ({ image, description, title }) => {
 
   )
 }
+
 
 export default function CarruselDestacado ({
   slides,
