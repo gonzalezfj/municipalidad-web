@@ -1,5 +1,7 @@
 import Slider from 'react-slick'
 
+import range from '@/utils/range'
+
 const settings = {
   dots: true,
   arrows: false,
@@ -71,7 +73,7 @@ export default function CarruselDestacado ({
   if (isLoading) {
     return (
       <Slider {...settings}>
-        {Array(5).fill(0).map((_, index) => (
+        {range(5).map((_, index) => (
           <Item key={index} description='' title='' />
         ))}
       </Slider>

@@ -1,6 +1,8 @@
 import ContentLoader from 'react-content-loader'
 import { useNavigate } from 'react-router'
 
+import range from '@/utils/range'
+
 const CardItem = ({ title, icon, onClick }) => {
   return (
     <div onClick={onClick} className='w-40 h-52 lg:w-52 lg:h-62 overflow-hidden shadow-lg bg-third rounded-primary flex flex-col items-center justify-center cursor-pointer' data-aos='fade-right'>
@@ -40,7 +42,7 @@ const Card = ({ botones, isLoading }) => {
   if (isLoading) {
     return (
       <div className='grid gap-x-14 gap-y-6 grid-cols-2 md:gap-x-16 md:gap-y-8 lg:grid-cols-3 lg:gap-y-20 lg:gap-x-28 sm:gap-x-4 sm:gap-y-4 sm:grid-cols-3 mt-20 mb-20'>
-        {Array(6).fill(0).map((e) => <CardItemPlaceholder key={e} />)}
+        {range(6).map((e) => <CardItemPlaceholder key={e} />)}
       </div>
     )
   }
