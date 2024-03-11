@@ -6,7 +6,7 @@ export const InhumacionesExhumaciones = () => {
       <div className='container mx-auto px-4 h-full flex flex-col gap-4 items-center justify-center pt-44 pb-20'>
         <h1 className='text-2xl text-[#3E3E3E] font-extrabold pb-4'>Inhumaciones y Exhumaciones:</h1>
         <p>Por los servicios de inhumación y exhumación, se abonará:</p>
-        <div className='container relative overflow-x-auto'>
+        <div className='container flex justify-center relative overflow-x-auto'>
           <table className='lg:w-[45rem] text-sm text-left rtl:text-right'>
             <tbody>
               <tr className='bg-[#FFC14F]'>

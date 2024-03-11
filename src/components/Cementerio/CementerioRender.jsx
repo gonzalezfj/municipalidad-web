@@ -14,19 +14,19 @@ export const CementerioRender = () => {
     },
     {
       title: 'Servicio de Mantenimiento',
-      path: '/'
+      path: '/serviciomantenimiento'
     },
     {
       title: 'Obras y reparaciones',
-      path: '/'
+      path: '/obrasreparaciones'
     },
     {
       title: 'Inhumaciones y Exhumaciones:',
-      path: '/'
+      path: '/inhumacionesexhumaciones'
     },
     {
       title: 'Regularización de la deuda',
-      path: '/'
+      path: '/regulaciondeudas'
     }
   ]
   return (

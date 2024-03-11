@@ -14,6 +14,7 @@ import ComercioRoutes from './routes/ComercioRoutes/ComercioRoutes'
 import { JuzgadoRoutes } from './routes/JuzgadoRoutes'
 import { EmpleoRoutes } from './routes/EmpleoRoutes'
 import { UrbanoRoutes } from './routes/UrbanoRoutes'
+import { CementerioRoutes } from './routes'
 
 function App () {
   return (
@@ -31,6 +32,7 @@ function App () {
       <JuzgadoRoutes />
       <EmpleoRoutes />
       <UrbanoRoutes />
+      <CementerioRoutes />
       <Footer />
     </Router>
   )
