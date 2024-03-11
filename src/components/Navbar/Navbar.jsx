@@ -5,6 +5,45 @@ import Links from './Links'
 // import imgSearch from '../../assets/home_menu_buscador.svg'
 import sidebarImage from '../../assets/group_61.png'
 
+const endpoints = {
+  menuItems: import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems&populate[2]=Logo'
+}
+
+const Logo = ({ path }) => {
+  return (
+    <div className='flex items-center'>
+      <NavLink to='/'>
+        {
+          path && <img className='px-3 h-16 lg:h-auto' src={import.meta.env.VITE_STRAPI_URL + path} />
+        }
+      </NavLink>
+    </div>
+  )
+}
+
+const HamburgerMenu = ({ setOpen }) => {
+  return (
+    <div className='flex items-center'>
+      <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 24 24'
+          strokeWidth={1.5}
+          stroke='currentColor'
+          className='w-7 h-7'
+        >
+          <path
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+          />
+        </svg>
+      </button>
+    </div>
+  )
+}
+
 const Navbar = () => {
   const [navData, setNavData] = useState()
   const [open, setOpen] = useState(false)
@@ -13,12 +52,10 @@ const Navbar = () => {
   useEffect(() => {
     const getInfoStrapi = async () => {
       try {
-        const responseLinks = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate=*')
-        const dataLinks = await responseLinks.json()
-        const responseSubLinks = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems')
-        const dataSubLinks = await responseSubLinks.json()
-        const dataNavbar = Object.assign(dataLinks.data.attributes, dataSubLinks.data.attributes)
-        setNavData(dataNavbar)
+        const responseLinks = await fetch(endpoints.menuItems).then((res) =>
+          res.json()
+        )
+        setNavData(responseLinks.data.attributes)
       } catch (error) {
         console.error('Error fetching data:', error)
       }
@@ -29,16 +66,8 @@ const Navbar = () => {
   return (
     <div className='container absolute p-2 left-0 right-0 mx-auto'>
       <div className='z-50 bg-white sticky top-0 left-0 right-0 shadow-md rounded-xl flex justify-between lg:'>
-        <div>
-          <NavLink to='/'><img className='px-3 h-16 lg:h-auto lg:mt-2' src={import.meta.env.VITE_STRAPI_URL + navData?.Logo.data.attributes.url} /></NavLink>
-        </div>
-        <div className='flex items-center'>
-          <button className='mr-3 lg:hidden' onClick={() => setOpen(true)}>
-            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-7 h-7'>
-              <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
-            </svg>
-          </button>
-        </div>
+        <Logo path={navData?.Logo.data.attributes.url} />
+        <HamburgerMenu open={open} setOpen={setOpen} />
         <div className='hidden md:hidden lg:px-24 lg:container lg:flex lg:items-center lg:justify-between lg:mx-auto lg:text-gray-600'>
           {navData?.Items.map((e) => (
             <div key={e?.id} className='relative'>
