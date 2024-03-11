@@ -1,7 +1,8 @@
 import React from 'react'
 import img from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
 import img2 from '@assets/img temporal/estoyBuscandoUn.jpg'
-export const PromoveOficio = () => {
+
+export const PromoverOficio = () => {
   return (
     <div>
       {/* IMG */}
