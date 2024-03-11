@@ -1,6 +1,7 @@
 import Categorias from './components/Categorias/Categorias'
 import { useEffect, useState } from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
+import imgFondo from '@assets/group_61.png'
 
 const Tramites = () => {
   const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false, false])
@@ -31,7 +32,7 @@ const Tramites = () => {
         <Categorias tramiteData={tramiteData} dropdownStates={dropdownStates} setDropdownStates={setDropdownStates} />
       </div>
       <div className='flex justify-between'>
-        <img className='scale-x-[-1] -z-10' src='src\assets\group_61.png' />
+        <img className='scale-x-[-1] -z-10' src={imgFondo} />
       </div>
       <div className='container mx-auto flex justify-center items-center xl:block xl:p-4'>
         <ButtonBack />
