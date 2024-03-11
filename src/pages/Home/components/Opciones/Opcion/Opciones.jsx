@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../Card'
 
-const Opciones = () => {
+const Opciones = ({ isLoading }) => {
   const [ButtonsData, setButtonsData] = useState()
   useEffect(() => {
     const getInfoStrapi = async () => {
@@ -17,11 +17,9 @@ const Opciones = () => {
   }, [])
 
   return (
-    <div className=''>
-      <div className='bg-secondary'>
-        <div className='items-center justify-center flex bg-primary rounded-secondary lg:rounded-tl-[50vh]'>
-          <Card buttonsData={ButtonsData} />
-        </div>
+    <div className='bg-secondary'>
+      <div className='items-center justify-center flex bg-primary rounded-secondary lg:rounded-tl-[50vh]'>
+        <Card isLoading={isLoading} botones={ButtonsData?.Botones} />
       </div>
     </div>
   )
