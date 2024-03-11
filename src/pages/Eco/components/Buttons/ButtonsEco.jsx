@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom'
+
 const ButtonsEco = () => {
   return (
     <div className='container'>
       <div className='p-7 text-[#616161]'>
         <h1 className='text-xl font-bold'>Gestionar Obleas de Estacionamiento</h1>
         <p className='mt-2'> </p>
-        <a href='/obleas' className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>OBLEAS</a>
+        <Link to='/obleas' className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>OBLEAS</Link>
       </div>
       <div className='p-7 text-[#616161]'>
         <h1 className='text-xl font-bold mt-2'>Remoción por grúa</h1>
         <p className='mt-2 mb-2'>¿Tu vehículo fue removido por nuestras grúas?</p>
-        <a href='/playaderemocion' className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>PLAYA DE REMOCIÓN</a>
+        <Link to='/playaderemocion' className='mt-2 p-2 font-bold bg-[#FFC14F] rounded-xl'>PLAYA DE REMOCIÓN</Link>
       </div>
       <div className='p-7 text-[#616161]'>
         <h1 className='text-xl font-bold'>Descargo por infracciones</h1>
