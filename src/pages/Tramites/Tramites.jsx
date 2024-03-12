@@ -26,7 +26,7 @@ const Tramites = () => {
     <>
       <div className='w-0 h-0 border-t-[75px] border-t-[#FFC14F] border-l-[75px] border-l-[#FFC14F] border-b-[75px] border-b-transparent border-r-[75px] border-r-transparent' />
       <div className='container mx-auto p-4 font-extrabold text-[#FFC14F]'>
-        <h1>GESTIÓN DE TRAMITES</h1>
+        <h1 className='text-2xl'>GESTIÓN DE TRAMITES</h1>
       </div>
       <div className='container mx-auto'>
         <Categorias tramiteData={tramiteData} dropdownStates={dropdownStates} setDropdownStates={setDropdownStates} />
