@@ -25,7 +25,8 @@ Una vez instalados los paquetes, es posible levantar un servidor local de desarr
 Si se necesita tener una previsualización de producción, el siguiente comando compila la aplicación y levanta un servidor de testeo
 
     npm run preview
-    ## Contribución
+    
+## Contribución
 
 Para poder contribuir en el proyecto, hay algunas consideraciones a tener en cuenta.
 
