@@ -109,7 +109,7 @@ const Empleo = () => {
             <CarruselEmpleo slides={slides} />
           </div>
           <div className='items-center justify-center flex pt-10'>
-            <button className='rounded-3xl w-[14rem] h-10 bg-[#D85B35]'>Consultas frecuentes</button>
+            <button className='font-bold  rounded-3xl w-[15rem] h-10 bg-[#D85B35]'>CONSULTAS FRECUENTES</button>
           </div>
         </div>
         <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center' />
