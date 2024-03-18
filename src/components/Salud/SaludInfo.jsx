@@ -4,8 +4,8 @@ export const SaludInfo = () => {
   return (
     <div>
       <div className='container flex flex-col h-full px-8 gap-2 border border-purple-800 rounded-3xl shadow-2xl p-10'>
-        <h1 className='text-[#4B0984] font-extrabold text-2xl'>Vacunatorio</h1>
-        <h4 className='text-[#4B0984] font-extrabold text-1xl'>Atencion</h4>
+        <h1 className='text-[#4B0984] font-extrabold text-[2rem]'>Vacunatorio</h1>
+        <h4 className='text-[#4B0984] font-extrabold text-2xl'>Atencion</h4>
         <p className='font-semibold'>De lunes a viernes de 8 a 12:30 hs
           por orden de llegada.
         </p>
@@ -14,7 +14,7 @@ export const SaludInfo = () => {
           CIC Barrio Manantial
           Agustín Gómez 201 oeste
         </p>
-        <h3 className='text-[#4B0984] font-extrabold text-1xl'>
+        <h3 className='text-[#4B0984] font-extrabold text-2xl'>
           Vacunas gratuitas disponibles
         </h3>
         <div className='list-disc pl-4'>
@@ -42,7 +42,7 @@ export const SaludInfo = () => {
             23 valente
           </li>
         </div>
-        <h1 className='text-[#4B0984] font-extrabold text-1xl'>Requisitos</h1>
+        <h1 className='text-[#4B0984] font-extrabold text-2xl'>Requisitos</h1>
         <div className='list-disc pl-4'>
           <li>Traer calendario de vacunas (OBLIGATORIO).
             En caso de haberlo extraviado puede dirigirse a la Dirección de Salud a fin de constatar en el sistema el registro de vacunación
