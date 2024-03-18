@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { Link } from 'react-router-dom'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export default function CarruselEmpleo ({
@@ -71,18 +72,20 @@ export default function CarruselEmpleo ({
         `}
       </style>
       <Slider {...settings} afterChange={index => setCurr(index)}>
-        {slides.map((img, key, index) => (
+        {slides.map((slide, index) => (
           <div
             data-aos='fade-left'
-            key={key}
-            className='w-full lg:w-60 flex rounded-lg overflow-hidden p-10 lg:h-full'
+            key={index}
+            className='w-full h-[30rem] lg:w-60 flex c overflow-hidden p-10 lg:h-full'
           >
-            <div className='h-82 lg:h-40 lg:w-40 rounded-lg flex object-cover'>
-              <img className='w-full h-64 lg:h-full object-cover rounded-t-lg' src={img} alt={`Slide ${key}`} />
-            </div>
-            <div className=' bg-secondary rounded-b-lg lg:w-40 lg:h-20 shadow-lg'>
+            <Link key={index} to={slide.path}>
+              <div className='h-82 lg:h-40 lg:w-40 rounded-lg flex object-cover'>
+                <img className='w-full h-64 lg:h-full object-cover rounded-t-lg' src={slide.image} alt={`Slide ${index}`} />
+              </div>
+            </Link>
+            <div className=' bg-secondary rounded-b-xl lg:w-40 lg:h-20 h-full shadow-lg'>
               <div className='px-6 py-10 lg:px-0 lg:py-0 lg:w-60 lg:text-center'>
-                <h3 className='font-bold text-3xl lg:w-40 lg:pt-4 lg:text-sm text-third'>Pirotecnia Cero en la Ciudad de San Juan</h3>
+                <h3 className='font-bold text-3xl lg:w-40 lg:pt-4 lg:text-sm text-third'>{slide.title}</h3>
               </div>
             </div>
           </div>

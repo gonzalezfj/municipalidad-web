@@ -4,10 +4,83 @@ import boton from '@assets/mobilEmpleo/empleo_botonCalendario.svg'
 import img1 from '@assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 import img2 from '@assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
 import img3 from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
-import ButtonBack from '@components/Default/ButtonBack'
+import img4 from '@assets/mobilEmpleo/empleoMobile_ProgramaInsercionLaboral.jpg'
+import img5 from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioRegisto.jpg'
+import img6 from '@assets/mobilEmpleo/empleoMobile_ProgramaPromover.jpg'
+// import ButtonBack from '@components/Default/ButtonBack'
+
+/*
+ <Route path='/programapromover' element={<ProgramaPromover />} />
+<Route path='/registraroficio' element={<RegistrarOficio />} />
+<Route path='/promoveroficio' element={<PromoverOficio />} />
+<Route path='/programaentrenamientotrabajo' element={<ProgramaEntrenamiento />} />
+<Route path='/capacitacionlaboral' element={<CapacitacionLaboral />} />
+<Route path='/programainsercionlaboral' element={<ProgramaInsercionLaboral />} />
+*/
 
 const Empleo = () => {
-  const slides = [img1, img2, img3, img3, img3, img3, img3]
+  const slides = [
+    {
+      title: 'Cursos y capacitación laboral',
+      image: img1,
+      path: '/capacitacionlaboral'
+    },
+    {
+      title: 'Entrenamiento para el trabajo',
+      image: img2,
+      path: '/programaentrenamientotrabajo'
+    },
+    {
+      title: 'Promové tu oficio guía Digital',
+      image: img3,
+      path: '/promoveroficio'
+    },
+    {
+      title: 'Inserción laboral',
+      image: img4,
+      path: '/programainsercionlaboral'
+    },
+    {
+      title: 'Promové tu oficio Registro de oficio',
+      image: img5,
+      path: '/registraroficio'
+    },
+    {
+      title: 'Promover',
+      image: img6,
+      path: '/programapromover'
+    },
+    {
+      title: 'Cursos y capacitación laboral',
+      image: img1,
+      path: '/capacitacionlaboral'
+    },
+    {
+      title: 'Entrenamiento para el trabajo',
+      image: img2,
+      path: '/programaentrenamientotrabajo'
+    },
+    {
+      title: 'Promové tu oficio guía Digital',
+      image: img3,
+      path: '/promoveroficio'
+    },
+    {
+      title: 'Inserción laboral',
+      image: img4,
+      path: '/programainsercionlaboral'
+    },
+    {
+      title: 'Promové tu oficio Registro de oficio',
+      image: img5,
+      path: '/registraroficio'
+    },
+    {
+      title: 'Promover',
+      image: img6,
+      path: '/programapromover'
+    }
+  ]
   return (
     <div className='pt-20'>
       {/* PRIMERA PARTE */}
@@ -26,18 +99,23 @@ const Empleo = () => {
         </div>
       </div>
       {/* PRIMERA PARTE */}
-      <div className='lg:items-center relative lg:justify-center lg:w-full'>
-        <h1 className='font-bold text-2xl pt-4 pl-10 lg:pt-0 lg:pl-0 lg:ml-[12.5rem] text-seven'>PROGRAMAS</h1>
-        <div className='bg-primary  relative w-full h-auto text-white'>
+      <div className='relative lg:items-center lg:justify-center lg:w-full'>
+        <div className='lg:pl-[13rem]'>
+          <h1 className='font-bold text-2xl pt-4 pl-10 lg:pt-0 lg:pl-0 text-seven'>PROGRAMAS</h1>
+        </div>
+        <div className='bg-primary relative w-full h-auto text-white pb-10'>
           <div className='bg-white w-full h-20 z-60 absolute lg:w-full rounded-br-full' />
           <div>
             <CarruselEmpleo slides={slides} />
           </div>
+          <div className='items-center justify-center flex pt-10'>
+            <button className='rounded-3xl w-[14rem] h-10 bg-[#D85B35]'>Consultas frecuentes</button>
+          </div>
         </div>
         <div className='bg-primary absolute -bottom-30 w-full h-20 rounded-br-full lg:flex lg:items-center lg:justify-center'>
-          <div className=' container mx-auto flex items-center justify-center xl:block'>
+          {/* <div className=' container mx-auto flex items-center justify-center xl:block'>
             <ButtonBack />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
