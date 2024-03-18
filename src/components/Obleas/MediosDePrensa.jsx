@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
 import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import img3 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
+import { Link } from 'react-router-dom'
 
 export const MediosDePrensa = () => {
   return (
@@ -35,11 +36,11 @@ export const MediosDePrensa = () => {
           </div>
         </div>
         {/* INFO  */}
-        <div className='py-4'>
+        <Link to='https://obleasintegrado.municipiosanjuan.gob.ar/FormularioObleas'>
           <button className='bg-transparent hover:bg-[#D85B35] text-[#D85B35] text-1xl font-extrabold  hover:text-white py-4 px-8  border-[#D85B35] border-2 hover:border-transparent rounded-3xl'>
             SOLICITAR OBLEA
           </button>
-        </div>
+        </Link>
         {/* BTN BACK */}
         <ButtonBack />
         <div className='relative'>
