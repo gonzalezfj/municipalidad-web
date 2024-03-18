@@ -1,5 +1,6 @@
 import React from 'react'
 import img from '@assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
+import ButtonBack from '@/components/Default/ButtonBack'
 export const CapacitacionLaboral = () => {
   return (
     <div>
@@ -46,6 +47,9 @@ export const CapacitacionLaboral = () => {
           <li>Los vecinos que quieran participar deberán informarce de los cursos vigentes de manera presencial en la Dirección de Empleo.</li>
           <li>Residir en Capital, que el domicilio figure en el DNI.</li>
         </section>
+        <div className=' container mx-auto flex items-center justify-center xl:block'>
+          <ButtonBack />
+        </div>
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 import img from '@assets/mobilEmpleo/empleoMobile_ProgramaInsercionLaboral.jpg'
 import img3 from '@assets/img temporal/dotacionTabla2.jpg'
 import { Accordion, AccordionTab } from 'primereact/accordion'
+import ButtonBack from '@/components/Default/ButtonBack'
 export const ProgramaInsercionLaboral = () => {
   return (
     <div>
@@ -20,14 +21,14 @@ export const ProgramaInsercionLaboral = () => {
           <div className='card'>
             <Accordion activeIndex={0} className='pt-4'>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] lg:text-[1.4rem] pb-4 lg:pb-10' header='Beneficios'>
-                <div className='list-item text-sm lg:text-base text-slate-900 pl-2'>
+                <div className='text-sm lg:text-base text-slate-900 pl-2'>
                   <li>La posibilidad de imputar la asignación dineraria de los programas sociales, educativos o de empleo que se continúe percibiendo, a cuenta del pago de la remuneración a través del Programa de Inserción Laboral del Ministerio de Trabajo, Empleo y Seguridad Social. </li>
                   <li>Una reducción de las contribuciones patronales del 100% por 12 meses.</li>
                 </div>
               </AccordionTab>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] pb-4 lg:pb-10 lg:text-[1.4rem]' header='Destinatarios I'>
                 <h1 className='text-black text-lg'>Empresas:</h1>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Todas, independientemente de su tamaño.</li>
                   <li>Deben estar inscriptas en AFIP.</li>
                   <li>No deben figurar en el RESAL (Registro Público de Empleadores con Sanciones Laborales)</li>
@@ -36,7 +37,7 @@ export const ProgramaInsercionLaboral = () => {
               </AccordionTab>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] pb-4 lg:pb-10 lg:text-[1.4rem]' header='Destinatarios II'>
                 <h1 className='font-extrabold text-black lg:text-lg'>Trabajadores/as desocupados/as mayores de DIECIOCHO (18) años participantes de:</h1>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Programa de Inserción Laboral del Ministerio de Trabajo, Empleo y Seguridad Social de la Nación.</li>
                   <li>Participantes del POGRAMA FOMENTAR EMPLEO del Ministerio de Trabajo, Empleo y Seguridad Social de la Nación, con Tratamiento General y Especial.</li>
                   <li>Titulares del Potenciar Trabajo del Ministerio de Desarrollo Social de la Nación.</li>
@@ -100,6 +101,9 @@ export const ProgramaInsercionLaboral = () => {
             </Accordion>
           </div>
         </section>
+        <div className=' container mx-auto flex items-center justify-center xl:block'>
+          <ButtonBack />
+        </div>
       </div>
     </div>
   )

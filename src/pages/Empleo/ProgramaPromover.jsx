@@ -1,5 +1,6 @@
 import React from 'react'
 import img from '@assets/mobilEmpleo/empleoMobile_ProgramaPromover.jpg'
+import ButtonBack from '@/components/Default/ButtonBack'
 // import img2 from '@assets/img temporal/estoyBuscandoUn.jpg'
 
 export const ProgramaPromover = () => {
@@ -16,11 +17,14 @@ export const ProgramaPromover = () => {
           <h1 className='font-extrabold'>¿A quien está dirigido?</h1>
           <p>A personas mayores de 18 años con discapacidad, que se encuentran desocupadas y residan en Capital.</p>
           <h1 className='font-extrabold'>Requisitos:</h1>
-          <ul className='list-disc pl-4'>
+          <ul className='pl-4'>
             <li>DNI</li>
             <li>Acreditar Discapacidad mediante Certificado Único de Discapacidad (CUD) expedido por autoridad competente en los términos del Artículo 3 de la Ley N° 22.431 y su modificatoria o norma análoga local, vigente.</li>
           </ul>
         </section>
+        <div className=' container mx-auto flex items-center justify-center xl:block'>
+          <ButtonBack />
+        </div>
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ import img from '@assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTra
 import img2 from '@assets/img temporal/dotacionTabla.jpg'
 import img3 from '@assets/img temporal/dotacionTabla2.jpg'
 import { Accordion, AccordionTab } from 'primereact/accordion'
+import ButtonBack from '@/components/Default/ButtonBack'
 
 export const ProgramaEntrenamiento = () => {
   return (
@@ -18,7 +19,7 @@ export const ProgramaEntrenamiento = () => {
           <div className='card'>
             <Accordion activeIndex={0} className='pt-4'>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] lg:text-[1.4rem] pb-4 lg:pb-10' header='Quienes pueden accerder al programa'>
-                <div className='list-item text-sm lg:text-base text-slate-900 pl-2'>
+                <div className='text-sm lg:text-base text-slate-900 pl-2'>
                   <li>Jóvenes que tengan entre 18 y hasta 24 años </li>
                   <li>Micro, Pequeñas, Medianas y Grandes Empresas.</li>
                 </div>
@@ -27,7 +28,7 @@ export const ProgramaEntrenamiento = () => {
                 <h1 className='text-black text-lg'>Montos</h1>
                 <p className='m-0 text-slate-800 text-sm lg:text-base'>Los trabajadores recibirán una suma de $45.000 mensuales a cargo del Ministerio de Trabajo, Empleo y Seguridad Social (MTEySS) o en forma conjunta con la empresa.</p>
                 <h1 className='text-black text-lg'>Entre sus objetivos:</h1>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Mejorar las condiciones de empleabilidad de trabajadores desocupados</li>
                   <li>Contribuir al fortalecimiento de la productividad y competitividad de empresas</li>
                   <li>Formar trabajadores capacitados de acuerdo a necesidades empresariales</li>
@@ -35,20 +36,20 @@ export const ProgramaEntrenamiento = () => {
               </AccordionTab>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] pb-4 lg:pb-10 lg:text-[1.4rem]' header='Acciones de Entrenamiento para el Trabajo'>
                 <h1 className='text-black text-lg'>Características de los proyectos</h1>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Los/as aprendices llevan a cabo acciones de formación teórica y práctica en un puesto de trabajo que les permiten mejorar su empleabilidad.</li>
                   <li>Durante el período de entrenamiento, no hay relación laboral entre el/a trabajador/a y la empresa.</li>
                   <li>Formar trabajadores capacitados de acuerdo a necesidades empresariales</li>
                 </div>
                 <h1 className='text-black text-lg'>Jornada y duración de las acciones</h1>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Las acciones podrán tener una carga horaria de hasta 20 horas semanales.</li>
                   <li>Lunes a viernes, en una sola franja horaria, entre las 05:00 a 22:00hs y en días hábiles.</li>
                   <li>Hasta 6 meses.</li>
                 </div>
               </AccordionTab>
               <AccordionTab className='text-[#8A43EF] text-[1.1rem] pb-4 lg:pb-10 lg:text-[1.4rem]' header='Responsabilidades de la empresa'>
-                <div className='list-item text-sm text-slate-900 pl-2 lg:text-base'>
+                <div className='text-sm text-slate-900 pl-2 lg:text-base'>
                   <li>Designar la cantidad de tutores que corresponda ,según dotación y cantidad de participantes.</li>
                   <li>Entregar un certificado a los/as participantes luego de concluido el proyecto.</li>
                   <li>Garantizar una cobertura de riesgos de trabajo y de salud para los/as participantes.</li>
@@ -73,7 +74,7 @@ export const ProgramaEntrenamiento = () => {
                 <section className='text-black text-sm lg:text-base'>
                   <p>*Este monto aplica para las acciones a partir de marzo 2023 y para participantes incluidos/as en los grupos poblacionales con tratamiento especial del PROGRAMA FOMENTAR EMPLEO. Para el resto de las poblaciones destinatarias, la ayuda económica es de $39.000.</p>
                   <h1>Normativa</h1>
-                  <div className='list-item pl-2 lg:text-base'>
+                  <div className='pl-2 lg:text-base'>
                     <li>Resolución MTEySS N°708/10</li>
                     <li>Resolución SE N°905/10 y sus modificatorias</li>
                   </div>
@@ -84,6 +85,9 @@ export const ProgramaEntrenamiento = () => {
         </section>
         <div className='flex flex-col gap-2'>
           <button className='text-white bg-[#4B0984] rounded-3xl h-10 lg:w-[40rem] lg:text-[1.2rem] lg:h-14'>Quiero entrenarme en una empresa</button>
+        </div>
+        <div className=' container mx-auto flex items-center justify-center xl:block'>
+          <ButtonBack />
         </div>
       </div>
     </div>

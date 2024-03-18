@@ -2,6 +2,7 @@ import React from 'react'
 import img from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioRegisto.jpg'
 import img2 from '@assets/img temporal/formularioOficio.jpg'
 import img3 from '@assets/img temporal/formularioOficioImg.jpg'
+import ButtonBack from '@/components/Default/ButtonBack'
 export const RegistrarOficio = () => {
   return (
     <div>
@@ -35,6 +36,9 @@ export const RegistrarOficio = () => {
               <li>Horarios de atención: De 7 a 13hs.</li>
             </ul>
           </section>
+          <div className=' container mx-auto flex items-center justify-center xl:block'>
+            <ButtonBack />
+          </div>
           {/* FALTA RECURSO  !!!! */}
         </div>
       </div>
