@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "deploy": "npm run build && pm2 serve dist 5173 --spa --name PaginaWebDevelopment",
     "build": "vite build",
     "prepare": "husky",
     "test": "echo Testeo aun no implementado",
