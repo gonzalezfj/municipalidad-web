@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import imgPlaystore from '@assets/ecoMobile_seccion2_botonPlaystore.svg'
-import imgApplestore from '@assets/ecoMobile_seccion2_botonApplestore.svg'
 import BannerEco from './components/Banner/BannerEco'
 import InfoEco from './components/Informacion/InfoEco'
 import DestacadaEco from './components/Destacadas/DestacadaEco'
 import ButtonsEco from './components/Buttons/ButtonsEco'
 import ButtonBack from '@components/Default/ButtonBack'
 import { Link } from 'react-router-dom'
+const imgPlaystore = import.meta.env.VITE_ASSETS_URL + '/assets/ecoMobile_seccion2_botonPlaystore.svg'
+const imgApplestore = import.meta.env.VITE_ASSETS_URL + '/assets/ecoMobile_seccion2_botonApplestore.svg'
 
 const Eco = () => {
   const [ecoData, setEcoData] = useState()

@@ -1,6 +1,6 @@
 import React from 'react'
-import img2 from '@assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
-import img from '@assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/mobilEmpleo/empleoMobile_ProgramaEntrenamientoParaElTrabajo.jpg'
 export const LimpiezaUrbana = () => {
   return (
     <div>

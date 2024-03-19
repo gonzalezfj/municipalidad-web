@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonBack from '../components/Default/ButtonBack'
-import img1 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
-import img2 from '../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 
 export const Senaletica = () => {
   return (

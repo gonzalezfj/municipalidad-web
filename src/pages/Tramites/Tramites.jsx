@@ -1,7 +1,7 @@
 import Categorias from './components/Categorias/Categorias'
 import { useEffect, useState } from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
-import imgFondo from '@assets/group_61.png'
+const imgFondo = import.meta.env.VITE_ASSETS_URL + '/assets/group_61.png'
 
 const Tramites = () => {
   const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false, false])

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import videoBoletas from '@assets/Libre_deuda_2024.mp4'
 import { BannerBoletas, InfoBoletas } from './components'
 import DestacadoBoletas from './components/DestacadoBoleta/DestacadoBoleta'
+const videoBoletas = import.meta.env.VITE_ASSETS_URL + '/assets/Libre_deuda_2024.mp4'
 
 const Boletas = () => {
   const [BoletasData, SetBoletasData] = useState()

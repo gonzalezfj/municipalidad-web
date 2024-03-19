@@ -1,9 +1,9 @@
 import React from 'react'
-import img1 from '@assets/Ocupacion_Calzada/formulario.jpg'
-import img2 from '@assets/Ocupacion_Calzada/mapCalzada.jpg'
-import img3 from '@assets/Ocupacion_Calzada/formularioCalzada.jpg'
-import img4 from '@assets/Ocupacion_Calzada/espacioUrbano_iconoCartel.svg'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/formulario.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/mapCalzada.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/formularioCalzada.jpg'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/espacioUrbano_iconoCartel.svg'
 
 export const OcupacionCalzada = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import imgPerro from '../../assets/mascotasmobile_botonPerro.svg'
-import imgGato from '../../assets/mascotasmobile_botonGato.svg'
 import { useNavigate } from 'react-router-dom'
+const imgPerro = import.meta.env.VITE_ASSETS_URL + '/assets/mascotasmobile_botonPerro.svg'
+const imgGato = import.meta.env.VITE_ASSETS_URL + '/assets/mascotasmobile_botonGato.svg'
 
 const ButtonTurnos = () => {
   const navigate = useNavigate()

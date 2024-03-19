@@ -1,6 +1,6 @@
 import React from 'react'
 import { CarteleriaPublica } from './CarteleriaPublica'
-import img4 from '@assets/Ocupacion_Calzada/espacioUrbano_iconoCartel.svg'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/espacioUrbano_iconoCartel.svg'
 
 export const CarteleriaRender = () => {
   const menuItems = [

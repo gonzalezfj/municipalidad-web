@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img1 from '@assets/LibreDeuda/LibreDeuda_fondo.svg'
-// import img2 from '@assets/obras/obras_icono.svg'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_fondo.svg'
+// const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/obras/obras_icono.svg'
 
 export const CambioDeTitularidad = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import img from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
-import img2 from '@assets/img temporal/estoyBuscandoUn.jpg'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioGuia.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/estoyBuscandoUn.jpg'
 
 export const PromoverOficio = () => {
   return (

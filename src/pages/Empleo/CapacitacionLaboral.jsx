@@ -1,6 +1,6 @@
 import React from 'react'
-import img from '@assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/mobilEmpleo/empleoMobile_ProgramaCursosyCapacitacionLaboral.jpg'
 export const CapacitacionLaboral = () => {
   return (
     <div>

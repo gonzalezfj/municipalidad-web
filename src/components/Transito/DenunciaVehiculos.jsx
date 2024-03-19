@@ -1,10 +1,10 @@
 import React from 'react'
-import img1 from '../../assets/img temporal/img form ubi domicilio.jpg'
-import img2 from '../../assets/img temporal/img mapa.jpg'
-import img3 from '../../assets/img temporal/img form2.jpg'
-import img4 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
-import img5 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 import ButtonBack from '../Default/ButtonBack'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/img form ubi domicilio.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/img mapa.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/img form2.jpg'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 
 export const DenunciaVehiculos = () => {
   return (

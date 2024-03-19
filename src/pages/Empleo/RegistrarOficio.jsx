@@ -1,8 +1,8 @@
 import React from 'react'
-import img from '@assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioRegisto.jpg'
-import img2 from '@assets/img temporal/formularioOficio.jpg'
-import img3 from '@assets/img temporal/formularioOficioImg.jpg'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/mobilEmpleo/empleoMobile_ProgramaPomoveTuOficioRegisto.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/formularioOficio.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/formularioOficioImg.jpg'
 export const RegistrarOficio = () => {
   return (
     <div>

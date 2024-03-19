@@ -1,8 +1,8 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
-import img3 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoComercio.svg'
 import { useNavigate } from 'react-router'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoComercio.svg'
 
 const PlayaEstacionamiento = () => {
   const navigate = useNavigate()

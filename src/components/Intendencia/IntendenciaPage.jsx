@@ -1,9 +1,9 @@
 import React from 'react'
-import img1 from '@assets/intendente/intendente_fotoIntendente.jpg'
-// import img2 from '@assets/img temporal/formularioIntendencia.jpg'
-import img3 from '@assets/intendente/intendente_graficoFondo.svg'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/intendente/intendente_fotoIntendente.jpg'
+// const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/formularioIntendencia.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/intendente/intendente_graficoFondo.svg'
 
 export const IntendenciaPage = () => {
   return (

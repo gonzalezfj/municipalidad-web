@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img3 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
-import img4 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
 
 export const Infraccion = () => {
   return (

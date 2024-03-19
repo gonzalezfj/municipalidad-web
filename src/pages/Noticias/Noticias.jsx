@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Card } from './Card'
 import ButtonBack from '@components/Default/ButtonBack'
-import img4 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo.svg'
-import img5 from '@assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo2.svg'
 import Pagination from './Pagination/Pagination'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo.svg'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/BuscadorNoticias_mobile/BuscarNoticias_graficaFondo2.svg'
 
 export const Noticias = () => {
   const [news, setNews] = useState([])

@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonBack from '../Default/ButtonBack'
-import img1 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoJuzgado.svg'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoJuzgado.svg'
 
 const DescargoOtras = () => {
   return (

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { MdExpandMore } from 'react-icons/md'
 import Links from './Links'
-// import imgSearch from '../../assets/home_menu_buscador.svg'
-import sidebarImage from '../../assets/group_61.png'
+// const imgSearch = import.meta.env.VITE_ASSETS_URL + '/assets/home_menu_buscador.svg'
+const sidebarImage = import.meta.env.VITE_ASSETS_URL + '/assets/group_61.png'
 
 const endpoints = {
   menuItems: import.meta.env.VITE_STRAPI_URL + '/api/navegacion?populate[0]=Items&populate[1]=Items.Subitems&populate[2]=Logo'

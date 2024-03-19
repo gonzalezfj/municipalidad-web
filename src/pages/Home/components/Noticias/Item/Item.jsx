@@ -1,8 +1,8 @@
 import CarruselNoticias from '../Carousel/Carousel'
-import img1 from '../../../../../assets/home_seccion4_noticiaPirotecnia.jpg'
-import img2 from '../../../../../assets/home_seccion4_noticiaLimpieza.jpg'
-import img3 from '../../../../../assets/home_seccion4_noticiaHomenaje.jpg'
-import img4 from '../../../../../assets/homemovil_seccion4_fondo.svg'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/home_seccion4_noticiaPirotecnia.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/home_seccion4_noticiaLimpieza.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/home_seccion4_noticiaHomenaje.jpg'
+const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/homemovil_seccion4_fondo.svg'
 
 const Noticias = () => {
   const slides = [img1, img2, img3]

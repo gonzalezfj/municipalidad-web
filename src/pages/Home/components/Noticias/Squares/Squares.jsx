@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import fondo from '@assets/home_seccion4_fondo.svg'
+const fondo = import.meta.env.VITE_ASSETS_URL + '/assets/home_seccion4_fondo.svg'
 
 const originPosition = [
   'origin-bottom-right',

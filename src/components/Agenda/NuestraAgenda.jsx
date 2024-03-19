@@ -1,8 +1,8 @@
 import React from 'react'
-import imgCard from '../../assets/imagen2.jpg'
-import img1 from '../../assets/mobilDesktopAgenda/Miscelanias-Agenda.svg'
-import img2 from '../../assets/mobilDesktopAgenda/Icono-Calendario-Agenda.svg'
 import { FaArrowLeft } from 'react-icons/fa'
+const imgCard = import.meta.env.VITE_ASSETS_URL + '/assets/imagen2.jpg'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/mobilDesktopAgenda/Miscelanias-Agenda.svg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/mobilDesktopAgenda/Icono-Calendario-Agenda.svg'
 
 export const NuestraAgenda = () => {
   return (

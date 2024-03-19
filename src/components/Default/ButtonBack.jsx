@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import buttonAtras from '@assets/guiaDeTramitesMobile_botonAtras.svg'
+const buttonAtras = import.meta.env.VITE_ASSETS_URL + '/assets/guiaDeTramitesMobile_botonAtras.svg'
 
 const ButtonBack = () => {
   const navigate = useNavigate()

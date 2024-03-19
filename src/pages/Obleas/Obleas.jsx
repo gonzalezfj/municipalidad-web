@@ -1,8 +1,8 @@
 import React from 'react'
 import ButtonBack from '@components/Default/ButtonBack'
-import img2 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
-import img3 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 import { Link } from 'react-router-dom'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_fondo2.svg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoTransito.svg'
 
 const Obleas = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from '@assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
 export const InhumacionesExhumaciones = () => {
   return (
     <div className='w-[100vw] h-full'>

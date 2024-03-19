@@ -1,7 +1,7 @@
-import iconFacebook from '../../assets/home_footer_iconoFacebook.svg'
-import iconTwitter from '../../assets/home_footer_iconoTwitter.svg'
-import iconInstagram from '../../assets/home_footer_iconoInstagram.svg'
-import iconYoutube from '../../assets/home_footer_iconoYoutube.svg'
+const iconFacebook = import.meta.env.VITE_ASSETS_URL + '/assets/home_footer_iconoFacebook.svg'
+const iconTwitter = import.meta.env.VITE_ASSETS_URL + '/assets/home_footer_iconoTwitter.svg'
+const iconInstagram = import.meta.env.VITE_ASSETS_URL + '/assets/home_footer_iconoInstagram.svg'
+const iconYoutube = import.meta.env.VITE_ASSETS_URL + '/assets/home_footer_iconoYoutube.svg'
 
 const SocialIcons = () => {
   return (

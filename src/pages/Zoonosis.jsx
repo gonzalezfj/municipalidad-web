@@ -1,8 +1,8 @@
 import React from 'react'
 import TextZoonosis from '../components/Zoonosis/TextZoonosis'
 import ButtonTurnos from '../components/Zoonosis/ButtonTurnos'
-import fondo from '../assets/fondo_zoonosis.svg'
 import ButtonBack from '../components/Default/ButtonBack.jsx'
+const fondo = import.meta.env.VITE_ASSETS_URL + '/assets/fondo_zoonosis.svg'
 
 const Zoonosis = () => {
   return (

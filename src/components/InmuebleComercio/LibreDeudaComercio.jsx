@@ -1,9 +1,9 @@
 import React from 'react'
-import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
-// import img3 from '../../assets/LibreDeuda/LibreDeuda_graficoInmueble.svg'
-// import img4 from '../../assets/LibreDeuda/LibreDeuda_graficoComercio.svg'
-import img5 from '../../assets/LibreDeuda/LibreDeuda_fondo.svg'
 import ButtonBack from '../Default/ButtonBack'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
+// const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_graficoInmueble.svg'
+// const img4 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_graficoComercio.svg'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_fondo.svg'
 
 export const LibreDeudaComercio = () => {
   return (

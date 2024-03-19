@@ -1,6 +1,6 @@
 import React from 'react'
 import { Accordion, AccordionTab } from 'primereact/accordion'
-import img from '@assets/imgCementerio/cementerioCapital.jpg'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/imgCementerio/cementerioCapital.jpg'
 export const ServicioFunebre = () => {
   return (
     <div className='w-full'>

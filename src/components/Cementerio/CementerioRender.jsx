@@ -1,7 +1,7 @@
 import React from 'react'
-import img from '@assets/imgCementerio/cementerioMunicipal.jpg'
-import img2 from '@assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
 import { CementerioHome } from './CementerioHome'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/imgCementerio/cementerioMunicipal.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/imgCementerio/cementerio_fondo_Mesa de trabajo 1.svg'
 export const CementerioRender = () => {
   const menuItems = [
     {

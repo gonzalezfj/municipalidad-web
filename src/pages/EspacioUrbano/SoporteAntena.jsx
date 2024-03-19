@@ -1,6 +1,6 @@
 import React from 'react'
-import img5 from '@assets/Ocupacion_Calzada/espacioUrbano_iconoFondo2.svg'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/Ocupacion_Calzada/espacioUrbano_iconoFondo2.svg'
 
 export const SoporteAntena = () => {
   return (

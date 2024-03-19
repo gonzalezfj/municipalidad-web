@@ -1,8 +1,8 @@
 import React from 'react'
-import img from '@assets/mobilEmpleo/empleoMobile_ProgramaInsercionLaboral.jpg'
-import img3 from '@assets/img temporal/dotacionTabla2.jpg'
 import { Accordion, AccordionTab } from 'primereact/accordion'
 import ButtonBack from '@/components/Default/ButtonBack'
+const img = import.meta.env.VITE_ASSETS_URL + '/assets/mobilEmpleo/empleoMobile_ProgramaInsercionLaboral.jpg'
+const img3 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/dotacionTabla2.jpg'
 export const ProgramaInsercionLaboral = () => {
   return (
     <div>

@@ -1,6 +1,6 @@
-import img1 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoGeneral.svg'
 import React from 'react'
 import ButtonBack from '../../components/Default/ButtonBack'
+const img1 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoGeneral.svg'
 
 const ConsultaTurnos = () => {
   return (

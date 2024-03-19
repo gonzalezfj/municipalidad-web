@@ -1,8 +1,8 @@
 import React from 'react'
-import img2 from '@assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
 import ButtonBack from '../Default/ButtonBack'
-import img5 from '@assets/LibreDeuda/LibreDeuda_fondo.svg'
-import img6 from '@assets/img temporal/imgFormRecategorizacion.jpg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_fondo.svg'
+const img6 = import.meta.env.VITE_ASSETS_URL + '/assets/img temporal/imgFormRecategorizacion.jpg'
 export const RecategorizacionForm = () => {
   return (
     <div className='w-full'>

@@ -1,6 +1,6 @@
-import img2 from '../../assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
 import ButtonBack from '../Default/ButtonBack'
-import img5 from '../../assets/LibreDeuda/LibreDeuda_fondo.svg'
+const img2 = import.meta.env.VITE_ASSETS_URL + '/assets/gia_tramites_turnos_obleas/guiaDeTramitesMobile_iconoRentas.svg'
+const img5 = import.meta.env.VITE_ASSETS_URL + '/assets/LibreDeuda/LibreDeuda_fondo.svg'
 
 export const EximicionPago = () => {
   return (

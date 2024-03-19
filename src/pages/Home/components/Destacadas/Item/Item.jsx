@@ -1,5 +1,5 @@
 // import CarruselDestacado from '../Carousel/Carousel'
-import { Carousel as CarruselDestacado } from '../Carousel'
+import { CarruselDestacado } from '../Carousel'
 
 const Destacado = ({ destacados, isLoading }) => {
   return (

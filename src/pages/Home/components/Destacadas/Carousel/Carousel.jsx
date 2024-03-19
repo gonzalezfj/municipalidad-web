@@ -65,7 +65,6 @@ const Item = ({ image, description, title }) => {
   )
 }
 
-
 export default function CarruselDestacado ({
   slides,
   isLoading
